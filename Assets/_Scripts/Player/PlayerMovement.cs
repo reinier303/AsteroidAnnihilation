@@ -60,6 +60,13 @@ namespace AsteroidAnnihilation
 
         [SerializeField]private List<Vector3> lastInputs;
 
+        //Audio Hookup
+        private AK.Wwise.RTPC accelerationHook;
+        private float currAngle;
+        private AK.Wwise.RTPC turnHook;
+        private AK.Wwise.RTPC velocityHook; 
+
+
         private void Awake()
         {
             backGroundSize = BackgroundCollider.transform.localScale * 14.5f;
@@ -142,7 +149,8 @@ namespace AsteroidAnnihilation
         // Update is called once per frame
         private void Update()
         {
-            if(Time.timeScale == 0)
+            UpdateAudioHooks();
+            if (Time.timeScale == 0)
             {
                 return;
             }
@@ -164,6 +172,13 @@ namespace AsteroidAnnihilation
                 StartCoroutine(Dash());
             }
             Move();
+        }
+
+        private void UpdateAudioHooks()
+        {
+            accelerationHook.SetValue(gameObject, MovementInput.normalized.magnitude);
+            //turnHook.SetValue(gameObject, currAngle);
+            velocityHook.SetValue(gameObject, rb.velocity.normalized.magnitude);
         }
 
         private IEnumerator Dash()
