@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3149804152" Type="User" Language="SFX" Hash="{BF459604-DE71-F277-100E-E2B3ED58FFEC}">
+			<ShortName>Base_SoundBank</ShortName>
+			<Path>Base_SoundBank.bnk</Path>
+			<Media>
+				<File Id="215372480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Temp\PlasmaGunShot4.wav</ShortName>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="276439328" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Temp\PlasmaGunShot1.wav</ShortName>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="375205690" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Temp\PlasmaGunShot2.wav</ShortName>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="723541179" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Temp\Levelup.wav</ShortName>
+					<CachePath>SFX/SFX_Temp/Levelup_10C4C929.wem</CachePath>
+				</File>
+				<File Id="788860315" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Temp\etfx_shoot_laser.wav</ShortName>
+					<CachePath>SFX/SFX_Temp/etfx_shoot_laser_10C4C929.wem</CachePath>
+				</File>
+				<File Id="809888030" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Temp\SwarmExplosion.wav</ShortName>
+					<CachePath>SFX/SFX_Temp/SwarmExplosion_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1060657738" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Temp\PlasmaGunShot3.wav</ShortName>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot3_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3201422434" Name="Temp_Play_etfx_shoot_laser" DurationType="OneShot" DurationMin="0.44" DurationMax="0.44">
+					<MediaRefs>
+						<MediaRef Id="788860315"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1450272620" Name="Temp_Play_Levelup" DurationType="OneShot" DurationMin="3.3533106" DurationMax="3.3533106">
+					<MediaRefs>
+						<MediaRef Id="723541179"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3965960414" Name="Temp_Play_PlasmaGunShot1" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="276439328"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3965960413" Name="Temp_Play_PlasmaGunShot2" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="375205690"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3965960412" Name="Temp_Play_PlasmaGunShot3" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="1060657738"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3965960411" Name="Temp_Play_PlasmaGunShot4" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="215372480"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2360230854" Name="Temp_Play_SwarmExplosion" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="809888030"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{D6F1B9B9-A598-14C5-EA52-56CF7A4BD9C8}</FileHash>
+</SoundBanksInfo>
