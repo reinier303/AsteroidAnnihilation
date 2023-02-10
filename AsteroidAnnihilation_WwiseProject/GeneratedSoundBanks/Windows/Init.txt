@@ -1,3 +1,14 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	155164948	PlayerShipHealthStates			\PlayerShipStates\PlayerShipHealthStates	
+
+Switch	ID	Name	Switch Group			Notes
+	777824873	AlmostDead	PlayerShipHealthStates			
+	825447798	HealthMedium	PlayerShipHealthStates			
+	1924267063	HealthLow	PlayerShipHealthStates			
+	2044049779	Dead	PlayerShipHealthStates			
+	3493536634	HealthAlmostFull	PlayerShipHealthStates			
+	4197849920	HealthFull	PlayerShipHealthStates			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

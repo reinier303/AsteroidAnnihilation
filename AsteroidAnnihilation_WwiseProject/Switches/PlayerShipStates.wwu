@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4E2A8B21-6F9B-4C48-A1DD-C7B97CD3CA44}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="PlayerShipStates" ID="{4E2A8B21-6F9B-4C48-A1DD-C7B97CD3CA44}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="PlayerShipHealthStates" ID="{D20AFC39-7FBC-4E29-8D23-BD00CDD6F768}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Dead" ID="{17058561-1B4F-4AB4-A49C-30B91C2BFD9B}"/>
+						<Switch Name="AlmostDead" ID="{0A52955D-26C2-4F19-B2AD-F08645E589FF}"/>
+						<Switch Name="HealthLow" ID="{0CE2AD44-0A0A-453F-A9A0-7C2FB755725A}"/>
+						<Switch Name="HealthMedium" ID="{95B56A13-0175-4646-AA9A-432CCF4842EF}"/>
+						<Switch Name="HealthAlmostFull" ID="{453D8108-BDDB-462F-8063-603AE18021CC}"/>
+						<Switch Name="HealthFull" ID="{9FAB5F9C-9DA0-491C-92A8-5267E0F84824}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerShipHealth" ID="{499C37B6-31B1-4565-8FB5-2CBA012AFD8D}"/>
+						<Curve Name="" ID="{82B0D36E-81B2-4041-9927-BD12B4D07538}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.10014</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.10114</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.35402</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.70945</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.87123</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.999</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

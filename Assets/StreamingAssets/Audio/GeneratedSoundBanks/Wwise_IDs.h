@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_PLAYERSHIPENGINE = 1672365273U;
+        static const AkUniqueID STOP_PLAYERSHIPENGINE = 4236749427U;
         static const AkUniqueID TEMP_PLAY_ETFX_SHOOT_LASER = 3201422434U;
         static const AkUniqueID TEMP_PLAY_LEVELUP = 1450272620U;
         static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT1 = 3965960414U;
@@ -22,10 +24,39 @@ namespace AK
         static const AkUniqueID TEMP_PLAY_SWARMEXPLOSION = 2360230854U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace PLAYERSHIPHEALTHSTATES
+        {
+            static const AkUniqueID GROUP = 155164948U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ALMOSTDEAD = 777824873U;
+                static const AkUniqueID DEAD = 2044049779U;
+                static const AkUniqueID HEALTHALMOSTFULL = 3493536634U;
+                static const AkUniqueID HEALTHFULL = 4197849920U;
+                static const AkUniqueID HEALTHLOW = 1924267063U;
+                static const AkUniqueID HEALTHMEDIUM = 825447798U;
+            } // namespace SWITCH
+        } // namespace PLAYERSHIPHEALTHSTATES
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYERSHIPACCELERATION = 1918122584U;
+        static const AkUniqueID PLAYERSHIPENERGY = 2508725640U;
+        static const AkUniqueID PLAYERSHIPGUNLEVEL = 2663975140U;
+        static const AkUniqueID PLAYERSHIPHEALTH = 1438366550U;
+        static const AkUniqueID PLAYERSHIPTURNRATE = 1347618923U;
+        static const AkUniqueID PLAYERSHIPVELOCITY = 3228488565U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID BASE_SOUNDBANK = 3149804152U;
+        static const AkUniqueID PERSISTENT_SOUNDBANK = 1299072232U;
     } // namespace BANKS
 
     namespace BUSSES
