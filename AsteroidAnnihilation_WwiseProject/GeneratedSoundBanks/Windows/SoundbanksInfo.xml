@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1299072232" Type="User" Language="SFX" Hash="{88A9BDBD-FBF3-ABE5-3260-676B84EC71DF}">
+		<SoundBank Id="1299072232" Type="User" Language="SFX" Hash="{9469D571-F6FB-D232-EF6C-9D217467AED3}">
 			<ShortName>Persistent_SoundBank</ShortName>
 			<Path>Persistent_SoundBank.bnk</Path>
 			<Media>
@@ -100,11 +100,12 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="1347618923" Name="PlayerShipTurnRate"/>
 				<GameParameter Id="1918122584" Name="PlayerShipAcceleration"/>
 				<GameParameter Id="3228488565" Name="PlayerShipVelocity"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F69B3706-CFB5-09DE-9047-A6FCBEF95B3C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{488D25F6-6C97-EA28-5C33-12645F16E7DC}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -139,5 +140,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{087DE995-BA76-53F7-94C0-B689ACD8950C}</FileHash>
+	<FileHash>{3D206261-C7BE-EE33-4312-C70D829DE99D}</FileHash>
 </SoundBanksInfo>
