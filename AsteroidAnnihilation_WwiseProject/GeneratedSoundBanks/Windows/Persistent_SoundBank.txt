@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	4236749427	Stop_PlayerShipEngine			\PlayerShip\Stop_PlayerShipEngine	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1347618923	PlayerShipTurnRate			\PlayerShipParameters\PlayerShipTurnRate	
 	1918122584	PlayerShipAcceleration			\PlayerShipParameters\PlayerShipAcceleration	
 	3228488565	PlayerShipVelocity			\PlayerShipParameters\PlayerShipVelocity	
 
