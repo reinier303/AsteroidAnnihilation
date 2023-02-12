@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -62,10 +63,7 @@ namespace AsteroidAnnihilation
         [SerializeField]private List<Vector3> lastInputs;
 
         //Audio Hookup
-        private RTPC accelerationHook;
         private float currAngle;
-        private RTPC turnHook;
-        private RTPC velocityHook; 
 
 
         private void Awake()
@@ -76,10 +74,6 @@ namespace AsteroidAnnihilation
             canDash = true;
             //TODO:: IMPORTANT CHECK IF THIS CAN BE ONLY DONE FOR PLAYER OBJECT
             Physics2D.simulationMode = SimulationMode2D.Update;
-
-            accelerationHook = new RTPC();
-            turnHook = new RTPC();
-            velocityHook = new RTPC();
         }
 
         private void Start()
@@ -181,9 +175,11 @@ namespace AsteroidAnnihilation
 
         private void UpdateAudioHooks()
         {
-            accelerationHook.SetValue(gameObject, MovementInput.normalized.magnitude);
-            //turnHook.SetValue(gameObject, currAngle);
-            velocityHook.SetValue(gameObject, rb.velocity.normalized.magnitude);
+
+            AkSoundEngine.SetRTPCValue("PlayerShipAcceleration", MovementInput.normalized.magnitude, gameObject);
+            AkSoundEngine.SetRTPCValue("PlayerShipVelocity", rb.velocity.normalized.magnitude, gameObject);
+            AkSoundEngine.SetRTPCValue("PlayerShipTurnRate", currAngle, gameObject);
+
         }
 
         private IEnumerator Dash()
