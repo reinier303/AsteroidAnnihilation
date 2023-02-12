@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 167cd372dc935741a30553f6c89f054c
     GuidInternal: 
-    m_lastTime: -8585257343355468354
+    m_lastTime: -8585255661705981905
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f7f7601071c7584ca5d565e67559c019
     GuidInternal: 
-    m_lastTime: -8585257343359134024
+    m_lastTime: -8585255661709040796
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c41b77c2168a854c8da7ed3209b64741
     GuidInternal: 
-    m_lastTime: -8585255640262143624
+    m_lastTime: -8585255668059559763
     List:
     - name: Persistent_SoundBank
       guid: 488dedfda64bd14ba76e280a55573b02
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d00ab9fa6d1ffe4bb3dfa6c68ccf2739
     GuidInternal: 
-    m_lastTime: -8585257343359311307
+    m_lastTime: -8585255661709290127
     List: []
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: a095558296356f40ba6397908977d23b
     GuidInternal: 
-    m_lastTime: -8585256584813020243
+    m_lastTime: -8585255661709290127
     List: []
   - PhysicalPath: Events\PlayerShip.wwu
     PathAndIcons:
@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerShip
     guid: 57f35acf701a1948bd901d61fd34ac0a
     GuidInternal: 
-    m_lastTime: -8585255640265177584
+    m_lastTime: -8585255648737567243
     List:
     - name: Play_PlayerShipEngine
       guid: c82e0154c582fd44bf590d1869034533
@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPath: Events\TestSounds
     guid: 48e558fb55174f4ebaad5a3c2cfa73f4
     GuidInternal: 
-    m_lastTime: -8585256584813010271
+    m_lastTime: -8585255661709290127
     List:
     - name: Temp_Play_etfx_shoot_laser
       guid: 7b5af0d36c11e54d97660763b8008b07
@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fd4515685ad28245be1ec28387e0ba23
     GuidInternal: 
-    m_lastTime: -8585257343359301341
+    m_lastTime: -8585255661709290127
     List: []
   - PhysicalPath: Game Parameters\PlayerShipParameters.wwu
     PathAndIcons:
@@ -330,7 +330,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\PlayerShipParameters
     guid: 253990e838f92842911d377eac5b4a21
     GuidInternal: 
-    m_lastTime: -8585255640265136867
+    m_lastTime: -8585255641868484426
     List:
     - name: PlayerShipAcceleration
       guid: c100c129aa3e3b4ea4bdad5d7c2308d9
@@ -428,7 +428,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 30b3ccf966202a409ca897d5f91522f3
     GuidInternal: 
-    m_lastTime: -8585257343355478328
+    m_lastTime: -8585255661705981905
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -442,7 +442,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0d6a13b7fbdb1d429cededc029a59f21
     GuidInternal: 
-    m_lastTime: -8585257343355478328
+    m_lastTime: -8585255661705981905
     List: []
   - PhysicalPath: Switches\PlayerShipStates.wwu
     PathAndIcons:
@@ -455,7 +455,7 @@ MonoBehaviour:
     ParentPath: Switches\PlayerShipStates
     guid: 218b2a4e9b6f484ca1ddc7b97cd3ca44
     GuidInternal: 
-    m_lastTime: -8585255640262113705
+    m_lastTime: -8585255651392524884
     List:
     - name: PlayerShipHealthStates
       guid: 39fc0ad2bc7f294e8d23bd00cdd6f768
@@ -583,10 +583,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 63d25f515c170d4ba11802bbb20dbcc5
     GuidInternal: 
-    m_lastTime: -8585257343355468354
+    m_lastTime: -8585255661705981905
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 0200000005000000
+  ExpandedWaapiItemIds: 02000000050000000600000009000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
