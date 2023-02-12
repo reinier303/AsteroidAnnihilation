@@ -149,7 +149,7 @@ namespace AsteroidAnnihilation
             SpawnParticleEffect();
             DropPickUps();
             DeathSound.Post(gameObject);
-            missionManager.AddObjectiveProgress(MissionObjectiveType.Elimination);
+            if (missionManager != null) { missionManager.AddObjectiveProgress(MissionObjectiveType.Elimination); }
             cameraManager.StartCoroutine(cameraManager.Shake(ShakeDuration, ShakeMagnitude));
             gameObject.SetActive(false);
         }
@@ -176,11 +176,10 @@ namespace AsteroidAnnihilation
             int dropAmount = Random.Range(DropTable.DropRange.x, DropTable.DropRange.y + 1);
             for(int i = 0; i < dropAmount; i++)
             {
-                PickUp pickUp = objectPooler.SpawnFromPool("PickUp", transform.position, Quaternion.identity).GetComponent<PickUp>();
-
                 Drop drop = DropTable.GetDrop();
                 if (drop.Equals(default(Drop))) { return; };
-                Debug.Log(drop.Item.ItemName);
+
+                PickUp pickUp = objectPooler.SpawnFromPool("PickUp", transform.position, Quaternion.identity).GetComponent<PickUp>();
 
                 pickUp.Initialize(drop);
             }

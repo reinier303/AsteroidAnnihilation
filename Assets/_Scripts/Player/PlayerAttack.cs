@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.EventSystems;
 using Sirenix.OdinInspector;
+using AK.Wwise;
 using static AsteroidAnnihilation.EnumCollections;
 
 namespace AsteroidAnnihilation
@@ -38,6 +39,11 @@ namespace AsteroidAnnihilation
         private Rigidbody2D rb;
         private bool energyInitialized;
 
+        //Audio Hooks
+        private RTPC dPSHook;
+        private RTPC energyHook;
+
+
         private void Awake()
         {
             rPlayer = GetComponent<Player>();
@@ -46,6 +52,9 @@ namespace AsteroidAnnihilation
             eventSystem = EventSystem.current;
 
             currentWeapons = new Dictionary<int, Weapon>();
+
+            dPSHook = new RTPC();
+            energyHook = new RTPC();
         }
 
         private void Start()
@@ -147,7 +156,9 @@ namespace AsteroidAnnihilation
         // Update is called once per frame
         private void Update()
         {
-            if(Time.timeScale == 0)
+            UpdateAudioHooks();
+
+            if (Time.timeScale == 0)
             {
                 return;
             }
@@ -163,6 +174,12 @@ namespace AsteroidAnnihilation
                 }
                 Fire(mouseButton);
             }
+        }
+
+        private void UpdateAudioHooks()
+        {
+            dPSHook.SetValue(gameObject, GetFireRateAverage() * currentWeapons[0].GetEquipmentStat(EnumCollections.Stats.Damage, 0));
+            energyHook.SetValue(gameObject, currentEnergy/ MaxEnergy);
         }
 
         private void Fire(int buttonDown)

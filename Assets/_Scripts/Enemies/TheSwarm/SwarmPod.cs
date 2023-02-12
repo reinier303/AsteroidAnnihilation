@@ -26,7 +26,7 @@ namespace AsteroidAnnihilation
 
         protected virtual void Update()
         {
-            if (spawnManager.BossActive)
+            if (spawnManager != null && spawnManager.BossActive)
             {
                 MoveAwayFromBoss();
                 return;

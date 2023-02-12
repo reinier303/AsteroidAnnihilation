@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Cinemachine;
+using AK.Wwise;
 
 namespace AsteroidAnnihilation
 {
@@ -61,10 +62,10 @@ namespace AsteroidAnnihilation
         [SerializeField]private List<Vector3> lastInputs;
 
         //Audio Hookup
-        private AK.Wwise.RTPC accelerationHook;
+        private RTPC accelerationHook;
         private float currAngle;
-        private AK.Wwise.RTPC turnHook;
-        private AK.Wwise.RTPC velocityHook; 
+        private RTPC turnHook;
+        private RTPC velocityHook; 
 
 
         private void Awake()
@@ -75,6 +76,10 @@ namespace AsteroidAnnihilation
             canDash = true;
             //TODO:: IMPORTANT CHECK IF THIS CAN BE ONLY DONE FOR PLAYER OBJECT
             Physics2D.simulationMode = SimulationMode2D.Update;
+
+            accelerationHook = new RTPC();
+            turnHook = new RTPC();
+            velocityHook = new RTPC();
         }
 
         private void Start()

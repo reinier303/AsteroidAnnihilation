@@ -59,6 +59,8 @@ namespace AsteroidAnnihilation
 
         public void SetItem(ItemData item)
         {
+            if (item.ItemName == null) { return; }
+            slotDataType = SlotDataType.Item;
             this.item = item;
         }
 

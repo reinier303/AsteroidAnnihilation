@@ -87,5 +87,5 @@ MonoBehaviour:
   Tier: 1
   ItemName: Swarm Tooth
   Icons:
-  - {fileID: 21300000, guid: 28679294ecc65f54d9b1208a2991f9bd, type: 3}
+  - {fileID: 21300000, guid: fa3efdd7e9e915940b256269ad13e872, type: 3}
   ItemType: 0

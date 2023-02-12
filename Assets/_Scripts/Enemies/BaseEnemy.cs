@@ -115,7 +115,7 @@ namespace AsteroidAnnihilation
             gameManager.RPlayer.RPlayerStats.AddToExperience(ExperienceGained);
             ExpPopUp expPopUp = objectPooler.SpawnFromPool("ExpPopUp", Vector2.zero, Quaternion.identity).GetComponent<ExpPopUp>();
             expPopUp.Initialize(ExperienceGained);
-            spawnManager.RemoveEnemyType(enemyType);
+            if (spawnManager != null) { spawnManager.RemoveEnemyType(enemyType); }
             base.Die();
         }
 

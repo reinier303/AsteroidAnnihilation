@@ -23,13 +23,13 @@ MonoBehaviour:
     SerializationNodes: []
   DropRange: {x: 0, y: 2}
   Drops:
-  - Weight: 60
+  - Weight: 100
     AmountRange: {x: 1, y: 2}
     ItemType: 0
     Item: {fileID: 11400000, guid: 9d3c35bc261f46745b29cb196806b873, type: 2}
     Equipment: {fileID: 0}
     Weapon: {fileID: 0}
-  - Weight: 25
+  - Weight: 30
     AmountRange: {x: 1, y: 2}
     ItemType: 0
     Item: {fileID: 11400000, guid: a9228c047412cdf48815333686656bd3, type: 2}

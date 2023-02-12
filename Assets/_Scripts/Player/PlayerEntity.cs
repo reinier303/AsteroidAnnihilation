@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using AK.Wwise;
 namespace AsteroidAnnihilation
 {
     public class PlayerEntity : BaseEntity
@@ -20,6 +20,9 @@ namespace AsteroidAnnihilation
         public bool RecentlyHit;
         private Collider2D collider;
 
+        //AudioHooks
+        private RTPC healthHook;
+
         protected override void Awake()
         {
             isDead = false;
@@ -31,6 +34,18 @@ namespace AsteroidAnnihilation
 
             currentHealth = MaxHealth;
             RecentlyHit = false;
+
+            healthHook = new RTPC();
+        }
+
+        protected virtual void Update()
+        {
+            UpdateAudioHooks();
+        }
+
+        private void UpdateAudioHooks()
+        {
+            healthHook.SetValue(gameObject, currentHealth/MaxHealth);
         }
 
         public void GetDefensiveVariables()

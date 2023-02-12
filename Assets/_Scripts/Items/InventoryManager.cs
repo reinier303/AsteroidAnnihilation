@@ -163,6 +163,7 @@ namespace AsteroidAnnihilation
 
         public bool AddItem(ItemData item, int index = -1)
         {
+            Debug.Log(item.ItemName);
             if (!InventoryFull())
             {
                 if (index == -1)

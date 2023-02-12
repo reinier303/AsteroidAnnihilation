@@ -41,14 +41,18 @@ namespace AsteroidAnnihilation
             switch (drop.ItemType)
             {
                 case EnumCollections.ItemType.Weapon:
+                    itemType = EnumCollections.ItemType.Weapon;
                     weaponData = equipmentManager.GenerateWeapon();
                     break;
-                case EnumCollections.ItemType.ShipComponent:
+                case EnumCollections.ItemType.HullPlating:
+                    itemType = EnumCollections.ItemType.HullPlating;
                     equipmentData = equipmentManager.GenerateEquipment();
                     break;
                 case EnumCollections.ItemType.Material:
+                    itemType = EnumCollections.ItemType.Material;
                     itemData = equipmentManager.GenerateItemData(drop.Item);
                     itemData.Amount = Random.Range(drop.AmountRange.x, drop.AmountRange.y);
+                    Debug.Log(itemData.ItemName); // Working
                     break;
             }
         }
@@ -128,7 +132,7 @@ namespace AsteroidAnnihilation
                     //weaponData = equipmentManager.GenerateWeapon();
                     break;
                 case EnumCollections.ItemType.Material:
-                    Debug.Log(itemData);
+                    Debug.Log(itemData.ItemName);
                     bool itemSuccess = inventoryManager.AddItem(itemData);
                     if (itemSuccess)
                     {
