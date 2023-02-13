@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 namespace AsteroidAnnihilation
 {
@@ -16,6 +17,7 @@ namespace AsteroidAnnihilation
         public EquipmentData equipment;
         private WeaponData weapon;
         [SerializeField] private Image icon;
+        [SerializeField] private TextMeshProUGUI amountText;
 
         public EnumCollections.ItemType slotType;
         public enum SlotDataType { None, Item, Equipment, Weapon }
@@ -30,6 +32,7 @@ namespace AsteroidAnnihilation
             slotDataType = SlotDataType.None;
             iconTransform = icon.GetComponent<RectTransform>();
             iconStartPos = iconTransform.anchoredPosition;
+            if (amountText != null) { amountText.gameObject.SetActive(false); }
         }
 
         private void Start()
@@ -39,11 +42,11 @@ namespace AsteroidAnnihilation
         }
 
         public void InitializeSlot()
-        {
-            Debug.Log("dataType" + slotDataType);
+        {        
             switch (slotDataType)
             {
                 case SlotDataType.None:
+                    if (amountText != null) { amountText.gameObject.SetActive(false); }
                     return;
                 case SlotDataType.Item:
                     SetIcon(item.Icon);
@@ -62,6 +65,8 @@ namespace AsteroidAnnihilation
             if (item.ItemName == null) { return; }
             slotDataType = SlotDataType.Item;
             this.item = item;
+            amountText.gameObject.SetActive(true);
+            amountText.text = "" + item.Amount;
         }
 
         public void SetItem(EquipmentData equip)
@@ -69,12 +74,14 @@ namespace AsteroidAnnihilation
             if(equip.ItemData.ItemName == null) { return; }
             slotDataType = SlotDataType.Equipment;
             equipment = equip;
+            if (amountText != null) { amountText.gameObject.SetActive(false); }
         }
 
         public void SetItem(WeaponData weapon)
         {
             slotDataType = SlotDataType.Weapon;
             this.weapon = weapon;
+            if (amountText != null) { amountText.gameObject.SetActive(false); }
         }
 
         private void SetIcon(Sprite Icon)

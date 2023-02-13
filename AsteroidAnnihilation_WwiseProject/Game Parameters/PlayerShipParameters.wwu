@@ -36,6 +36,7 @@
 				<GameParameter Name="PlayerShipGunLevel" ID="{3BE68EC3-0F04-4E91-809D-54C8C9A98F46}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="PlayerShipAcceleration" ID="{29C100C1-3EAA-4E3B-A4BD-AD5D7C2308D9}">

@@ -87,6 +87,7 @@ namespace AsteroidAnnihilation
         public void PlayAudio(string tag, GameObject gObj = null)
         {
             ScriptableAudio sa = Audios[tag];
+            if(sa.Tag == "") { return; }
             Debug.Log(sa.Sound.Name);
             AkSoundEngine.PostEvent(sa.Sound.Name, gObj == null ? gameObject : gObj);
             //sa.Sound.PostEvent(gameObject);

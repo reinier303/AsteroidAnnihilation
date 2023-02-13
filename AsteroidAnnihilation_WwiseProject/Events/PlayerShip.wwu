@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="PlayerShip" ID="{CF5AF357-1A70-4819-BD90-1D61FD34AC0A}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_PlayerShipGunshot" ID="{80FE13A7-8B37-4EF7-8EAA-E44055076501}">
+				<Event Name="Play_PlayerShipShootGun" ID="{80FE13A7-8B37-4EF7-8EAA-E44055076501}">
 					<ChildrenList>
 						<Action Name="" ID="{676D66DA-1E66-45F0-93B3-E47499A0257F}" ShortID="393949323">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ShipGunLevel_01" ID="{ECC19E3C-8B98-4591-A2B1-C4489D13C574}" WorkUnitID="{5B5EF29F-FF65-4EE8-BDCF-6886F765F7CC}"/>
+									<ObjectRef Name="ShipGunShot" ID="{E896DC42-438B-43B6-83BB-66AD7742259E}" WorkUnitID="{5B5EF29F-FF65-4EE8-BDCF-6886F765F7CC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -163,8 +163,15 @@ namespace AsteroidAnnihilation
 
         public bool AddItem(ItemData item, int index = -1)
         {
-            Debug.Log(item.ItemName);
-            if (!InventoryFull())
+            int containedItem = InventoryContainsItem(item);
+            if (containedItem != -1)
+            {
+                ItemData data = InventoryItems[containedItem];
+                data.Amount++;
+                InventoryItems[containedItem] = data;
+                return true;
+            }
+            else if (!InventoryFull())
             {
                 if (index == -1)
                 {
@@ -175,7 +182,9 @@ namespace AsteroidAnnihilation
                 ItemSlots[index].SetItem(item);
                 InitializeInventoryItems();
                 return true;
-            } else { return false; }
+            } 
+            else { return false; }
+
         }
 
         public (bool, EquipmentData) AddItem(EquipmentData equipment, int index = -1)
@@ -267,7 +276,17 @@ namespace AsteroidAnnihilation
 
         public bool InventoryFull()
         {
+            Debug.Log(GetItemCount() >= InventorySlots);
             return GetItemCount() >= InventorySlots;
+        }
+
+        public int InventoryContainsItem(ItemData item)
+        {
+            foreach (int key in InventoryItems.Keys)
+            {
+                if (InventoryItems[key].ItemName == item.ItemName) { return key; }
+            }
+            return -1;
         }
 
         private int GetAvailableSlotIndex()

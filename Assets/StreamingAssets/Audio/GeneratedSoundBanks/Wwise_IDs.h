@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_PLAYERSHIPENGINE = 1672365273U;
+        static const AkUniqueID PLAY_PLAYERSHIPSHOOTGUN = 1172773070U;
         static const AkUniqueID STOP_PLAYERSHIPENGINE = 4236749427U;
         static const AkUniqueID TEMP_PLAY_ETFX_SHOOT_LASER = 3201422434U;
         static const AkUniqueID TEMP_PLAY_LEVELUP = 1450272620U;
@@ -26,6 +27,16 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace PLAYERSHIPGUNLEVELSWITCH
+        {
+            static const AkUniqueID GROUP = 1749199752U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID LEVEL_01 = 987635873U;
+            } // namespace SWITCH
+        } // namespace PLAYERSHIPGUNLEVELSWITCH
+
         namespace PLAYERSHIPHEALTHSTATES
         {
             static const AkUniqueID GROUP = 155164948U;
