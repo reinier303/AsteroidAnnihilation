@@ -84,11 +84,12 @@ namespace AsteroidAnnihilation
             objectPooler = ObjectPooler.Instance;
         }
 
-        public void PlayAudio(string tag)
+        public void PlayAudio(string tag, GameObject gObj = null)
         {
-
             ScriptableAudio sa = Audios[tag];
-            sa.Sound.Post(gameObject);
+            Debug.Log(sa.Sound.Name);
+            AkSoundEngine.PostEvent(sa.Sound.Name, gObj == null ? gameObject : gObj);
+            //sa.Sound.PostEvent(gameObject);
         }
 
         public virtual void MoveToNextSongRoundRobin()
