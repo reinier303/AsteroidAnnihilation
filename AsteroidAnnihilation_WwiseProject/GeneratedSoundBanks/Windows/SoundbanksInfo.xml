@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1299072232" Type="User" Language="SFX" Hash="{EECB9B8A-383A-5D5F-93B5-64C4FE45807B}">
+		<SoundBank Id="1299072232" Type="User" Language="SFX" Hash="{9479DAB4-0048-8520-8AE2-124235708B30}">
 			<ShortName>Persistent_SoundBank</ShortName>
 			<Path>Persistent_SoundBank.bnk</Path>
 			<Media>
@@ -169,11 +169,23 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="1438366550" Name="PlayerShipHealth"/>
 				<GameParameter Id="1918122584" Name="PlayerShipAcceleration"/>
 				<GameParameter Id="2663975140" Name="PlayerShipGunLevel"/>
 				<GameParameter Id="3228488565" Name="PlayerShipVelocity"/>
 			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="155164948" Name="PlayerShipHealthStates">
+					<GameParameterRef Id="1438366550"/>
+					<Switches>
+						<Switch Id="777824873" Name="AlmostDead"/>
+						<Switch Id="825447798" Name="HealthMedium"/>
+						<Switch Id="1924267063" Name="HealthLow"/>
+						<Switch Id="2044049779" Name="Dead"/>
+						<Switch Id="3493536634" Name="HealthAlmostFull"/>
+						<Switch Id="4197849920" Name="HealthFull"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1749199752" Name="PlayerShipGunLevelSwitch">
 					<GameParameterRef Id="2663975140"/>
 					<Switches>
@@ -223,5 +235,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7EE170C5-29E1-5E32-D903-80B6CE332DD1}</FileHash>
+	<FileHash>{32C25526-99E9-C17E-F93C-6E39CE6C3469}</FileHash>
 </SoundBanksInfo>

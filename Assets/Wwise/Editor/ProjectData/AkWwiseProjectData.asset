@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c41b77c2168a854c8da7ed3209b64741
     GuidInternal: 
-    m_lastTime: -8585253829065340651
+    m_lastTime: -8585253208782172049
     List:
     - name: Persistent_SoundBank
       guid: 488dedfda64bd14ba76e280a55573b02
@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerShip
     guid: 57f35acf701a1948bd901d61fd34ac0a
     GuidInternal: 
-    m_lastTime: -8585253829065440391
+    m_lastTime: -8585253208782231931
     List:
     - name: Play_PlayerShipEngine
       guid: c82e0154c582fd44bf590d1869034533
@@ -139,9 +139,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_PlayerShipGunshot
+    - name: Play_PlayerShipShootGun
       guid: a713fe80378bf74e8eaae44055076501
-      id: 2805580567
+      id: 1172773070
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -149,10 +149,10 @@ MonoBehaviour:
       - ElementName: PlayerShip
         ObjectType: 12
         guid: 57f35acf701a1948bd901d61fd34ac0a
-      - ElementName: Play_PlayerShipGunshot
+      - ElementName: Play_PlayerShipShootGun
         ObjectType: 3
         guid: a713fe80378bf74e8eaae44055076501
-      Path: Events\PlayerShip\Play_PlayerShipGunshot
+      Path: Events\PlayerShip\Play_PlayerShipShootGun
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -619,9 +619,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585255661705981905
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000080000000c000000
+  ExpandedFileSystemItemIds: 0100000005000000080000000c0000002b0000002c0000005c0000005f000000630000009a0000000401000005010000380100003a0100003b0100003c0100006e0100008201000084010000
+  ExpandedWaapiItemIds: 0100000005000000080000000c0000002b0000002c0000005c0000005f000000630000009a0000000401000005010000380100003a0100003b0100003c0100006e0100008201000084010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
