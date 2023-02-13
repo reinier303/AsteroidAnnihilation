@@ -198,7 +198,7 @@ namespace AsteroidAnnihilation
                     {
                         if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
                         //Todo::Move this to weapon script.
-                        audioManager.PlayAudio("PlasmaGunShot");
+                        AkSoundEngine.PostEvent("Play_PlayerShipShootGun", this.gameObject);
                         currentWeapons[i].Fire(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
                     }
                     canFire = false;
@@ -215,7 +215,7 @@ namespace AsteroidAnnihilation
                     {
                         if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
                         //Todo::Move this to weapon script.
-                        audioManager.PlayAudio("PlasmaGunShot");
+                        AkSoundEngine.PostEvent("Play_PlayerShipShootGun", this.gameObject);
                         currentWeapons[i].Fire2nd(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
                     }
                     canFire = false;

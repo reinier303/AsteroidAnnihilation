@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1299072232" Type="User" Language="SFX" Hash="{9469D571-F6FB-D232-EF6C-9D217467AED3}">
+		<SoundBank Id="1299072232" Type="User" Language="SFX" Hash="{EECB9B8A-383A-5D5F-93B5-64C4FE45807B}">
 			<ShortName>Persistent_SoundBank</ShortName>
 			<Path>Persistent_SoundBank.bnk</Path>
 			<Media>
@@ -17,17 +17,49 @@
 					<ShortName>SFX_Temp\PlasmaGunShot4.wav</ShortName>
 					<CachePath>SFX/SFX_Temp/PlasmaGunShot4_10C4C929.wem</CachePath>
 				</File>
+				<File Id="237743632" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunBody-001.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunBody-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="254906646" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunTail-003.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunTail-003_10C4C929.wem</CachePath>
+				</File>
 				<File Id="276439328" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Temp\PlasmaGunShot1.wav</ShortName>
 					<CachePath>SFX/SFX_Temp/PlasmaGunShot1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="290230786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunTransient-003.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunTransient-003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="329372466" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunTail-002.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunTail-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="343547370" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunBody-003.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunBody-003_10C4C929.wem</CachePath>
 				</File>
 				<File Id="375205690" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Temp\PlasmaGunShot2.wav</ShortName>
 					<CachePath>SFX/SFX_Temp/PlasmaGunShot2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="384186691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunTail-001.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunTail-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="557894179" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>acid dnb kick.wav</ShortName>
+					<CachePath>SFX/acid dnb kick_10C4C929.wem</CachePath>
+				</File>
 				<File Id="602459634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>S_O_2_48_ShipElectronicHum.wav</ShortName>
 					<CachePath>SFX/S_O_2_48_ShipElectronicHum_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="641948614" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunBody-002.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunBody-002_10C4C929.wem</CachePath>
 				</File>
 				<File Id="723541179" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Temp\Levelup.wav</ShortName>
@@ -45,17 +77,54 @@
 					<ShortName>S_O_2_48_ShipEngineExhaust.wav</ShortName>
 					<CachePath>SFX/S_O_2_48_ShipEngineExhaust_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="854929007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunTransient-002.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunTransient-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="951658105" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>S_O_2_48_ShipGunTransient-001.wav</ShortName>
+					<CachePath>SFX/S_O_2_48_ShipGunTransient-001_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1060657738" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Temp\PlasmaGunShot3.wav</ShortName>
 					<CachePath>SFX/SFX_Temp/PlasmaGunShot3_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="240132277" Name="Echoes_Linear (Custom)" LibName="Wwise Delay" LibId="6946819"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="1672365273" Name="Play_PlayerShipEngine" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="602459634"/>
 						<MediaRef Id="853381070"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="1172773070" Name="Play_PlayerShipShootGun" DurationType="OneShot" DurationMin="0.5219428" DurationMax="0.6707505">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1749199752" Id="987635873" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="237743632"/>
+								<MediaRef Id="254906646"/>
+								<MediaRef Id="290230786"/>
+								<MediaRef Id="329372466"/>
+								<MediaRef Id="343547370"/>
+								<MediaRef Id="384186691"/>
+								<MediaRef Id="557894179"/>
+								<MediaRef Id="641948614"/>
+								<MediaRef Id="854929007"/>
+								<MediaRef Id="951658105"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="240132277"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="4236749427" Name="Stop_PlayerShipEngine" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
@@ -100,12 +169,20 @@
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="1347618923" Name="PlayerShipTurnRate"/>
 				<GameParameter Id="1918122584" Name="PlayerShipAcceleration"/>
+				<GameParameter Id="2663975140" Name="PlayerShipGunLevel"/>
 				<GameParameter Id="3228488565" Name="PlayerShipVelocity"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="1749199752" Name="PlayerShipGunLevelSwitch">
+					<GameParameterRef Id="2663975140"/>
+					<Switches>
+						<Switch Id="987635873" Name="Level_01"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{488D25F6-6C97-EA28-5C33-12645F16E7DC}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A035C285-E815-D81D-07D1-EB3FC88BE9DF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -137,8 +214,14 @@
 						<Switch Id="4197849920" Name="HealthFull"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="1749199752" Name="PlayerShipGunLevelSwitch">
+					<GameParameterRef Id="2663975140"/>
+					<Switches>
+						<Switch Id="987635873" Name="Level_01"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3D206261-C7BE-EE33-4312-C70D829DE99D}</FileHash>
+	<FileHash>{7EE170C5-29E1-5E32-D903-80B6CE332DD1}</FileHash>
 </SoundBanksInfo>

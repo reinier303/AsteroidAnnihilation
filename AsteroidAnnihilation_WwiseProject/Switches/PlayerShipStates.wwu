@@ -66,6 +66,34 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="PlayerShipGunLevelSwitch" ID="{C2FF35D9-9EB6-43FD-987A-D22C6B737882}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Level_01" ID="{19F8AE46-D57A-4CC8-98DB-91F48F6E3D96}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerShipGunLevel" ID="{3BE68EC3-0F04-4E91-809D-54C8C9A98F46}"/>
+						<Curve Name="" ID="{D962A214-BD05-416B-AC61-29FC89870BBB}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

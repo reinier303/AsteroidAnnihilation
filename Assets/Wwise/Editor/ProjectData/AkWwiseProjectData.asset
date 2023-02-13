@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c41b77c2168a854c8da7ed3209b64741
     GuidInternal: 
-    m_lastTime: -8585255668059559763
+    m_lastTime: -8585253829065340651
     List:
     - name: Persistent_SoundBank
       guid: 488dedfda64bd14ba76e280a55573b02
@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerShip
     guid: 57f35acf701a1948bd901d61fd34ac0a
     GuidInternal: 
-    m_lastTime: -8585255648737567243
+    m_lastTime: -8585253829065440391
     List:
     - name: Play_PlayerShipEngine
       guid: c82e0154c582fd44bf590d1869034533
@@ -330,7 +330,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\PlayerShipParameters
     guid: 253990e838f92842911d377eac5b4a21
     GuidInternal: 
-    m_lastTime: -8585255641868484426
+    m_lastTime: -8585253841408254432
     List:
     - name: PlayerShipAcceleration
       guid: c100c129aa3e3b4ea4bdad5d7c2308d9
@@ -455,8 +455,42 @@ MonoBehaviour:
     ParentPath: Switches\PlayerShipStates
     guid: 218b2a4e9b6f484ca1ddc7b97cd3ca44
     GuidInternal: 
-    m_lastTime: -8585255651392524884
+    m_lastTime: -8585253841408104826
     List:
+    - name: PlayerShipGunLevelSwitch
+      guid: d935ffc2b69efd43987ad22c6b737882
+      id: 1749199752
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerShipStates
+        ObjectType: 12
+        guid: 218b2a4e9b6f484ca1ddc7b97cd3ca44
+      - ElementName: PlayerShipGunLevelSwitch
+        ObjectType: 11
+        guid: d935ffc2b69efd43987ad22c6b737882
+      Path: Switches\PlayerShipStates\PlayerShipGunLevelSwitch
+      values:
+      - name: Level_01
+        guid: 46aef8197ad5c84c98db91f48f6e3d96
+        id: 987635873
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerShipStates
+          ObjectType: 12
+          guid: 218b2a4e9b6f484ca1ddc7b97cd3ca44
+        - ElementName: PlayerShipGunLevelSwitch
+          ObjectType: 11
+          guid: d935ffc2b69efd43987ad22c6b737882
+        - ElementName: Level_01
+          ObjectType: 10
+          guid: 46aef8197ad5c84c98db91f48f6e3d96
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: PlayerShipHealthStates
       guid: 39fc0ad2bc7f294e8d23bd00cdd6f768
       id: 155164948
@@ -586,8 +620,8 @@ MonoBehaviour:
     m_lastTime: -8585255661705981905
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000080000001100000023000000
+  ExpandedWaapiItemIds: 0100000005000000080000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
