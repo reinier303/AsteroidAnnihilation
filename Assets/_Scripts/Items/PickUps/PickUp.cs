@@ -137,8 +137,7 @@ namespace AsteroidAnnihilation
                     if (itemSuccess)
                     {
                         ItemPickedUp();
-                    }
-                    gameObject.SetActive(false);
+                    } else { return false; }
                     //weaponData = equipmentManager.GenerateWeapon();
                     break;
             }
@@ -148,7 +147,7 @@ namespace AsteroidAnnihilation
         private void ItemPickedUp()
         {
             objectPooler.SpawnFromPool("EquipmentPickupEffect", transform.position, transform.rotation);
-            audioManager.PlayAudio("PickupEquipment");
+            //audioManager.PlayAudio("PickupEquipment");
             gameObject.SetActive(false);
         }
     }

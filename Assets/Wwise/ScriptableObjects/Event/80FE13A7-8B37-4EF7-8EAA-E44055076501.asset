@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9e86065660c0744b1f9deb327518ef, type: 3}
   m_Name: 80FE13A7-8B37-4EF7-8EAA-E44055076501
   m_EditorClassIdentifier: 
-  objectName: Play_PlayerShipGunshot
-  id: 2805580567
+  objectName: Play_PlayerShipShootGun
+  id: 1172773070
   guid: 80FE13A7-8B37-4EF7-8EAA-E44055076501

@@ -39,10 +39,6 @@ namespace AsteroidAnnihilation
         private Rigidbody2D rb;
         private bool energyInitialized;
 
-        //Audio Hooks
-        private RTPC dPSHook;
-        private RTPC energyHook;
-
 
         private void Awake()
         {
@@ -52,9 +48,6 @@ namespace AsteroidAnnihilation
             eventSystem = EventSystem.current;
 
             currentWeapons = new Dictionary<int, Weapon>();
-
-            dPSHook = new RTPC();
-            energyHook = new RTPC();
         }
 
         private void Start()
@@ -178,8 +171,8 @@ namespace AsteroidAnnihilation
 
         private void UpdateAudioHooks()
         {
-            dPSHook.SetValue(gameObject, GetFireRateAverage() * currentWeapons[0].GetEquipmentStat(EnumCollections.Stats.Damage, 0));
-            energyHook.SetValue(gameObject, currentEnergy/ MaxEnergy);
+            AkSoundEngine.SetRTPCValue("PlayerShipGunLevel", GetFireRateAverage() * currentWeapons[0].GetEquipmentStat(EnumCollections.Stats.Damage, 0), gameObject);
+            AkSoundEngine.SetRTPCValue("PlayerShipEnergy", currentEnergy / MaxEnergy, gameObject);
         }
 
         private void Fire(int buttonDown)
@@ -198,7 +191,7 @@ namespace AsteroidAnnihilation
                     {
                         if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
                         //Todo::Move this to weapon script.
-                        AkSoundEngine.PostEvent("Play_PlayerShipShootGun", this.gameObject);
+                        audioManager.PlayAudio("Play_PlayerShipShootGun");
                         currentWeapons[i].Fire(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
                     }
                     canFire = false;
@@ -215,7 +208,7 @@ namespace AsteroidAnnihilation
                     {
                         if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
                         //Todo::Move this to weapon script.
-                        AkSoundEngine.PostEvent("Play_PlayerShipShootGun", this.gameObject);
+                        audioManager.PlayAudio("Play_PlayerShipShootGun");
                         currentWeapons[i].Fire2nd(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
                     }
                     canFire = false;

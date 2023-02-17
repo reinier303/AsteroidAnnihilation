@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: SwarmDrops
+    m_Hash: 1061864817
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Insectoid_Chunks_A_Medium_0
+      m_Hash: 770634589
+      m_Sprite: {fileID: 219197808, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 219197808, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_1
+      m_Hash: 451527627
+      m_Sprite: {fileID: 128559809, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 128559809, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_2
+      m_Hash: 65049201
+      m_Sprite: {fileID: -627790777, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -627790777, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_3
+      m_Hash: 887595751
+      m_Sprite: {fileID: -847976799, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -847976799, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_4
+      m_Hash: 713242436
+      m_Sprite: {fileID: -1205026197, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1205026197, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_5
+      m_Hash: 495192018
+      m_Sprite: {fileID: 803800948, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 803800948, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_6
+      m_Hash: 76371560
+      m_Sprite: {fileID: -373094700, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -373094700, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_7
+      m_Hash: 864708350
+      m_Sprite: {fileID: 1387398178, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1387398178, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_8
+      m_Hash: 590707567
+      m_Sprite: {fileID: 119358739, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 119358739, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_9
+      m_Hash: 338840569
+      m_Sprite: {fileID: -1750016460, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1750016460, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_10
+      m_Hash: 947334618
+      m_Sprite: {fileID: 1535478703, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1535478703, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_11
+      m_Hash: 259005772
+      m_Sprite: {fileID: -129617252, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -129617252, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_12
+      m_Hash: 377048310
+      m_Sprite: {fileID: 2064697398, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2064697398, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_13
+      m_Hash: 561937504
+      m_Sprite: {fileID: 2021881308, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2021881308, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_14
+      m_Hash: 1058728387
+      m_Sprite: {fileID: -1466541045, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1466541045, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    - m_Name: Insectoid_Chunks_A_Medium_15
+      m_Hash: 136173909
+      m_Sprite: {fileID: -441761227, guid: 128957b87ef6447498b40ad80c676943, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -441761227, guid: 128957b87ef6447498b40ad80c676943,
+        type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 16
+  m_PrimaryLibraryGUID: 

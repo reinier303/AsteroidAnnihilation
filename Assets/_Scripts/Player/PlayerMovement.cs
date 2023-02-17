@@ -94,6 +94,7 @@ namespace AsteroidAnnihilation
             {
                 Engines.Add(ps);
             }
+            AudioManager.Instance.PlayAudio("Play_PlayerShipEngine");
             screenRatio = (float)Screen.height / (float)Screen.width;
         }
 
@@ -175,11 +176,9 @@ namespace AsteroidAnnihilation
 
         private void UpdateAudioHooks()
         {
-
             AkSoundEngine.SetRTPCValue("PlayerShipAcceleration", MovementInput.normalized.magnitude, gameObject);
             AkSoundEngine.SetRTPCValue("PlayerShipVelocity", rb.velocity.normalized.magnitude, gameObject);
             AkSoundEngine.SetRTPCValue("PlayerShipTurnRate", currAngle, gameObject);
-
         }
 
         private IEnumerator Dash()
