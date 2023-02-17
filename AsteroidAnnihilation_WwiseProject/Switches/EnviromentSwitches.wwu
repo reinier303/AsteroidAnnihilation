@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1A811AF2-2E73-4BA1-89D4-1E90D7E4D46C}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="EnviromentSwitches" ID="{1A811AF2-2E73-4BA1-89D4-1E90D7E4D46C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="NumberOfEnemies" ID="{6E6D5655-34E4-4C35-9EE5-A61953E3460B}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="NoEnemies" ID="{31A083EF-CCA6-48CF-B283-098AA67E5953}"/>
+						<Switch Name="AFewEnemies" ID="{8931E330-9A83-45D9-BDA9-1FA5A278502F}"/>
+						<Switch Name="ManyEnemies" ID="{673853D3-CE59-4C35-92DC-D1F103B2FA50}"/>
+						<Switch Name="GiantSwarm" ID="{C88B39C6-8449-4C18-A1F8-8CC58CFB991C}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="NumberOfEnemies" ID="{1D44918D-2D69-459A-8E6E-4F255E29C295}"/>
+						<Curve Name="" ID="{273A91C9-5C2A-4E00-9172-01636C79560E}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>15</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>35</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>50</XPos>
+									<YPos>4</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

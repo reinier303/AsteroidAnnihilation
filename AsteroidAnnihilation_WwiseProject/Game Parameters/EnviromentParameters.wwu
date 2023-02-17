@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C0618F32-DE98-4D64-9B64-2760189A3FAD}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="EnviromentParameters" ID="{C0618F32-DE98-4D64-9B64-2760189A3FAD}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="NumberOfEnemies" ID="{1D44918D-2D69-459A-8E6E-4F255E29C295}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
