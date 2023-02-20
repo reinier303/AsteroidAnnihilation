@@ -65,10 +65,10 @@ namespace AsteroidAnnihilation
 
         public enum Weapons
         {
-            None,
-            PlasmaGun,
-            PlasmaShotgun,
-            EnergyMines,
+            None = 0,
+            BulletWeapon = 1,
+            PlasmaShotgun = 2,
+            EnergyMines = 3,
         }
 
         public enum Stats
@@ -160,9 +160,10 @@ namespace AsteroidAnnihilation
 
         public enum PlayerProjectiles
         {
-            PlasmaBullet,
-            EnergyMine,
-            ShotgunBullet
+            PlasmaBullet = 0,
+            EnergyMine = 1,
+            ShotgunBullet = 2,
+            AcidBullet = 3
         }
 
         public enum EnemyProjectiles
@@ -206,13 +207,14 @@ namespace AsteroidAnnihilation
 
         public enum ExplosionFX
         {
-            SwarmExplosion1,
-            SwarmExplosion2,
-            SwarmExplosionBoss,
-            AsteroidExplosion1,
-            AsteroidExplosion2,
-            AsteroidExplosionBoss,
-            PlayerExplosion,
+            SwarmExplosion1 = 0,
+            SwarmExplosion2 = 1,
+            SwarmExplosionBoss = 2,
+            AsteroidExplosion1 = 3,
+            AsteroidExplosion2 = 4,
+            AsteroidExplosionBoss = 5,
+            PlayerExplosio = 6,
+            WreckageExplosion = 7,
         }
 
         public enum PermanenceSprites

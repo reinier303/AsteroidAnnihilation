@@ -30,7 +30,6 @@ namespace AsteroidAnnihilation
         public int maxMissions = 3;
         public int missionsCompleted;
 
-
         [SerializeField] private Transform missionCardHolder;
         [SerializeField] private GameObject missionCard;
 
@@ -94,6 +93,7 @@ namespace AsteroidAnnihilation
             yield return new WaitForSecondsRealtime(3f);
             spawnManager.gameObject.SetActive(true);
             parallaxBackground.SetMissionBackgrounds();
+            parallaxBackground.generateEnvironmentChunks = true;
             spawnManager.Initialize();
             uiManager.UpdateMissionUI();
             canGainProgress = true;
@@ -110,6 +110,7 @@ namespace AsteroidAnnihilation
 
         public IEnumerator MoveToHub()
         {
+            parallaxBackground.generateEnvironmentChunks = false;
             uiManager.LoadingScreen.SetActive(true);
             inputManager.InputEnabled = false;
             Time.timeScale = 0;

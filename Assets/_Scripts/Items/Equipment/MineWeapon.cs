@@ -29,7 +29,6 @@ namespace AsteroidAnnihilation
             MineProjectile mineProjectile = (MineProjectile)projectile;
 
             projectile.Initialize(GetEquipmentStat(EnumCollections.Stats.Size, weaponIndex), damage, 0 ,lifeTime, IsCrit());
-            projectile.WeaponIndex = WeaponIndex;
             projectile.StartCoroutine(projectile.DisableAfterTime());
         }
     }

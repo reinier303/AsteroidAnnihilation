@@ -179,7 +179,7 @@ namespace AsteroidAnnihilation
                 Drop drop = DropTable.GetDrop();
                 if (drop.Equals(default(Drop))) { return; };
 
-                PickUp pickUp = objectPooler.SpawnFromPool("PickUp", transform.position, Quaternion.identity).GetComponent<PickUp>();
+                PickUp pickUp = objectPooler.SpawnFromPool("PickUp", transform.position + new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f)), Quaternion.identity).GetComponent<PickUp>();
 
                 pickUp.Initialize(drop);
             }

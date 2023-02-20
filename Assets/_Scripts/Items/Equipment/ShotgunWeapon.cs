@@ -42,7 +42,6 @@ namespace AsteroidAnnihilation
 
                 //Initialize projectile
                 BaseProjectile projectile = projectileObject.GetComponent<BaseProjectile>();
-                projectile.WeaponIndex = WeaponIndex;
 
                 //Set projectile stat values
                 float damage = GetEquipmentStat(EnumCollections.Stats.Damage, weaponIndex);

@@ -34,24 +34,27 @@ namespace AsteroidAnnihilation
             //itemType = GetItemType();
             //GenerateDrop();
 
-            icon.sprite = weaponData.EquipmentData.ItemData.Icon;
             //TODO:: Fix this with ObjectPooler and make it return itself to poolparent after disabling
-            Instantiate(generalItemSettings.GetRarityMaterial(weaponData.EquipmentData.ItemData.Rarity), transform.position, transform.rotation, transform);
+            //Instantiate(generalItemSettings.GetRarityMaterial(weaponData.EquipmentData.ItemData.Rarity), transform.position, transform.rotation, transform);
 
             switch (drop.ItemType)
             {
                 case EnumCollections.ItemType.Weapon:
                     itemType = EnumCollections.ItemType.Weapon;
                     weaponData = equipmentManager.GenerateWeapon();
+                    icon.sprite = weaponData.EquipmentData.ItemData.Icon;
                     break;
                 case EnumCollections.ItemType.HullPlating:
                     itemType = EnumCollections.ItemType.HullPlating;
                     equipmentData = equipmentManager.GenerateEquipment();
+                    icon.sprite = equipmentData.ItemData.Icon;
                     break;
                 case EnumCollections.ItemType.Material:
                     itemType = EnumCollections.ItemType.Material;
                     itemData = equipmentManager.GenerateItemData(drop.Item);
                     itemData.Amount = Random.Range(drop.AmountRange.x, drop.AmountRange.y);
+                    itemData.Icon = drop.Item.GetIcon();
+                    icon.sprite = itemData.Icon;
                     Debug.Log(itemData.ItemName); // Working
                     break;
             }

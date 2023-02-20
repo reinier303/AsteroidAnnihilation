@@ -8,18 +8,22 @@ namespace AsteroidAnnihilation
     public class ParallaxBackground : SerializedMonoBehaviour
     {
         public static ParallaxBackground Instance;
+
+        private EnvironmentManager environmentManager;
+        public bool generateEnvironmentChunks = false;
+
         private Transform player;
 
         private Vector2 size;
 
-        private Vector2 parallaxNumber;
+        private Vector2Int parallaxNumber;
 
         private float zValue;
 
         public float ParallaxMoveOffsetMultiplier = 3;
 
         [DictionaryDrawerSettings(KeyLabel ="Keys", ValueLabel ="Values")] 
-        [SerializeField] private Dictionary<Transform, Vector2> BackgroundElements;
+        [SerializeField] private Dictionary<Transform, Vector2Int> BackgroundElements;
 
         public bool GetSpritesFromResources;
         public List<Sprite> BackgroundSprites;
@@ -31,7 +35,7 @@ namespace AsteroidAnnihilation
         private void Awake()
         {
             Instance = this;
-            BackgroundElements = new Dictionary<Transform, Vector2>();
+            BackgroundElements = new Dictionary<Transform, Vector2Int>();
 
             SpriteRenderer spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
             zValue = transform.GetChild(0).localPosition.z;
@@ -44,6 +48,7 @@ namespace AsteroidAnnihilation
         private void Start()
         {
             player = GameManager.Instance.RPlayer.transform;
+            environmentManager = EnvironmentManager.Instance;
             InitializeBackgrounds();
             SetBackgroundsStart();
             StartCoroutine(CheckParallax());
@@ -72,7 +77,7 @@ namespace AsteroidAnnihilation
                 RandomSprite backgroundRandom = transform.GetChild(i).GetComponent<RandomSprite>();
                 if (backgroundRandom != null)
                 {
-                    BackgroundElements.Add(transform.GetChild(i), new Vector2(0, i * 10));
+                    BackgroundElements.Add(transform.GetChild(i), new Vector2Int(0, i * 10));
                     backgroundRandom.SetSprites(BackgroundSprites);
                     continue;
                 }
@@ -95,19 +100,19 @@ namespace AsteroidAnnihilation
         public void SetBackgroundsStart()
         {
             Vector3 position = new Vector3(size.x * (parallaxNumber.x + 1), size.x * parallaxNumber.y, zValue);
-            Vector2 gridPosition = new Vector2(parallaxNumber.x + 1, parallaxNumber.y);
+            Vector2Int gridPosition = new Vector2Int(parallaxNumber.x + 1, parallaxNumber.y);
             SpawnBackground(position, gridPosition, true, true);
             position = new Vector3(size.x * (parallaxNumber.x - 1), size.x * parallaxNumber.y, zValue);
-            gridPosition = new Vector2(parallaxNumber.x - 1, parallaxNumber.y);
+            gridPosition = new Vector2Int(parallaxNumber.x - 1, parallaxNumber.y);
             SpawnBackground(position, gridPosition, true, false);
             position = new Vector3(size.x * parallaxNumber.x, size.y * (parallaxNumber.y + 1), zValue);
-            gridPosition = new Vector2(parallaxNumber.x, parallaxNumber.y + 1);
+            gridPosition = new Vector2Int(parallaxNumber.x, parallaxNumber.y + 1);
             SpawnBackground(position, gridPosition, false, true);
             position = new Vector3(size.x * parallaxNumber.x, size.y * (parallaxNumber.y - 1), zValue);
-            gridPosition = new Vector2(parallaxNumber.x, parallaxNumber.y - 1);
+            gridPosition = new Vector2Int(parallaxNumber.x, parallaxNumber.y - 1);
             SpawnBackground(position, gridPosition, false, true);
             position = new Vector3(0 ,0, zValue);
-            gridPosition = new Vector2(0, 0);
+            gridPosition = new Vector2Int(0, 0);
             SpawnBackground(position, gridPosition, false, true);
 
         }
@@ -118,26 +123,26 @@ namespace AsteroidAnnihilation
             if (player.transform.position.x >= (size.x * (parallaxNumber.x + 1)) - (size.x / 2) - parallaxMoveOffset)
             {
                 Vector3 position = new Vector3(size.x * (parallaxNumber.x + 1), size.x * parallaxNumber.y, zValue);
-                Vector2 gridPosition = new Vector2(parallaxNumber.x + 1, parallaxNumber.y);
+                Vector2Int gridPosition = new Vector2Int(parallaxNumber.x + 1, parallaxNumber.y);
                 SpawnBackground(position, gridPosition, true , true);
             }
             if (player.transform.position.x <= (size.x * (parallaxNumber.x - 1)) + (size.x / 2) + parallaxMoveOffset)
             {
                 Vector3 position = new Vector3(size.x * (parallaxNumber.x - 1), size.x * parallaxNumber.y, zValue);
-                Vector2 gridPosition = new Vector2(parallaxNumber.x - 1, parallaxNumber.y);
+                Vector2Int gridPosition = new Vector2Int(parallaxNumber.x - 1, parallaxNumber.y);
                 SpawnBackground(position, gridPosition , true, false);
             }
 
             if (player.transform.position.y >= (size.y * (parallaxNumber.y + 1)) - (size.y / 2) - parallaxMoveOffset)
             {
                 Vector3 position = new Vector3(size.x * parallaxNumber.x, size.y * (parallaxNumber.y + 1), zValue);
-                Vector2 gridPosition = new Vector2(parallaxNumber.x, parallaxNumber.y + 1);
+                Vector2Int gridPosition = new Vector2Int(parallaxNumber.x, parallaxNumber.y + 1);
                 SpawnBackground(position, gridPosition, false, true);
             }
             if (player.transform.position.y <= (size.y * (parallaxNumber.y - 1)) + (size.y / 2) + parallaxMoveOffset)
             {
                 Vector3 position = new Vector3(size.x * parallaxNumber.x, size.y * (parallaxNumber.y - 1), zValue);
-                Vector2 gridPosition = new Vector2(parallaxNumber.x, parallaxNumber.y - 1);
+                Vector2Int gridPosition = new Vector2Int(parallaxNumber.x, parallaxNumber.y - 1);
                 SpawnBackground(position, gridPosition, false, false);
             }
             yield return new WaitForSeconds(0.5f);
@@ -145,9 +150,9 @@ namespace AsteroidAnnihilation
         }
 
         //Spawns 3 for diagonals
-        private void SpawnBackground(Vector3 position, Vector2 gridPosition, bool x, bool positive)
+        private void SpawnBackground(Vector3 position, Vector2Int gridPosition, bool x, bool positive)
         {
-            Vector2 startGridPos = gridPosition;
+            Vector2Int startGridPos = gridPosition;
             Transform background = null;
             //Three side to side
             for (int i = -1; i < 2; i++)
@@ -155,11 +160,11 @@ namespace AsteroidAnnihilation
                 //Calculate position on grid
                 if (x)
                 {
-                    gridPosition = startGridPos + new Vector2(0, i);
+                    gridPosition = startGridPos + new Vector2Int(0, i);
                 }
                 else
                 {
-                    gridPosition = startGridPos + new Vector2(i, 0);
+                    gridPosition = startGridPos + new Vector2Int(i, 0);
                 }
                 if (BackgroundElements.ContainsValue(gridPosition))
                 {
@@ -180,13 +185,14 @@ namespace AsteroidAnnihilation
                     background.localPosition = position + new Vector3(size.x * i, 0, 0);
                     BackgroundElements[background] = gridPosition;
                 }
+                if (generateEnvironmentChunks) { environmentManager.GenerateEnvironmentChunk(background.localPosition, size, gridPosition); }
             }
 
             //Extra in front
             int direction = positive ? 1 : -1;
 
-            if (x) { gridPosition = startGridPos + new Vector2(direction, 0); } 
-            else { gridPosition = startGridPos + new Vector2(0, direction); }
+            if (x) { gridPosition = startGridPos + new Vector2Int(direction, 0); } 
+            else { gridPosition = startGridPos + new Vector2Int(0, direction); }
             if (BackgroundElements.ContainsValue(gridPosition))
             {
                 return;
@@ -203,10 +209,10 @@ namespace AsteroidAnnihilation
                 background.localPosition = position + new Vector3(0, size.y * direction, 0);
                 BackgroundElements[background] = gridPosition;
             }
-            
+            if (generateEnvironmentChunks) { environmentManager.GenerateEnvironmentChunk(background.localPosition, size, gridPosition); }
         }
 
-        private Vector2 CalculateParallaxNumber()
+        private Vector2Int CalculateParallaxNumber()
         {
             int x = 0;
             int y = 0;
@@ -226,7 +232,7 @@ namespace AsteroidAnnihilation
             {
                 y = Mathf.CeilToInt((player.transform.position.y - (size.y / 2)) / (size.y));
             }
-            return new Vector2(x, y);
+            return new Vector2Int(x, y);
         }
 
         private Transform GetAvailableBackground()

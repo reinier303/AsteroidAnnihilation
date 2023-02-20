@@ -64,7 +64,7 @@ namespace AsteroidAnnihilation
         {
             if (!ES3.KeyExists("inventoryItems"))
             {
-                InventorySlots = 24;
+                InventorySlots = 32;
                 InventoryItems = new Dictionary<int, ItemData>();
                 InventoryEquipment = new Dictionary<int, EquipmentData>();
                 InventoryWeapons = new Dictionary<int, WeaponData>();

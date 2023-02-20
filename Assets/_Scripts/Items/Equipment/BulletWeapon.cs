@@ -42,12 +42,11 @@ namespace AsteroidAnnihilation
                 float newRotation = (player.eulerAngles.z - angleIncrease * i) + (spread / 2);
 
                 //Spawn Projectile with extra rotation based on projectile count
-                GameObject projectileObject = objectPooler.SpawnFromPool(EnumCollections.PlayerProjectiles.PlasmaBullet.ToString(), player.position + player.TransformDirection(weaponPosition),
+                GameObject projectileObject = objectPooler.SpawnFromPool(ProjectileType.ToString(), player.position + player.TransformDirection(weaponPosition),
                 Quaternion.Euler(player.eulerAngles.x, player.eulerAngles.y, newRotation));
 
                 //Initialize projectile
                 BaseProjectile projectile = projectileObject.GetComponent<BaseProjectile>();
-                projectile.WeaponIndex = WeaponIndex;
 
                 //Set projectile stat values
                 float damage = GetEquipmentStat(EnumCollections.Stats.Damage, weaponIndex);
@@ -94,7 +93,6 @@ namespace AsteroidAnnihilation
 
                 //Initialize projectile
                 BaseProjectile projectile = projectileObject.GetComponent<BaseProjectile>();
-                projectile.WeaponIndex = WeaponIndex;
 
                 //Set projectile stat values
                 float damage = GetEquipmentStat(EnumCollections.Stats.Damage, weaponIndex) * 1.25f;

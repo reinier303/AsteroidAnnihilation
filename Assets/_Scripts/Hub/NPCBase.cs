@@ -46,7 +46,7 @@ namespace AsteroidAnnihilation
 
         protected virtual void Update()
         {
-            if (inRange && Input.GetKeyDown(KeyCode.F))
+            if (inRange && menuToOpen != null && Input.GetKeyDown(KeyCode.F))
             {
                 //Open Menu
                 menuToOpen.gameObject.SetActive(true);
