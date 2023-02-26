@@ -2043,7 +2043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6d40c9a558d084eb74ab0b260987c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceAmountRange: {x: 2, y: 3}
+  pieceAmountRange: {x: 1, y: 4}
   environmentPieces:
   - {fileID: 3720788973270516445}
   - {fileID: 1089800068324246780}

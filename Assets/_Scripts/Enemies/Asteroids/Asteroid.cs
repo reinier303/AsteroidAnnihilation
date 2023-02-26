@@ -19,6 +19,7 @@ namespace AsteroidAnnihilation
         private bool freezing;
 
         [SerializeField] private GameObject TrailEffects;
+        private Camera mainCamera;
 
         protected override void Awake()
         {
@@ -30,6 +31,7 @@ namespace AsteroidAnnihilation
         protected override void Start()
         {
             base.Start();
+            mainCamera = cameraManager.GetComponent<Camera>();
             //maxXandY = CameraOffset.Instance.ScreenEdgeValues + new Vector2(19f,11f);
         }
 
@@ -90,7 +92,16 @@ namespace AsteroidAnnihilation
             if (player != null)
             {
                 player.OnTakeDamage?.Invoke(ContactDamage, false);
-                //Die();
+            }
+            if(mainCamera == null) { return; }
+            Vector3 vpPos = mainCamera.WorldToViewportPoint(transform.position);
+            Debug.Log(vpPos);
+            if (vpPos.x >= 0f && vpPos.x <= 1f && vpPos.y >= 0f && vpPos.y <= 1f)
+            {                           //Environment
+                if (collision.gameObject.layer == 18)
+                {
+                    DieNoRewards();
+                }
             }
         }
 
@@ -189,6 +200,17 @@ namespace AsteroidAnnihilation
         {
             EjectTrailEffects();
             base.Die();
+        }
+
+        protected virtual void DieNoRewards()
+        {
+            if (grouped) { enemyGroup.StartCoroutine(enemyGroup.EnemyDisabled()); }
+            EjectTrailEffects();
+            SpawnParticleEffect();
+            SpawnSegments();
+            DeathSound.Post(gameObject);
+            cameraManager.StartCoroutine(cameraManager.Shake(ShakeDuration, ShakeMagnitude));
+            gameObject.SetActive(false);
         }
     }
 }

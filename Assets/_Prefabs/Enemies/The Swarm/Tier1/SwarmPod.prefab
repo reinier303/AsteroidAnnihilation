@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8471778084086044513}
   - component: {fileID: 8471778084086044518}
   - component: {fileID: 8471778084086044519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SwarmPod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,12 +168,14 @@ MonoBehaviour:
   RotationSpeed: 0.007
   DroppedUnits: 15
   ExperienceGained: 5
+  CheckPlayerDistance: 1
   AggroDistance: 9
   DeAggroDistance: 45
   sizeRange: {x: 0.9, y: 1.1}
   grouped: 0
   StopDistance: 0.5
   DeathOnImpact: 1
+  countsAsEnemy: 1
   enemyType: 
   moveSpeed: 1.15
   aggroMove: 3
@@ -188,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5225408063591488787}
   - component: {fileID: 4001645117663930208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

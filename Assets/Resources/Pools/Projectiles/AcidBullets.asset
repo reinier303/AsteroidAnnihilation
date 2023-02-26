@@ -15,3 +15,4 @@ MonoBehaviour:
   Tag: AcidBullet
   Prefab: {fileID: 7296814962085735418, guid: 8dbfad498d9f1c747b9e8f122ac8b0b2, type: 3}
   Amount: 1000
+  disableOnMissionExit: 1

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1002376230902218405}
   - component: {fileID: 4204992785254096307}
   - component: {fileID: 2874641106497223678}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 1002376231137964271}
   - component: {fileID: 8823978418148451201}
   - component: {fileID: 5356234411945878378}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 1002376231180008906}
   - component: {fileID: 6241208766292996683}
   - component: {fileID: 7746508164212805582}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 5712468111972644965}
   - component: {fileID: 1002376231526984069}
   - component: {fileID: 2794256081840960852}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 1002376231605123685}
   - component: {fileID: 2356884580016844712}
   - component: {fileID: 98347773480907883}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1372,7 +1372,7 @@ GameObject:
   - component: {fileID: 1002376231702775410}
   - component: {fileID: 789164733565476529}
   - component: {fileID: 5771657122442149688}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1640,7 +1640,7 @@ GameObject:
   - component: {fileID: 6510199685664270253}
   - component: {fileID: 1002376231867235681}
   - component: {fileID: 8021674480332783847}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1896,7 +1896,7 @@ GameObject:
   - component: {fileID: 1002376231921033389}
   - component: {fileID: 4490249387729572412}
   - component: {fileID: 7903617644713044273}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2196,7 +2196,7 @@ GameObject:
   - component: {fileID: 1002376232086409802}
   - component: {fileID: 7092577454445730087}
   - component: {fileID: 1052195797613737366}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2446,7 +2446,7 @@ GameObject:
   - component: {fileID: 1002376232392618027}
   - component: {fileID: 5533468238979392322}
   - component: {fileID: 7980940420881811422}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2704,7 +2704,7 @@ GameObject:
   - component: {fileID: 1002376232595768224}
   - component: {fileID: 5445958812448815521}
   - component: {fileID: 1285310207008296047}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3020,7 +3020,7 @@ GameObject:
   - component: {fileID: 1002376232642855948}
   - component: {fileID: 5108983543629960834}
   - component: {fileID: 7463718536839920689}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: Wreckage9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6d40c9a558d084eb74ab0b260987c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceAmountRange: {x: 4, y: 6}
+  pieceAmountRange: {x: 4, y: 7}
   environmentPieces:
   - {fileID: 1002376231867235685}
   - {fileID: 1002376231526983289}

@@ -15,6 +15,8 @@ namespace AsteroidAnnihilation
         private Dictionary<string, Transform> PoolParents = new Dictionary<string, Transform>();
         public Transform PopUpParent;
 
+        public List<Transform> ResetOnMissionExitPools;
+
         private void Awake()
         {
             Instance = this;
@@ -52,6 +54,7 @@ namespace AsteroidAnnihilation
                 {
                     GameObject containerObject = new GameObject(pool.Tag + "Pool");
                     containerObject.transform.parent = PoolsContainerObject.transform;
+                    if (pool.disableOnMissionExit) { ResetOnMissionExitPools.Add(containerObject.transform); }
                     PoolParents.Add(pool.Tag, containerObject.transform);
                     Queue<GameObject> objectPool = new Queue<GameObject>();
 
@@ -71,7 +74,7 @@ namespace AsteroidAnnihilation
                         }
                         else
                         {
-                            obj = Instantiate(pool.Prefab, containerObject.transform);
+                            obj = Instantiate(pool.Prefab, containerObject.transform);                            
                         }
                         if(obj == null)
                         {
@@ -122,9 +125,15 @@ namespace AsteroidAnnihilation
             return objectToSpawn;
         }
 
-        private void ResetObject(GameObject objectToReset)
+        public void ResetOnMissionExit()
         {
-
+            foreach(Transform parentObj in ResetOnMissionExitPools)
+            {
+                for(int i = 0; i < parentObj.childCount; i++)
+                {
+                    parentObj.GetChild(i).gameObject.SetActive(false);
+                }
+            }
         }
 
     }

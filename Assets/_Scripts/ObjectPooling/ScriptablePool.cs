@@ -10,5 +10,6 @@ namespace AsteroidAnnihilation
         public string Tag;
         public GameObject Prefab;
         public int Amount;
+        public bool disableOnMissionExit = false;
     }
 }

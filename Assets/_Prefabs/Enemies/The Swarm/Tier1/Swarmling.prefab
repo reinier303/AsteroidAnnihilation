@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1693522028131002134}
   - component: {fileID: 7533478420036050277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 3068416948585524580}
   - component: {fileID: 3068416948585524579}
   - component: {fileID: 3068416948585524578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Swarmling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,12 +216,14 @@ MonoBehaviour:
   RotationSpeed: 2.75
   DroppedUnits: 0
   ExperienceGained: 0
+  CheckPlayerDistance: 1
   AggroDistance: 20
   DeAggroDistance: 45
   sizeRange: {x: 0.55, y: 0.65}
   grouped: 0
   StopDistance: 0.4
   DeathOnImpact: 1
+  countsAsEnemy: 1
   enemyType: 
   idleWaitTime: 6
   idleMove: 2

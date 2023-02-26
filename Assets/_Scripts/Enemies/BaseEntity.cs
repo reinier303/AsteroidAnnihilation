@@ -149,7 +149,6 @@ namespace AsteroidAnnihilation
             SpawnParticleEffect();
             DropPickUps();
             DeathSound.Post(gameObject);
-            if (missionManager != null) { missionManager.AddObjectiveProgress(MissionObjectiveType.Elimination); }
             cameraManager.StartCoroutine(cameraManager.Shake(ShakeDuration, ShakeMagnitude));
             gameObject.SetActive(false);
         }

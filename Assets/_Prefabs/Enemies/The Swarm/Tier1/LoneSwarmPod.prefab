@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8263419155807108328}
   - component: {fileID: 8263419155807108335}
   - component: {fileID: 8263419155807108334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LoneSwarmPod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,12 +168,14 @@ MonoBehaviour:
   RotationSpeed: 0.025
   DroppedUnits: 50
   ExperienceGained: 30
+  CheckPlayerDistance: 1
   AggroDistance: 10
   DeAggroDistance: 45
   sizeRange: {x: 1.9, y: 2.1}
   grouped: 0
   StopDistance: 0.75
   DeathOnImpact: 0
+  countsAsEnemy: 1
   enemyType: 
   moveSpeed: 1.25
   aggroMove: 3
@@ -188,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5744379026692912794}
   - component: {fileID: 3509695750166662377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

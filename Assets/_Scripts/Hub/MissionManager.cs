@@ -15,6 +15,8 @@ namespace AsteroidAnnihilation
         private UIManager uiManager;
         private InputManager inputManager;
         private ParallaxBackground parallaxBackground;
+        private EnvironmentManager environmentManager;
+        private ObjectPooler objectPooler;
         private Player player;
         [SerializeField] private SpawnManager spawnManager;
 
@@ -56,6 +58,8 @@ namespace AsteroidAnnihilation
             uiManager = UIManager.Instance;
             inputManager = InputManager.Instance;
             parallaxBackground = ParallaxBackground.Instance;
+            environmentManager = EnvironmentManager.Instance;
+            objectPooler = ObjectPooler.Instance;
             gameManager.onEndGame += SaveMissions;
         }
 
@@ -116,6 +120,8 @@ namespace AsteroidAnnihilation
             Time.timeScale = 0;
             yield return new WaitForSecondsRealtime(1.1f);
             Player.Instance.transform.position = Vector3.zero;
+            environmentManager.ResetEnvironment();
+            objectPooler.ResetOnMissionExit();
             spawnManager.gameObject.SetActive(false);
             gameElements.SetActive(false);
             hubElements.SetActive(true);

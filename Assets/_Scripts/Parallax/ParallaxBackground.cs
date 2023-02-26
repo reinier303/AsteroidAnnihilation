@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.UIElements;
 
 namespace AsteroidAnnihilation
 {
@@ -114,7 +115,7 @@ namespace AsteroidAnnihilation
             position = new Vector3(0 ,0, zValue);
             gridPosition = new Vector2Int(0, 0);
             SpawnBackground(position, gridPosition, false, true);
-
+            if (generateEnvironmentChunks) { environmentManager.GenerateEnvironmentChunk(position, size, gridPosition); }
         }
 
         private IEnumerator CheckParallax()

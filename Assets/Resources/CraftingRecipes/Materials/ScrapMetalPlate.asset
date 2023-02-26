@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cafaa0e583cf5924e8d132899b38020b, type: 3}
   m_Name: ScrapMetalPlate
   m_EditorClassIdentifier: 
-  CraftingComponents: []
-  Result: {fileID: 0}
-  Amount: 0
+  CraftingIngredients:
+  - ItemNeeded: {fileID: 11400000, guid: 9d42650c3c9c28f48867bed2c460ad4c, type: 2}
+    Amount: 5
+  Result: {fileID: 11400000, guid: 9d42650c3c9c28f48867bed2c460ad4c, type: 2}
+  Amount: 1
+  StartUnlocked: 1
