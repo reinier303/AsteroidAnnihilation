@@ -50,6 +50,7 @@ namespace AsteroidAnnihilation
             {
                 //Open Menu
                 menuToOpen.gameObject.SetActive(true);
+                uiManager.MenuOpen = true;
                 inputManager.InputEnabled = false;
             }
         }

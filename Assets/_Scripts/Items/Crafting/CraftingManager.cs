@@ -16,6 +16,8 @@ namespace AsteroidAnnihilation
         //boolean is for unlocked state
         private Dictionary<CraftingRecipe, bool> recipes;
 
+        private CraftingRecipe selectedRecipe;
+
         // Start is called before the first frame update
         private void Awake()
         {
@@ -79,6 +81,11 @@ namespace AsteroidAnnihilation
                     recipeUI.GetComponent<CraftingRecipeUIElement>().InitializeRecipe(recipe);
                 }
             }
+        }
+
+        public void SetSelectedRecipe(CraftingRecipe recipe)
+        {
+            selectedRecipe = recipe;
         }
     }
 }
