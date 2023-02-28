@@ -32,9 +32,12 @@ namespace AsteroidAnnihilation
         [SerializeField] protected bool countsAsEnemy = true;
         public string enemyType;
 
+        private WaitForSeconds wait;
+
         protected override void Awake()
         {
             base.Awake();
+            wait = new WaitForSeconds(1f);
             if (grouped) { enemyGroup = transform.parent.GetComponent<EnemyGroup>(); }
         }
 
@@ -107,7 +110,7 @@ namespace AsteroidAnnihilation
                 gameObject.SetActive(false);
                 spawnManager.RemoveEnemyType(enemyType);
             }
-            yield return new WaitForSeconds(time);
+            yield return wait;
             StartCoroutine(CheckDistanceToPlayer(time));
         }
 

@@ -9,6 +9,7 @@ namespace AsteroidAnnihilation
     {
         public static CraftingManager Instance;
 
+        private InventoryManager inventoryManager;
         private ObjectPooler objectPooler;
 
         [SerializeField] private Transform recipesHolder;
@@ -17,6 +18,7 @@ namespace AsteroidAnnihilation
         private Dictionary<CraftingRecipe, bool> recipes;
 
         private CraftingRecipe selectedRecipe;
+        [SerializeField] private CraftingRecipeUIElement craftingConfirmationUIElement;
 
         // Start is called before the first frame update
         private void Awake()
@@ -28,6 +30,7 @@ namespace AsteroidAnnihilation
 
         private void Start()
         {
+            inventoryManager = InventoryManager.Instance;
             objectPooler = ObjectPooler.Instance;
             ShowRecipes();
         }
@@ -86,6 +89,47 @@ namespace AsteroidAnnihilation
         public void SetSelectedRecipe(CraftingRecipe recipe)
         {
             selectedRecipe = recipe;
+            craftingConfirmationUIElement.InitializeRecipe(selectedRecipe);
+        }
+
+        public void TryCraftItem()
+        {
+            if(CheckRecipeRequirements())
+            {
+                CraftItem();
+            }
+        }
+
+        public bool CheckRecipeRequirements()
+        {
+            foreach(CraftingIngredient ingredient in selectedRecipe.CraftingIngredients)
+            {
+                if(inventoryManager.GetItemAmountInInventory(ingredient.ItemNeeded.ItemName) < ingredient.Amount)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public void CraftItem()
+        {
+            foreach (CraftingIngredient ingredient in selectedRecipe.CraftingIngredients)
+            {
+                inventoryManager.ReduceItemAmount(ingredient.ItemNeeded.ItemName, ingredient.Amount);
+            }
+            switch(selectedRecipe.Result.ItemType)
+            {
+                case EnumCollections.ItemType.Material:
+                    inventoryManager.AddItem(selectedRecipe.Result.GenerateItemData(1));
+                    break;
+                case EnumCollections.ItemType.HullPlating:
+                    //inventoryManager.AddItem(selectedRecipe.Result.GenerateItemData(1));
+                    break;
+                case EnumCollections.ItemType.Weapon:
+                    //inventoryManager.AddItem(selectedRecipe.Result.GenerateItemData(1));
+                    break;
+            }
         }
     }
 }

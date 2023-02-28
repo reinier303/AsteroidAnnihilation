@@ -11,11 +11,14 @@ namespace AsteroidAnnihilation
         [SerializeField] private Image icon;
         [SerializeField] private TextMeshProUGUI amount;
         
-        public void InitializeIngredient(Item item, int amount)
+        public void InitializeIngredient(Item item, int amount, int amountAvailable = -1)
         {
-            Debug.Log(icon);
             icon.sprite = item.GetIcon();
-            this.amount.text = "" + amount;
+            if(amountAvailable == -1)
+            {
+                this.amount.text = "" + amount;
+            }
+            else { this.amount.text = amountAvailable + "/" + amount; }
         }
     }
 }

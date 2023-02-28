@@ -1,8 +1,6 @@
-using System.Collections;
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
-using Sirenix.OdinInspector;
 
 namespace AsteroidAnnihilation
 {
@@ -163,7 +161,7 @@ namespace AsteroidAnnihilation
 
         public bool AddItem(ItemData item, int index = -1)
         {
-            int containedItem = InventoryContainsItem(item);
+            int containedItem = GetItemAmountInInventory(item.ItemName);
             if (containedItem != -1)
             {
                 ItemData data = InventoryItems[containedItem];
@@ -280,13 +278,31 @@ namespace AsteroidAnnihilation
             return GetItemCount() >= InventorySlots;
         }
 
-        public int InventoryContainsItem(ItemData item)
+        public int GetItemAmountInInventory(string itemName)
         {
             foreach (int key in InventoryItems.Keys)
             {
-                if (InventoryItems[key].ItemName == item.ItemName) { return key; }
+                if (InventoryItems[key].ItemName == itemName) { return InventoryItems[key].Amount; }
             }
             return -1;
+        }
+
+        public int GetItemIndex(string itemName)
+        {
+            foreach (int key in InventoryItems.Keys)
+            {
+                if (InventoryItems[key].ItemName == itemName) { return key; }
+            }
+            return -1;
+        }
+
+        public void ReduceItemAmount(string itemName, int reduction)
+        {
+            int index = GetItemIndex(itemName);
+            ItemData data = InventoryItems[index];
+            data.Amount -= reduction;
+            if(data.Amount == 0) { RemoveItem(data, index); }
+            else { InventoryItems[index] = data; }
         }
 
         private int GetAvailableSlotIndex()

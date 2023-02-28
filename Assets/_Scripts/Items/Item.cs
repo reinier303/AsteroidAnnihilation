@@ -32,5 +32,17 @@ namespace AsteroidAnnihilation
         {
             return Icons[Random.Range(0, Icons.Count)];
         }
+
+        public ItemData GenerateItemData(int amount)
+        {
+            ItemData data = new ItemData();
+            data.ItemName = ItemName;
+            data.Tier = Tier;
+            data.Rarity = GetRarity();
+            data.ItemType = ItemType;
+            data.Icon = GetIcon();
+            data.Amount = amount;
+            return data;
+        }
     }
 }

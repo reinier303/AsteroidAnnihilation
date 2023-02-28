@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using AsteroidAnnihilation;
-using Newtonsoft.Json.Bson;
 
 public class ExpPopUp : MonoBehaviour
 {

@@ -8,7 +8,10 @@ namespace AsteroidAnnihilation
     public class CraftingRecipe : ScriptableObject
     {
         public List<CraftingIngredient> CraftingIngredients;
-        public Item Result;
+        public Item ResultItem;
+        public Equipment ResultEquipment;
+        public Weapon Result;
+
         public int Amount;
         public bool StartUnlocked;
     }

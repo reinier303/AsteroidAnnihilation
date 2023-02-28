@@ -3,55 +3,78 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 namespace AsteroidAnnihilation
 {
     public class CraftingRecipeUIElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
     {
-        private CraftingManager craftingManager;
-        private CraftingRecipe recipe;
-        [SerializeField] private CraftingIngredientUIElement result;
-        [SerializeField] private List<CraftingIngredientUIElement> Ingredients;
-        private Image image;
+        protected CraftingManager craftingManager;
+        protected CraftingRecipe recipe;
+        [SerializeField] protected CraftingIngredientUIElement result;
+        [SerializeField] protected List<CraftingIngredientUIElement> Ingredients;
+        protected Image image;
 
-        [SerializeField] private Color enterColor;
+        [SerializeField] protected bool pointerEventsEnabled = true;
+        [SerializeField] protected bool resetScaleAndPosition = true;
 
-        public void InitializeRecipe(CraftingRecipe recipe)
+        [ShowIf("pointerEventsEnabled")] [SerializeField] private Color enterColor;
+
+
+        public virtual void InitializeRecipe(CraftingRecipe recipe)
         {
             craftingManager = CraftingManager.Instance;
             image = GetComponent<Image>();
             this.recipe = recipe;
             result.InitializeIngredient(recipe.Result, recipe.Amount);
+            DisableAllIngredients();
 
-            for(int i = 0; i < recipe.CraftingIngredients.Count; i++)
+            for (int i = 0; i < recipe.CraftingIngredients.Count; i++)
             {
                 RectTransform rect = GetComponent<RectTransform>();
-                transform.localScale = new Vector3(1, 1, 1);
-                transform.localPosition = new Vector3(0, 0, 0);
+                if (resetScaleAndPosition) { ResetScaleAndPosition(); }
                 Ingredients[i].gameObject.SetActive(true);
                 CraftingIngredient ingredient = recipe.CraftingIngredients[i];
                 Ingredients[i].InitializeIngredient(ingredient.ItemNeeded, ingredient.Amount);
             }
         }
 
-        public void OnPointerDown(PointerEventData eventData)
+        protected void DisableAllIngredients()
         {
+            foreach(CraftingIngredientUIElement ingredient in Ingredients)
+            {
+                ingredient.gameObject.SetActive(false);
+            }
+        }
+
+        protected void ResetScaleAndPosition()
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            transform.localPosition = new Vector3(0, 0, 0);
+        }
+
+        public virtual void OnPointerDown(PointerEventData eventData)
+        {
+            if (!pointerEventsEnabled) { return; }
             image.color = new Color(1, 1, 1, 1);
             craftingManager.SetSelectedRecipe(recipe);
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public virtual void OnPointerEnter(PointerEventData eventData)
         {
+            if (!pointerEventsEnabled) { return; }
             image.color = enterColor;
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public virtual void OnPointerExit(PointerEventData eventData)
         {
+            if (!pointerEventsEnabled) { return; }
             image.color = new Color(0, 0, 0, 0);
         }
 
-        public void OnPointerUp(PointerEventData eventData)
+        public virtual void OnPointerUp(PointerEventData eventData)
         {
+            if (!pointerEventsEnabled) { return; }
             image.color = enterColor;
         }
     }
