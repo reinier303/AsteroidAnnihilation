@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerShip
     guid: 57f35acf701a1948bd901d61fd34ac0a
     GuidInternal: 
-    m_lastTime: -8585253208782231931
+    m_lastTime: -8585252217369274732
     List:
     - name: Play_PlayerShipEngine
       guid: c82e0154c582fd44bf590d1869034533
@@ -319,6 +319,33 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585255661709290127
     List: []
+  - PhysicalPath: Game Parameters\EnviromentParameters.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: EnviromentParameters
+      ObjectType: 12
+      guid: 328f61c098de644d9b642760189a3fad
+    ParentPath: Game Parameters\EnviromentParameters
+    guid: 328f61c098de644d9b642760189a3fad
+    GuidInternal: 
+    m_lastTime: -8585253161080339747
+    List:
+    - name: NumberOfEnemies
+      guid: 8d91441d692d9a458e6e4f255e29c295
+      id: 321019979
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: EnviromentParameters
+        ObjectType: 12
+        guid: 328f61c098de644d9b642760189a3fad
+      - ElementName: NumberOfEnemies
+        ObjectType: 13
+        guid: 8d91441d692d9a458e6e4f255e29c295
+      Path: Game Parameters\EnviromentParameters\NumberOfEnemies
   - PhysicalPath: Game Parameters\PlayerShipParameters.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -330,7 +357,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\PlayerShipParameters
     guid: 253990e838f92842911d377eac5b4a21
     GuidInternal: 
-    m_lastTime: -8585253841408254432
+    m_lastTime: -8585252217369264754
     List:
     - name: PlayerShipAcceleration
       guid: c100c129aa3e3b4ea4bdad5d7c2308d9
@@ -444,6 +471,101 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585255661705981905
     List: []
+  - PhysicalPath: Switches\EnviromentSwitches.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: EnviromentSwitches
+      ObjectType: 12
+      guid: f21a811a732ea14b89d41e90d7e4d46c
+    ParentPath: Switches\EnviromentSwitches
+    guid: f21a811a732ea14b89d41e90d7e4d46c
+    GuidInternal: 
+    m_lastTime: -8585253161080429516
+    List:
+    - name: NumberOfEnemies
+      guid: 55566d6ee434354c9ee5a61953e3460b
+      id: 321019979
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: EnviromentSwitches
+        ObjectType: 12
+        guid: f21a811a732ea14b89d41e90d7e4d46c
+      - ElementName: NumberOfEnemies
+        ObjectType: 11
+        guid: 55566d6ee434354c9ee5a61953e3460b
+      Path: Switches\EnviromentSwitches\NumberOfEnemies
+      values:
+      - name: AFewEnemies
+        guid: 30e33189839ad945bda91fa5a278502f
+        id: 1938642156
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: AFewEnemies
+          ObjectType: 10
+          guid: 30e33189839ad945bda91fa5a278502f
+      - name: GiantSwarm
+        guid: c6398bc84984184ca1f88cc58cfb991c
+        id: 1361491240
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: GiantSwarm
+          ObjectType: 10
+          guid: c6398bc84984184ca1f88cc58cfb991c
+      - name: ManyEnemies
+        guid: d353386759ce354c92dcd1f103b2fa50
+        id: 2915076976
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: ManyEnemies
+          ObjectType: 10
+          guid: d353386759ce354c92dcd1f103b2fa50
+      - name: NoEnemies
+        guid: ef83a031a6cccf48b283098aa67e5953
+        id: 2111510692
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: NoEnemies
+          ObjectType: 10
+          guid: ef83a031a6cccf48b283098aa67e5953
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\PlayerShipStates.wwu
     PathAndIcons:
     - ElementName: Switches
@@ -455,7 +577,7 @@ MonoBehaviour:
     ParentPath: Switches\PlayerShipStates
     guid: 218b2a4e9b6f484ca1ddc7b97cd3ca44
     GuidInternal: 
-    m_lastTime: -8585253841408104826
+    m_lastTime: -8585252217367369807
     List:
     - name: PlayerShipGunLevelSwitch
       guid: d935ffc2b69efd43987ad22c6b737882
@@ -619,9 +741,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585255661705981905
     List: []
-  ExpandedFileSystemItemIds: 0100000005000000080000000c0000002b0000002c0000005c0000005f000000630000009a0000000401000005010000380100003a0100003b0100003c0100006e0100008201000084010000
-  ExpandedWaapiItemIds: 0100000005000000080000000c0000002b0000002c0000005c0000005f000000630000009a0000000401000005010000380100003a0100003b0100003c0100006e0100008201000084010000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

@@ -27,6 +27,19 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace NUMBEROFENEMIES
+        {
+            static const AkUniqueID GROUP = 321019979U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID AFEWENEMIES = 1938642156U;
+                static const AkUniqueID GIANTSWARM = 1361491240U;
+                static const AkUniqueID MANYENEMIES = 2915076976U;
+                static const AkUniqueID NOENEMIES = 2111510692U;
+            } // namespace SWITCH
+        } // namespace NUMBEROFENEMIES
+
         namespace PLAYERSHIPGUNLEVELSWITCH
         {
             static const AkUniqueID GROUP = 1749199752U;
@@ -56,6 +69,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID NUMBEROFENEMIES = 321019979U;
         static const AkUniqueID PLAYERSHIPACCELERATION = 1918122584U;
         static const AkUniqueID PLAYERSHIPENERGY = 2508725640U;
         static const AkUniqueID PLAYERSHIPGUNLEVEL = 2663975140U;
