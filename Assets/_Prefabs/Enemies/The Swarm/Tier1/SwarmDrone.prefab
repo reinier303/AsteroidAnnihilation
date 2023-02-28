@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6055870862599295270}
   - component: {fileID: 6055870862599295265}
   - component: {fileID: 6055870862599295264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SwarmDrone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,12 +168,14 @@ MonoBehaviour:
   RotationSpeed: 0.025
   DroppedUnits: 20
   ExperienceGained: 10
+  CheckPlayerDistance: 1
   AggroDistance: 19
   DeAggroDistance: 45
   sizeRange: {x: 0.9, y: 1.1}
   grouped: 0
   StopDistance: 17
   DeathOnImpact: 0
+  countsAsEnemy: 1
   enemyType: 
   moveSpeed: 3.25
   aggroMove: 6
@@ -196,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7574891622914644820}
   - component: {fileID: 1590817637820342567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

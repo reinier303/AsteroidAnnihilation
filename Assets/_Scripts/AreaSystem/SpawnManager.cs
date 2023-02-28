@@ -104,7 +104,7 @@ namespace AsteroidAnnihilation
                 string enemy = enemyNames[Random.Range(0, enemyNames.Count)];
                 if(CheckEnemyType(enemy))
                 {
-                    GameObject enemyObject = RObjectPooler.SpawnFromPool(enemy, spawnPosition, Quaternion.identity);
+                    GameObject enemyObject = RObjectPooler.SpawnFromPool(enemy, spawnPosition, Quaternion.Euler(0,0,Random.Range(0,360)));
                     BaseEnemy enemyScipt = enemyObject.GetComponent<BaseEnemy>();
                     if (enemyScipt == null)
                     {

@@ -67,14 +67,14 @@ namespace AsteroidAnnihilation
         }
 
         private void Update()
-        {      
+        {
+            PauseInput();
             if (!InputEnabled)
             {
                 Attacking = false;
                 return;
             }
             GetAxisNormalizedCoef();
-            PauseInput();
             if (Input.GetKeyDown(Inventory))
             {
                 uiManager.OpenInventory();
@@ -101,6 +101,7 @@ namespace AsteroidAnnihilation
         {
             if (Input.GetKeyDown(PauseButton) || Input.GetKeyDown(PauseButton2))
             {
+                Debug.Log(uiManager.MenuOpen);
                 if (uiManager.MenuOpen)
                 {
                     uiManager.CloseAllMenus();

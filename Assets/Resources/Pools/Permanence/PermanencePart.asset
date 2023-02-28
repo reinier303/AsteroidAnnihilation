@@ -15,3 +15,4 @@ MonoBehaviour:
   Tag: PermanencePart
   Prefab: {fileID: 4624789049232154690, guid: f499aeb2bfbd5a448a7009883000bda4, type: 3}
   Amount: 2500
+  disableOnMissionExit: 1

@@ -94,7 +94,7 @@ namespace AsteroidAnnihilation
             {
                 Engines.Add(ps);
             }
-            AudioManager.Instance.PlayAudio("Play_PlayerShipEngine");
+            AudioManager.Instance.PlayAudio("Play_PlayerShipEngine", gameObject);
             screenRatio = (float)Screen.height / (float)Screen.width;
         }
 

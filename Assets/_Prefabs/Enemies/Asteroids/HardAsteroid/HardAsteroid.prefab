@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6987045444576619860}
   - component: {fileID: 266407236380892956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TrailEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 7512182232665586568}
   - component: {fileID: 7512182232665586575}
   - component: {fileID: 7512182232665586574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HardAsteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,10 @@ MonoBehaviour:
   ShakeMagnitude: 7.5
   ShakeDuration: 0.5
   HitSound: 
-  DeathSound: 
+  DeathSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   ParticleEffect: 3
   ParticleEffectScale: 1.3
   PermanenceSprites: 1
@@ -157,12 +160,14 @@ MonoBehaviour:
   RotationSpeed: 0
   DroppedUnits: 50
   ExperienceGained: 5
+  CheckPlayerDistance: 1
   AggroDistance: 8
   DeAggroDistance: 50
   sizeRange: {x: 0.9, y: 1.25}
   grouped: 0
   StopDistance: 0.75
   DeathOnImpact: 0
+  countsAsEnemy: 1
   enemyType: 
   MaxRotationSpeed: 750
   MinForce: 8
@@ -180,7 +185,7 @@ GameObject:
   - component: {fileID: 5614952447757407502}
   - component: {fileID: 5614952447757407501}
   - component: {fileID: 5614952447757407500}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +282,7 @@ GameObject:
   - component: {fileID: 8169885979807405276}
   - component: {fileID: 8335757812883726518}
   - component: {fileID: 8334563209482820174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5078,7 +5083,7 @@ GameObject:
   - component: {fileID: 8178204527680757594}
   - component: {fileID: 8335120373392941286}
   - component: {fileID: 8335456314243795136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -78,6 +78,12 @@ namespace AsteroidAnnihilation
                 hitEffect.transform.localScale = new Vector2(Size, Size);
                 audioManager.PlayAudio("PlasmaGunHit");
                 gameObject.SetActive(false);
+            //Environment Hit
+            } else if(collider.gameObject.layer == 18) {
+                GameObject hitEffect = objectPooler.SpawnFromPool(OnHitEffectName, transform.position, Quaternion.identity);
+                hitEffect.transform.localScale = new Vector2(Size, Size);
+                audioManager.PlayAudio("PlasmaGunHit");
+                gameObject.SetActive(false);
             }
         }
 

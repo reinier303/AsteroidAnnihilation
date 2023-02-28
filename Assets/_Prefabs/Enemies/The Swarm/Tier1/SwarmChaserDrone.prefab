@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5034665333673268708}
   - component: {fileID: 5034665333673268707}
   - component: {fileID: 5034665333673268706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SwarmChaserDrone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,12 +168,14 @@ MonoBehaviour:
   RotationSpeed: 2.25
   DroppedUnits: 25
   ExperienceGained: 10
+  CheckPlayerDistance: 1
   AggroDistance: 16
   DeAggroDistance: 45
   sizeRange: {x: 0.9, y: 1.25}
   grouped: 0
   StopDistance: 0.75
   DeathOnImpact: 0
+  countsAsEnemy: 1
   enemyType: 
   idleWaitTime: 6
   idleMove: 2
@@ -188,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8704073557298634646}
   - component: {fileID: 560635697920878053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

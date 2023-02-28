@@ -51,6 +51,7 @@ namespace AsteroidAnnihilation
 
         public GameObject PostGamePanel;
         public GameObject PauseMenu;
+        [SerializeField] private GameObject craftingScreen;
 
         [FoldoutGroup("Objectives")] public GameObject ObjectiveMenu;
         [FoldoutGroup("Objectives")] public Transform ObjectivesPanel;
@@ -145,6 +146,7 @@ namespace AsteroidAnnihilation
         public void CloseAllMenus()
         {
             inventoryScreen.SetActive(false);
+            craftingScreen.SetActive(false);
             MenuOpen = false;
         }
 

@@ -26,7 +26,7 @@ TagManager:
   - TutorialElement
   - Environment
   - PlayerContactCollider
-  - 
+  - PickupCollider
   - 
   - 
   - 

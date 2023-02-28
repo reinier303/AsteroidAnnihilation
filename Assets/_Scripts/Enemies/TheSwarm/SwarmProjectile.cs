@@ -16,6 +16,13 @@ namespace AsteroidAnnihilation
                 objectPooler.SpawnFromPool(OnHitEffectName, transform.position, Quaternion.identity);
                 gameObject.SetActive(false);
             }
+            else if (collider.gameObject.layer == 18)
+            {
+                GameObject hitEffect = objectPooler.SpawnFromPool(OnHitEffectName, transform.position, Quaternion.identity);
+                hitEffect.transform.localScale = new Vector2(Size, Size);
+                audioManager.PlayAudio("");
+                gameObject.SetActive(false);
+            }
         }
     }
 }

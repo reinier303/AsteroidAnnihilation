@@ -64,7 +64,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 7
+      Data: 8
     - Name: 
       Entry: 7
       Data: 
@@ -146,6 +146,18 @@ MonoBehaviour:
     - Name: $v
       Entry: 1
       Data: PlayerExplosion
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 7
+    - Name: $v
+      Entry: 1
+      Data: WreckageExplosion
     - Name: 
       Entry: 8
       Data: 

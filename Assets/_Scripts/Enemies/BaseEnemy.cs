@@ -18,6 +18,7 @@ namespace AsteroidAnnihilation
         public float ExperienceGained;
 
         //Aggro
+        public bool CheckPlayerDistance = true;
         public float AggroDistance = 8f;
         public float DeAggroDistance = 50f;
 
@@ -28,6 +29,7 @@ namespace AsteroidAnnihilation
         public float StopDistance = 0.75f;
         public bool DeathOnImpact;
 
+        [SerializeField] protected bool countsAsEnemy = true;
         public string enemyType;
 
         protected override void Awake()
@@ -49,6 +51,7 @@ namespace AsteroidAnnihilation
 
             if (player != null)
             {
+                if(ContactDamage == 0) { return; }
                 player.OnTakeDamage?.Invoke(ContactDamage, false);
                 if(DeathOnImpact)
                 {
@@ -80,7 +83,7 @@ namespace AsteroidAnnihilation
         {
             base.OnEnable();
             Player = GameManager.Instance.RPlayer.transform;
-            StartCoroutine(CheckDistanceToPlayer(1f));
+            if (CheckPlayerDistance) { StartCoroutine(CheckDistanceToPlayer(1f)); }
         }
 
         protected virtual void Rotate(Vector3 target = default(Vector3), float rotSpeedMultiplier = 1)
@@ -115,7 +118,11 @@ namespace AsteroidAnnihilation
             gameManager.RPlayer.RPlayerStats.AddToExperience(ExperienceGained);
             ExpPopUp expPopUp = objectPooler.SpawnFromPool("ExpPopUp", Vector2.zero, Quaternion.identity).GetComponent<ExpPopUp>();
             expPopUp.Initialize(ExperienceGained);
-            if (spawnManager != null) { spawnManager.RemoveEnemyType(enemyType); }
+            if (countsAsEnemy && spawnManager != null) 
+            {
+                if (missionManager != null) { missionManager.AddObjectiveProgress(MissionObjectiveType.Elimination); }
+                spawnManager.RemoveEnemyType(enemyType); 
+            }
             base.Die();
         }
 
