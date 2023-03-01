@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 167cd372dc935741a30553f6c89f054c
     GuidInternal: 
-    m_lastTime: -8585257343355468354
+    m_lastTime: -8585255661705981905
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f7f7601071c7584ca5d565e67559c019
     GuidInternal: 
-    m_lastTime: -8585257343359134024
+    m_lastTime: -8585255661709040796
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c41b77c2168a854c8da7ed3209b64741
     GuidInternal: 
-    m_lastTime: -8585255640262143624
+    m_lastTime: -8585253208782172049
     List:
     - name: Persistent_SoundBank
       guid: 488dedfda64bd14ba76e280a55573b02
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d00ab9fa6d1ffe4bb3dfa6c68ccf2739
     GuidInternal: 
-    m_lastTime: -8585257343359311307
+    m_lastTime: -8585255661709290127
     List: []
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: a095558296356f40ba6397908977d23b
     GuidInternal: 
-    m_lastTime: -8585256584813020243
+    m_lastTime: -8585255661709290127
     List: []
   - PhysicalPath: Events\PlayerShip.wwu
     PathAndIcons:
@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerShip
     guid: 57f35acf701a1948bd901d61fd34ac0a
     GuidInternal: 
-    m_lastTime: -8585253182333529625
+    m_lastTime: -8585252217369274732
     List:
     - name: Play_PlayerShipEngine
       guid: c82e0154c582fd44bf590d1869034533
@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPath: Events\TestSounds
     guid: 48e558fb55174f4ebaad5a3c2cfa73f4
     GuidInternal: 
-    m_lastTime: -8585256584813010271
+    m_lastTime: -8585255661709290127
     List:
     - name: Temp_Play_etfx_shoot_laser
       guid: 7b5af0d36c11e54d97660763b8008b07
@@ -317,8 +317,35 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fd4515685ad28245be1ec28387e0ba23
     GuidInternal: 
-    m_lastTime: -8585257343359301341
+    m_lastTime: -8585255661709290127
     List: []
+  - PhysicalPath: Game Parameters\EnviromentParameters.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: EnviromentParameters
+      ObjectType: 12
+      guid: 328f61c098de644d9b642760189a3fad
+    ParentPath: Game Parameters\EnviromentParameters
+    guid: 328f61c098de644d9b642760189a3fad
+    GuidInternal: 
+    m_lastTime: -8585253161080339747
+    List:
+    - name: NumberOfEnemies
+      guid: 8d91441d692d9a458e6e4f255e29c295
+      id: 321019979
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: EnviromentParameters
+        ObjectType: 12
+        guid: 328f61c098de644d9b642760189a3fad
+      - ElementName: NumberOfEnemies
+        ObjectType: 13
+        guid: 8d91441d692d9a458e6e4f255e29c295
+      Path: Game Parameters\EnviromentParameters\NumberOfEnemies
   - PhysicalPath: Game Parameters\PlayerShipParameters.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -330,7 +357,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\PlayerShipParameters
     guid: 253990e838f92842911d377eac5b4a21
     GuidInternal: 
-    m_lastTime: -8585253182333524550
+    m_lastTime: -8585252217369264754
     List:
     - name: PlayerShipAcceleration
       guid: c100c129aa3e3b4ea4bdad5d7c2308d9
@@ -428,7 +455,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 30b3ccf966202a409ca897d5f91522f3
     GuidInternal: 
-    m_lastTime: -8585257343355478328
+    m_lastTime: -8585255661705981905
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -442,8 +469,103 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0d6a13b7fbdb1d429cededc029a59f21
     GuidInternal: 
-    m_lastTime: -8585257343355478328
+    m_lastTime: -8585255661705981905
     List: []
+  - PhysicalPath: Switches\EnviromentSwitches.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: EnviromentSwitches
+      ObjectType: 12
+      guid: f21a811a732ea14b89d41e90d7e4d46c
+    ParentPath: Switches\EnviromentSwitches
+    guid: f21a811a732ea14b89d41e90d7e4d46c
+    GuidInternal: 
+    m_lastTime: -8585253161080429516
+    List:
+    - name: NumberOfEnemies
+      guid: 55566d6ee434354c9ee5a61953e3460b
+      id: 321019979
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: EnviromentSwitches
+        ObjectType: 12
+        guid: f21a811a732ea14b89d41e90d7e4d46c
+      - ElementName: NumberOfEnemies
+        ObjectType: 11
+        guid: 55566d6ee434354c9ee5a61953e3460b
+      Path: Switches\EnviromentSwitches\NumberOfEnemies
+      values:
+      - name: AFewEnemies
+        guid: 30e33189839ad945bda91fa5a278502f
+        id: 1938642156
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: AFewEnemies
+          ObjectType: 10
+          guid: 30e33189839ad945bda91fa5a278502f
+      - name: GiantSwarm
+        guid: c6398bc84984184ca1f88cc58cfb991c
+        id: 1361491240
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: GiantSwarm
+          ObjectType: 10
+          guid: c6398bc84984184ca1f88cc58cfb991c
+      - name: ManyEnemies
+        guid: d353386759ce354c92dcd1f103b2fa50
+        id: 2915076976
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: ManyEnemies
+          ObjectType: 10
+          guid: d353386759ce354c92dcd1f103b2fa50
+      - name: NoEnemies
+        guid: ef83a031a6cccf48b283098aa67e5953
+        id: 2111510692
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: EnviromentSwitches
+          ObjectType: 12
+          guid: f21a811a732ea14b89d41e90d7e4d46c
+        - ElementName: NumberOfEnemies
+          ObjectType: 11
+          guid: 55566d6ee434354c9ee5a61953e3460b
+        - ElementName: NoEnemies
+          ObjectType: 10
+          guid: ef83a031a6cccf48b283098aa67e5953
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\PlayerShipStates.wwu
     PathAndIcons:
     - ElementName: Switches
@@ -455,7 +577,7 @@ MonoBehaviour:
     ParentPath: Switches\PlayerShipStates
     guid: 218b2a4e9b6f484ca1ddc7b97cd3ca44
     GuidInternal: 
-    m_lastTime: -8585253182331882553
+    m_lastTime: -8585252217367369807
     List:
     - name: PlayerShipGunLevelSwitch
       guid: d935ffc2b69efd43987ad22c6b737882
@@ -617,7 +739,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 63d25f515c170d4ba11802bbb20dbcc5
     GuidInternal: 
-    m_lastTime: -8585257343355468354
+    m_lastTime: -8585255661705981905
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

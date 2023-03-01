@@ -11,12 +11,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	4236749427	Stop_PlayerShipEngine			\PlayerShip\Stop_PlayerShipEngine	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	155164948	PlayerShipHealthStates			\PlayerShipStates\PlayerShipHealthStates	
 	1749199752	PlayerShipGunLevelSwitch			\PlayerShipStates\PlayerShipGunLevelSwitch	
 
 Switch	ID	Name	Switch Group			Notes
+	777824873	AlmostDead	PlayerShipHealthStates			
+	825447798	HealthMedium	PlayerShipHealthStates			
+	1924267063	HealthLow	PlayerShipHealthStates			
+	2044049779	Dead	PlayerShipHealthStates			
+	3493536634	HealthAlmostFull	PlayerShipHealthStates			
+	4197849920	HealthFull	PlayerShipHealthStates			
 	987635873	Level_01	PlayerShipGunLevelSwitch			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1438366550	PlayerShipHealth			\PlayerShipParameters\PlayerShipHealth	
 	1918122584	PlayerShipAcceleration			\PlayerShipParameters\PlayerShipAcceleration	
 	2663975140	PlayerShipGunLevel			\PlayerShipParameters\PlayerShipGunLevel	
 	3228488565	PlayerShipVelocity			\PlayerShipParameters\PlayerShipVelocity	
@@ -25,23 +33,28 @@ Effect plug-ins	ID	Name	Type				Notes
 	240132277	Echoes_Linear (Custom)	Wwise Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	22072133	PistolBody-003	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\PistolBody-003_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Trainsient_2\PistolBody-003		26492
+	102477313	PistolBody-002	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\PistolBody-002_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Trainsient_2\PistolBody-002		26492
 	215372480	PlasmaGunShot4	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\SFX_Temp\PlasmaGunShot4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Temp\PlasmaGunShot4		254112
-	237743632	S_O_2_48_ShipGunBody-001	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunBody-001_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Body\S_O_2_48_ShipGunBody-001		108496
-	254906646	S_O_2_48_ShipGunTail-003	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunTail-003_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Tail\S_O_2_48_ShipGunTail-003		65744
+	237743632	S_O_2_48_ShipGunBody-001	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunBody-001_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Body\S_O_2_48_ShipGunBody-001		108496
+	265077398	S_O_2_ShipGunTail_003	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_ShipGunTail_003_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Tail\S_O_2_ShipGunTail_003		157188
 	276439328	PlasmaGunShot1	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\SFX_Temp\PlasmaGunShot1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Temp\PlasmaGunShot1		254112
 	290230786	S_O_2_48_ShipGunTransient-003	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunTransient-003_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Transient\S_O_2_48_ShipGunTransient-003		51956
-	329372466	S_O_2_48_ShipGunTail-002	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunTail-002_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Tail\S_O_2_48_ShipGunTail-002		65744
-	343547370	S_O_2_48_ShipGunBody-003	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunBody-003_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Body\S_O_2_48_ShipGunBody-003		121652
+	343547370	S_O_2_48_ShipGunBody-003	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunBody-003_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Body\S_O_2_48_ShipGunBody-003		121652
 	375205690	PlasmaGunShot2	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\SFX_Temp\PlasmaGunShot2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Temp\PlasmaGunShot2		254112
-	384186691	S_O_2_48_ShipGunTail-001	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunTail-001_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Tail\S_O_2_48_ShipGunTail-001		49000
+	427500297	PistolBody-001	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\PistolBody-001_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Trainsient_2\PistolBody-001		26492
+	553620808	S_O_2_ShipGunTail_004	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_ShipGunTail_004_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Tail\S_O_2_ShipGunTail_004		157188
 	557894179	Transient_Persistent	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\acid dnb kick_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Transient_Persistent		69080
 	602459634	S_L_2_48_ShipElectronicHum	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipElectronicHum_D79FB2B7.wem		\Actor-Mixer Hierarchy\PlayerShip\EngineSounds\EngineMain\BaseHum\S_L_2_48_ShipElectronicHum		1256824
-	641948614	S_O_2_48_ShipGunBody-002	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunBody-002_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Body\S_O_2_48_ShipGunBody-002		106268
+	639078872	S_O_2_ShipGunTail_002	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_ShipGunTail_002_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Tail\S_O_2_ShipGunTail_002		157188
+	641948614	S_O_2_48_ShipGunBody-002	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunBody-002_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Body\S_O_2_48_ShipGunBody-002		106268
 	723541179	Levelup	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\SFX_Temp\Levelup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Temp\Levelup		591620
 	788860315	etfx_shoot_laser	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\SFX_Temp\etfx_shoot_laser_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Temp\etfx_shoot_laser		84576
+	806410605	S_O_2_ShipGunTail_001	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_ShipGunTail_001_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Tail\S_O_2_ShipGunTail_001		157188
 	809888030	SwarmExplosion	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\SFX_Temp\SwarmExplosion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Temp\SwarmExplosion		176496
 	853381070	S_L_2_48_ShipEngineExhaust	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipEngineExhaust_D79FB2B7.wem		\Actor-Mixer Hierarchy\PlayerShip\EngineSounds\EngineMain\DynamicHum\S_L_2_48_ShipEngineExhaust		10053916
 	854929007	S_O_2_48_ShipGunTransient-002	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunTransient-002_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Transient\S_O_2_48_ShipGunTransient-002		82116
 	951658105	S_O_2_48_ShipGunTransient-001	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\S_O_2_48_ShipGunTransient-001_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Transient\S_O_2_48_ShipGunTransient-001		54244
+	1013912439	PistolBody-004	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\PistolBody-004_10C4C929.wem		\Actor-Mixer Hierarchy\PlayerShip\Weapons\ShipGunShot\ShipGunLevel_01\Delayed\Trainsient_2\PistolBody-004		24280
 	1060657738	PlasmaGunShot3	D:\Github\AsteroidAnnihilation\AsteroidAnnihilation_WwiseProject\.cache\Windows\SFX\SFX_Temp\PlasmaGunShot3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Temp\PlasmaGunShot3		254112
 

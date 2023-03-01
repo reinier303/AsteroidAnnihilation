@@ -1,5 +1,6 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
 	155164948	PlayerShipHealthStates			\PlayerShipStates\PlayerShipHealthStates	
+	321019979	NumberOfEnemies			\EnviromentSwitches\NumberOfEnemies	
 	1749199752	PlayerShipGunLevelSwitch			\PlayerShipStates\PlayerShipGunLevelSwitch	
 
 Switch	ID	Name	Switch Group			Notes
@@ -9,6 +10,10 @@ Switch	ID	Name	Switch Group			Notes
 	2044049779	Dead	PlayerShipHealthStates			
 	3493536634	HealthAlmostFull	PlayerShipHealthStates			
 	4197849920	HealthFull	PlayerShipHealthStates			
+	1361491240	GiantSwarm	NumberOfEnemies			
+	1938642156	AFewEnemies	NumberOfEnemies			
+	2111510692	NoEnemies	NumberOfEnemies			
+	2915076976	ManyEnemies	NumberOfEnemies			
 	987635873	Level_01	PlayerShipGunLevelSwitch			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
