@@ -17,6 +17,9 @@ MonoBehaviour:
     Amount: 5
   - ItemNeeded: {fileID: 11400000, guid: 488adb46527e8534c94fd65458728330, type: 2}
     Amount: 2
-  Result: {fileID: 11400000, guid: 9d42650c3c9c28f48867bed2c460ad4c, type: 2}
+  ItemType: 0
+  ResultItem: {fileID: 11400000, guid: 9d42650c3c9c28f48867bed2c460ad4c, type: 2}
+  ResultEquipment: {fileID: 0}
+  ResultWeapon: {fileID: 0}
   Amount: 1
   StartUnlocked: 1
