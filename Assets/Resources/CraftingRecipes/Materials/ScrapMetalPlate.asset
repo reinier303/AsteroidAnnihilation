@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: ScrapMetalPlate
   m_EditorClassIdentifier: 
   CraftingIngredients:
-  - ItemNeeded: {fileID: 11400000, guid: 9d42650c3c9c28f48867bed2c460ad4c, type: 2}
+  - ItemNeeded: {fileID: 11400000, guid: 4d41e90de32496045ad5c3c40b5ec2f3, type: 2}
     Amount: 5
   ItemType: 0
-  ResultItem: {fileID: 11400000, guid: 9d42650c3c9c28f48867bed2c460ad4c, type: 2}
+  ResultItem: {fileID: 11400000, guid: dfabfa31cb1026a419a2ab080196dfd9, type: 2}
   ResultEquipment: {fileID: 0}
   ResultWeapon: {fileID: 0}
   Amount: 1

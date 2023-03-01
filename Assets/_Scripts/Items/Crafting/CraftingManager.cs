@@ -99,6 +99,7 @@ namespace AsteroidAnnihilation
             if(CheckRecipeRequirements())
             {
                 CraftItem();
+                SetSelectedRecipe(selectedRecipe);
             }
         }
 
