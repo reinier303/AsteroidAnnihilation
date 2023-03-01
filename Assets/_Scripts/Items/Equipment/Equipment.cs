@@ -69,5 +69,21 @@ namespace AsteroidAnnihilation
 
             return rarityStats;
         }
+
+        public EquipmentData GenerateEquipmentData(GeneralItemSettings generalItemSettings)
+        {
+            EquipmentData equipmentData = new EquipmentData();
+            equipmentData.ItemData = GenerateItemData(1);
+            equipmentData.EquipmentStats = new Dictionary<EnumCollections.Stats, float>();
+            equipmentData.RarityStats = GetRarityStats(equipmentData.ItemData.Rarity, generalItemSettings);
+
+            foreach (EnumCollections.Stats stat in EquipmentStatRanges.Keys)
+            {
+                float value = Random.Range(EquipmentStatRanges[stat].x, EquipmentStatRanges[stat].y);
+                value = MathHelpers.RoundToDecimal(value, 3);
+                equipmentData.EquipmentStats.Add(stat, value);
+            }
+            return equipmentData;
+        }
     }
 }

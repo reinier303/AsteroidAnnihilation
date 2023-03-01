@@ -11,6 +11,7 @@ namespace AsteroidAnnihilation
 
         private InventoryManager inventoryManager;
         private ObjectPooler objectPooler;
+        private SettingsManager settingsManager;
 
         [SerializeField] private Transform recipesHolder;
 
@@ -32,6 +33,7 @@ namespace AsteroidAnnihilation
         {
             inventoryManager = InventoryManager.Instance;
             objectPooler = ObjectPooler.Instance;
+            settingsManager = SettingsManager.Instance;
             ShowRecipes();
         }
 
@@ -41,7 +43,7 @@ namespace AsteroidAnnihilation
             foreach (CraftingRecipe recipe in resourcesRecipes)
             {
                 //Check if recipe info is filled.
-                if (recipe.CraftingIngredients.Count > 0 && recipe.Result != null && recipe.Amount > 0)
+                if (recipe.CraftingIngredients.Count > 0 &&  recipe.Amount > 0  && recipe.ResultWeapon != null || recipe.ResultEquipment != null || recipe.ResultItem != null)
                 {
                     //We check it this way to make sure new recipes will be added when updating while old recipes will remain properly saved.
                     if (!recipes.ContainsKey(recipe)) { recipes.Add(recipe, false); }
@@ -118,16 +120,16 @@ namespace AsteroidAnnihilation
             {
                 inventoryManager.ReduceItemAmount(ingredient.ItemNeeded.ItemName, ingredient.Amount);
             }
-            switch(selectedRecipe.Result.ItemType)
+            switch(selectedRecipe.ItemType)
             {
                 case EnumCollections.ItemType.Material:
-                    inventoryManager.AddItem(selectedRecipe.Result.GenerateItemData(1));
+                    inventoryManager.AddItem(selectedRecipe.ResultItem.GenerateItemData(1));
                     break;
-                case EnumCollections.ItemType.HullPlating:
-                    //inventoryManager.AddItem(selectedRecipe.Result.GenerateItemData(1));
+                case EnumCollections.ItemType.Equipment:
+                    inventoryManager.AddItem(selectedRecipe.ResultEquipment.GenerateEquipmentData(settingsManager.generalItemSettings));
                     break;
                 case EnumCollections.ItemType.Weapon:
-                    //inventoryManager.AddItem(selectedRecipe.Result.GenerateItemData(1));
+                    inventoryManager.AddItem(selectedRecipe.ResultWeapon.GenerateWeaponData(settingsManager.generalItemSettings));
                     break;
             }
         }

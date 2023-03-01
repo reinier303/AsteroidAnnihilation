@@ -34,6 +34,15 @@ namespace AsteroidAnnihilation
                 return false;
             }
         }
+
+        public WeaponData GenerateWeaponData(GeneralItemSettings generalItemSettings)
+        {
+            WeaponData weaponData = new WeaponData();
+            weaponData.EquipmentData = GenerateEquipmentData(generalItemSettings);
+            weaponData.WeaponType = WeaponType;
+            weaponData.ProjectileType= ProjectileType;
+            return weaponData;
+        }
     }
 
     public interface IFire

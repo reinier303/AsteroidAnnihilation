@@ -185,15 +185,15 @@ namespace AsteroidAnnihilation
 
         public enum ItemType
         {
-            Material,
-            HullPlating,
-            EnergyCore,
-            Engine,
-            Weapon,
-            Consumable,
-            /* Accesory */ShipComponent,
-            Inventory,
-            Equipment
+            Material = 0,
+            HullPlating = 1,
+            EnergyCore = 2,
+            Engine = 3,
+            Weapon = 4,
+            Consumable = 5,
+            /* Accesory */ShipComponent = 6,
+            Inventory= 7,
+            Equipment = 8
         }
 
         public enum ShipType

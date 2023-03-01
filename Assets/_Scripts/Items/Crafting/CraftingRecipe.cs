@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,9 +9,11 @@ namespace AsteroidAnnihilation
     public class CraftingRecipe : ScriptableObject
     {
         public List<CraftingIngredient> CraftingIngredients;
-        public Item ResultItem;
-        public Equipment ResultEquipment;
-        public Weapon Result;
+
+        public EnumCollections.ItemType ItemType;
+        [ShowIf("ItemType", EnumCollections.ItemType.Material)] public Item ResultItem;
+        [ShowIf("ItemType", EnumCollections.ItemType.Equipment)] public Equipment ResultEquipment;
+        [ShowIf("ItemType", EnumCollections.ItemType.Weapon)] public Weapon ResultWeapon;
 
         public int Amount;
         public bool StartUnlocked;

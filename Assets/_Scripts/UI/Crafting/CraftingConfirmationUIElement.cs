@@ -18,7 +18,7 @@ namespace AsteroidAnnihilation
         public override void InitializeRecipe(CraftingRecipe recipe)
         {
             this.recipe = recipe;
-            result.InitializeIngredient(recipe.Result, recipe.Amount);
+            SetResult(recipe);
             DisableAllIngredients();
 
             for (int i = 0; i < recipe.CraftingIngredients.Count; i++)
@@ -28,6 +28,22 @@ namespace AsteroidAnnihilation
                 Ingredients[i].gameObject.SetActive(true);
                 CraftingIngredient ingredient = recipe.CraftingIngredients[i];
                 Ingredients[i].InitializeIngredient(ingredient.ItemNeeded, ingredient.Amount, Mathf.Clamp(inventoryManager.GetItemAmountInInventory(ingredient.ItemNeeded.ItemName), 0, 100000));
+            }
+        }
+
+        private void SetResult(CraftingRecipe recipe)
+        {
+            switch (recipe.ItemType)
+            {
+                case EnumCollections.ItemType.Material:
+                    result.InitializeIngredient(recipe.ResultItem, recipe.Amount);
+                    break;
+                case EnumCollections.ItemType.Equipment:
+                    result.InitializeIngredient(recipe.ResultEquipment, recipe.Amount);
+                    break;
+                case EnumCollections.ItemType.Weapon:
+                    result.InitializeIngredient(recipe.ResultWeapon, recipe.Amount);
+                    break;
             }
         }
     }
