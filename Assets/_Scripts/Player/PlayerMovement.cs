@@ -42,6 +42,7 @@ namespace AsteroidAnnihilation
         [SerializeField] CinemachineConfiner confiner;
 
         private GameManager gameManager;
+        private AudioManager audioManager;
         private Player player;
         private PlayerStats playerStats;
         private InputManager inputManager;
@@ -81,6 +82,7 @@ namespace AsteroidAnnihilation
             cam = Camera.main;
             SceneManager.sceneLoaded += OnSceneLoaded;
             gameManager = GameManager.Instance;
+            audioManager = AudioManager.Instance;
             equipmentManager = EquipmentManager.Instance;
             objectPooler = ObjectPooler.Instance;
             player = gameManager.RPlayer;
@@ -183,6 +185,7 @@ namespace AsteroidAnnihilation
 
         private IEnumerator Dash()
         {
+            audioManager.PlayAudio("Play_ShipDash");
             canDash = false;
             dashing = true;
             StartCoroutine(DashParticles());

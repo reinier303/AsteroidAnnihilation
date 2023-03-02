@@ -15,11 +15,6 @@ MonoBehaviour:
   Sound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 13bede366978e744da462ff48b9a60b0,
+    WwiseObjectReference: {fileID: 11400000, guid: d731fa3797814794fa9114bcd3fc5f80,
       type: 2}
-  Tag: PlasmaGunHit
-  Clips:
-  - {fileID: 8300000, guid: 074cee5e8624aa4428300be00e1d2bd2, type: 3}
-  MixerGroup: {fileID: 24300002, guid: c581ec550c197d14ea4fa4f0fb8d76d4, type: 2}
-  VolumeMinMax: {x: 0.25, y: 0.35}
-  PitchMinMax: {x: 0.8, y: 1.2}
+  Tag: Play_ShipPlasmaGunImpact

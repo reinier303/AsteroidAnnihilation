@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c41b77c2168a854c8da7ed3209b64741
     GuidInternal: 
-    m_lastTime: -8585253208782172049
+    m_lastTime: -8585238401256732671
     List:
     - name: Persistent_SoundBank
       guid: 488dedfda64bd14ba76e280a55573b02
@@ -83,6 +83,36 @@ MonoBehaviour:
         guid: 488dedfda64bd14ba76e280a55573b02
       Path: SoundBanks\Default Work Unit\Persistent_SoundBank
   EventWwu:
+  - PhysicalPath: Events\Ambience.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Ambience
+      ObjectType: 12
+      guid: af7218bd94aff948b475deab561fef1a
+    ParentPath: Events\Ambience
+    guid: af7218bd94aff948b475deab561fef1a
+    GuidInternal: 
+    m_lastTime: -8585238451156859939
+    List:
+    - name: Play_SpaceAmbience
+      guid: 5b77c58da83df941a37afd2adf4e8b08
+      id: 915492624
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: af7218bd94aff948b475deab561fef1a
+      - ElementName: Play_SpaceAmbience
+        ObjectType: 3
+        guid: 5b77c58da83df941a37afd2adf4e8b08
+      Path: Events\Ambience\Play_SpaceAmbience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -94,7 +124,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d00ab9fa6d1ffe4bb3dfa6c68ccf2739
     GuidInternal: 
-    m_lastTime: -8585255661709290127
+    m_lastTime: -8585238345444126651
     List: []
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
@@ -109,6 +139,36 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585255661709290127
     List: []
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 8ec1436c8bccf941800f49612484e9ef
+    ParentPath: Events\Music
+    guid: 8ec1436c8bccf941800f49612484e9ef
+    GuidInternal: 
+    m_lastTime: -8585239164164248903
+    List:
+    - name: Play_DefaultMusic
+      guid: c1b54cfb9fc363488fcc4e64fa2a5ad6
+      id: 1857418338
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 8ec1436c8bccf941800f49612484e9ef
+      - ElementName: Play_DefaultMusic
+        ObjectType: 3
+        guid: c1b54cfb9fc363488fcc4e64fa2a5ad6
+      Path: Events\Music\Play_DefaultMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\PlayerShip.wwu
     PathAndIcons:
     - ElementName: Events
@@ -120,7 +180,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerShip
     guid: 57f35acf701a1948bd901d61fd34ac0a
     GuidInternal: 
-    m_lastTime: -8585252217369274732
+    m_lastTime: -8585238345444058603
     List:
     - name: Play_PlayerShipEngine
       guid: c82e0154c582fd44bf590d1869034533
@@ -153,6 +213,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: a713fe80378bf74e8eaae44055076501
       Path: Events\PlayerShip\Play_PlayerShipShootGun
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_ShipDash
+      guid: 303986cd5454ad47be283212a52a760c
+      id: 3482721360
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerShip
+        ObjectType: 12
+        guid: 57f35acf701a1948bd901d61fd34ac0a
+      - ElementName: Play_ShipDash
+        ObjectType: 3
+        guid: 303986cd5454ad47be283212a52a760c
+      Path: Events\PlayerShip\Play_ShipDash
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_ShipPlasmaGunImpact
+      guid: 0c67fdcff50c45429cff640935ec3fc1
+      id: 4264920734
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerShip
+        ObjectType: 12
+        guid: 57f35acf701a1948bd901d61fd34ac0a
+      - ElementName: Play_ShipPlasmaGunImpact
+        ObjectType: 3
+        guid: 0c67fdcff50c45429cff640935ec3fc1
+      Path: Events\PlayerShip\Play_ShipPlasmaGunImpact
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -357,7 +451,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\PlayerShipParameters
     guid: 253990e838f92842911d377eac5b4a21
     GuidInternal: 
-    m_lastTime: -8585252217369264754
+    m_lastTime: -8585238451156929756
     List:
     - name: PlayerShipAcceleration
       guid: c100c129aa3e3b4ea4bdad5d7c2308d9
@@ -455,8 +549,106 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 30b3ccf966202a409ca897d5f91522f3
     GuidInternal: 
-    m_lastTime: -8585255661705981905
-    List: []
+    m_lastTime: -8585238451157228806
+    List:
+    - name: GameState
+      guid: 9e004930adef554fa278b262a4c4c9ce
+      id: 4091656514
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 30b3ccf966202a409ca897d5f91522f3
+      - ElementName: GameState
+        ObjectType: 9
+        guid: 9e004930adef554fa278b262a4c4c9ce
+      Path: States\Default Work Unit\GameState
+      values:
+      - name: CraftingMenu
+        guid: 0cf7aed503bcca4194792393ce622e02
+        id: 1247366870
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 30b3ccf966202a409ca897d5f91522f3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 9e004930adef554fa278b262a4c4c9ce
+        - ElementName: CraftingMenu
+          ObjectType: 8
+          guid: 0cf7aed503bcca4194792393ce622e02
+      - name: InventoryMenu
+        guid: 79340ada1044f146b327273e5acacb6b
+        id: 2407792274
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 30b3ccf966202a409ca897d5f91522f3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 9e004930adef554fa278b262a4c4c9ce
+        - ElementName: InventoryMenu
+          ObjectType: 8
+          guid: 79340ada1044f146b327273e5acacb6b
+      - name: None
+        guid: 285c171b7f2137409f13c5cfff420a35
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 30b3ccf966202a409ca897d5f91522f3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 9e004930adef554fa278b262a4c4c9ce
+        - ElementName: None
+          ObjectType: 8
+          guid: 285c171b7f2137409f13c5cfff420a35
+      - name: Paused
+        guid: bfa147d2b4a70c4fa35111ff1201b57a
+        id: 319258907
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 30b3ccf966202a409ca897d5f91522f3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 9e004930adef554fa278b262a4c4c9ce
+        - ElementName: Paused
+          ObjectType: 8
+          guid: bfa147d2b4a70c4fa35111ff1201b57a
+      - name: StartMenu
+        guid: 2c5257d76ff5cc44b7b7d9a0b8fbead4
+        id: 3944636910
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 30b3ccf966202a409ca897d5f91522f3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 9e004930adef554fa278b262a4c4c9ce
+        - ElementName: StartMenu
+          ObjectType: 8
+          guid: 2c5257d76ff5cc44b7b7d9a0b8fbead4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:

@@ -13,17 +13,32 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_DEFAULTMUSIC = 1857418338U;
         static const AkUniqueID PLAY_PLAYERSHIPENGINE = 1672365273U;
         static const AkUniqueID PLAY_PLAYERSHIPSHOOTGUN = 1172773070U;
+        static const AkUniqueID PLAY_SHIPDASH = 3482721360U;
+        static const AkUniqueID PLAY_SHIPPLASMAGUNIMPACT = 4264920734U;
+        static const AkUniqueID PLAY_SPACEAMBIENCE = 915492624U;
         static const AkUniqueID STOP_PLAYERSHIPENGINE = 4236749427U;
-        static const AkUniqueID TEMP_PLAY_ETFX_SHOOT_LASER = 3201422434U;
-        static const AkUniqueID TEMP_PLAY_LEVELUP = 1450272620U;
-        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT1 = 3965960414U;
-        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT2 = 3965960413U;
-        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT3 = 3965960412U;
-        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT4 = 3965960411U;
-        static const AkUniqueID TEMP_PLAY_SWARMEXPLOSION = 2360230854U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CRAFTINGMENU = 1247366870U;
+                static const AkUniqueID INVENTORYMENU = 2407792274U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PAUSED = 319258907U;
+                static const AkUniqueID STARTMENU = 3944636910U;
+            } // namespace STATE
+        } // namespace GAMESTATE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -81,7 +96,10 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID PERSISTENT_SOUNDBANK = 1299072232U;
+        static const AkUniqueID AMBIENCE_SOUNDBANK = 3010096371U;
+        static const AkUniqueID MUSIC_SOUNDBANK = 3589812408U;
+        static const AkUniqueID SHIP_SOUNDBANK = 547480325U;
+        static const AkUniqueID WEAPONS_SOUNDBANK = 1692504546U;
     } // namespace BANKS
 
     namespace BUSSES
