@@ -260,7 +260,7 @@ MonoBehaviour:
   Tier: 1
   ItemName: Swarm Acid Gun
   Icons:
-  - {fileID: 21300000, guid: d18601fa773b39f4493c3fcef97da9ee, type: 3}
+  - {fileID: 21300000, guid: 4e43be37ce1159f4a94c0ad5849f2b65, type: 3}
   ItemType: 4
   BaseEquipmentName: 
   WeaponType: 1

@@ -21,21 +21,42 @@ namespace AsteroidAnnihilation
 
         private GeneralItemSettings generalItemSettings;
         private EnumCollections.ItemType itemType;
+        
+        [Header("Use for testing")]
+        public Item testItem;
+        public int testAmount = 5;
+
+        private void Start()
+        {
+            if (testItem != null)
+            {
+
+                settingsManager = SettingsManager.Instance;
+                equipmentManager = EquipmentManager.Instance;
+                inventoryManager = InventoryManager.Instance;
+                audioManager = AudioManager.Instance;
+                objectPooler = ObjectPooler.Instance;
+                generalItemSettings = settingsManager.generalItemSettings;
+
+                itemType = testItem.ItemType;
+                itemData = testItem.GenerateItemData(testAmount);
+                icon.sprite = testItem.GetIcon();
+            }
+        }
 
         public void Initialize(Drop drop)
         {
+            //itemType = GetItemType();
+            //GenerateDrop();
+
+            //TODO:: Fix this with ObjectPooler and make it return itself to poolparent after disabling
+            //Instantiate(generalItemSettings.GetRarityMaterial(weaponData.EquipmentData.ItemData.Rarity), transform.position, transform.rotation, transform);
             settingsManager = SettingsManager.Instance;
             equipmentManager = EquipmentManager.Instance;
             inventoryManager = InventoryManager.Instance;
             audioManager = AudioManager.Instance;
             objectPooler = ObjectPooler.Instance;
             generalItemSettings = settingsManager.generalItemSettings;
-
-            //itemType = GetItemType();
-            //GenerateDrop();
-
-            //TODO:: Fix this with ObjectPooler and make it return itself to poolparent after disabling
-            //Instantiate(generalItemSettings.GetRarityMaterial(weaponData.EquipmentData.ItemData.Rarity), transform.position, transform.rotation, transform);
 
             switch (drop.ItemType)
             {

@@ -100,7 +100,7 @@ namespace AsteroidAnnihilation
                 {
                     equipedWeapons.Add(i, default);
                 }
-                equipedWeapons[0] = generalItemSettings.startWeapon;
+                equipedWeapons[0] = generalItemSettings.startWeapon.GenerateWeaponData(generalItemSettings);
 
                 equipedGear = new Dictionary<EnumCollections.ItemType, EquipmentData>();
                 foreach(EquipmentData equipData in generalItemSettings.startGear.Values)

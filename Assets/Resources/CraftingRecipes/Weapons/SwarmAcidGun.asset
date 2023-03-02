@@ -13,14 +13,12 @@ MonoBehaviour:
   m_Name: SwarmAcidGun
   m_EditorClassIdentifier: 
   CraftingIngredients:
-  - ItemNeeded: {fileID: 11400000, guid: 9d42650c3c9c28f48867bed2c460ad4c, type: 2}
-    Amount: 0
   - ItemNeeded: {fileID: 11400000, guid: 67a1d3ed006b79c4c9a4c0810929d18c, type: 2}
-    Amount: 20
+    Amount: 15
   - ItemNeeded: {fileID: 11400000, guid: 9d3c35bc261f46745b29cb196806b873, type: 2}
-    Amount: 35
+    Amount: 25
   - ItemNeeded: {fileID: 11400000, guid: a761318ce2613564d93e26e761a8db47, type: 2}
-    Amount: 40
+    Amount: 30
   ItemType: 4
   ResultItem: {fileID: 0}
   ResultEquipment: {fileID: 0}

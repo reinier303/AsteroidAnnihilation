@@ -171,6 +171,7 @@ namespace AsteroidAnnihilation
 
         private void UpdateAudioHooks()
         {
+            if(currentWeapons[0].WeaponType == EnumCollections.Weapons.None) { return; }
             AkSoundEngine.SetRTPCValue("PlayerShipGunLevel", GetFireRateAverage() * currentWeapons[0].GetEquipmentStat(EnumCollections.Stats.Damage, 0), gameObject);
             AkSoundEngine.SetRTPCValue("PlayerShipEnergy", currentEnergy / MaxEnergy, gameObject);
         }

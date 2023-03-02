@@ -24,7 +24,6 @@ MonoBehaviour:
     - {fileID: 108116, guid: 3a8a426e1e0745a42889051d6ec93d08, type: 3}
     - {fileID: 108116, guid: 80f26260455382b4386016507ef06ce0, type: 3}
     - {fileID: 108116, guid: 2327c2c7ea4df2b4abdf0207fec9887f, type: 3}
-    - {fileID: 21300000, guid: cf5a1866f085f0d4baf1cc773e74d130, type: 3}
     - {fileID: 21300000, guid: ad99e8a9cb963334685b18d7fda45e9e, type: 3}
     - {fileID: 21300000, guid: 5555a7bc63e5f3a4aa18981a999435e3, type: 3}
     - {fileID: 21300000, guid: 651de9400fe86bd419091292d70018a3, type: 3}
@@ -349,191 +348,14 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: startWeapon
-      Entry: 7
-      Data: AsteroidAnnihilation.WeaponData, Assembly-CSharp
-    - Name: EquipmentData
-      Entry: 7
-      Data: AsteroidAnnihilation.EquipmentData, Assembly-CSharp
-    - Name: ItemData
-      Entry: 7
-      Data: AsteroidAnnihilation.ItemData, Assembly-CSharp
-    - Name: ItemName
-      Entry: 1
-      Data: Stock Plasma Gun
-    - Name: Tier
-      Entry: 3
-      Data: 0
-    - Name: Rarity
-      Entry: 3
-      Data: 0
-    - Name: ItemType
-      Entry: 3
-      Data: 4
-    - Name: Icon
-      Entry: 10
-      Data: 8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: EquipmentStats
-      Entry: 7
-      Data: 4|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
-        Assembly-CSharp],[System.Single, mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 5|System.Collections.Generic.EnumEqualityComparer`1[[AsteroidAnnihilation.EnumCollections+Stats,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 8
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 0
-    - Name: $v
-      Entry: 4
-      Data: 9
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
-      Entry: 4
-      Data: 0.85
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
-    - Name: $v
-      Entry: 4
-      Data: 2.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 3
-    - Name: $v
-      Entry: 4
-      Data: 16
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 4
-    - Name: $v
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 5
-    - Name: $v
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 7
-    - Name: $v
-      Entry: 4
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 8
-    - Name: $v
-      Entry: 4
-      Data: 0.4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: RarityStats
-      Entry: 7
-      Data: 6|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
-        Assembly-CSharp],[System.Single, mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 5
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: WeaponType
-      Entry: 3
-      Data: 1
-    - Name: ProjectileType
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: startGear
       Entry: 7
-      Data: 7|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+ItemType,
+      Data: 4|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+ItemType,
         Assembly-CSharp],[AsteroidAnnihilation.EquipmentData, Assembly-CSharp]],
         mscorlib
     - Name: comparer
       Entry: 7
-      Data: 8|System.Collections.Generic.EnumEqualityComparer`1[[AsteroidAnnihilation.EnumCollections+ItemType,
+      Data: 5|System.Collections.Generic.EnumEqualityComparer`1[[AsteroidAnnihilation.EnumCollections+ItemType,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -573,17 +395,30 @@ MonoBehaviour:
       Data: 1
     - Name: Icon
       Entry: 10
-      Data: 9
+      Data: 8
+    - Name: Amount
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: EquipmentStats
       Entry: 7
-      Data: 9|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
+      Data: 6|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
         Assembly-CSharp],[System.Single, mscorlib]], mscorlib
     - Name: comparer
-      Entry: 9
-      Data: 5
+      Entry: 7
+      Data: 7|System.Collections.Generic.EnumEqualityComparer`1[[AsteroidAnnihilation.EnumCollections+Stats,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 12
       Data: 2
@@ -619,11 +454,11 @@ MonoBehaviour:
       Data: 
     - Name: RarityStats
       Entry: 7
-      Data: 10|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
+      Data: 8|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
         Assembly-CSharp],[System.Single, mscorlib]], mscorlib
     - Name: comparer
       Entry: 9
-      Data: 5
+      Data: 7
     - Name: 
       Entry: 12
       Data: 0
@@ -665,17 +500,20 @@ MonoBehaviour:
       Data: 2
     - Name: Icon
       Entry: 10
-      Data: 10
+      Data: 9
+    - Name: Amount
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: EquipmentStats
       Entry: 7
-      Data: 11|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
+      Data: 9|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
         Assembly-CSharp],[System.Single, mscorlib]], mscorlib
     - Name: comparer
       Entry: 9
-      Data: 5
+      Data: 7
     - Name: 
       Entry: 12
       Data: 2
@@ -711,11 +549,11 @@ MonoBehaviour:
       Data: 
     - Name: RarityStats
       Entry: 7
-      Data: 12|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
+      Data: 10|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
         Assembly-CSharp],[System.Single, mscorlib]], mscorlib
     - Name: comparer
       Entry: 9
-      Data: 5
+      Data: 7
     - Name: 
       Entry: 12
       Data: 0
@@ -757,17 +595,20 @@ MonoBehaviour:
       Data: 3
     - Name: Icon
       Entry: 10
-      Data: 11
+      Data: 10
+    - Name: Amount
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: EquipmentStats
       Entry: 7
-      Data: 13|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
+      Data: 11|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
         Assembly-CSharp],[System.Single, mscorlib]], mscorlib
     - Name: comparer
       Entry: 9
-      Data: 5
+      Data: 7
     - Name: 
       Entry: 12
       Data: 1
@@ -791,11 +632,11 @@ MonoBehaviour:
       Data: 
     - Name: RarityStats
       Entry: 7
-      Data: 14|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
+      Data: 12|System.Collections.Generic.Dictionary`2[[AsteroidAnnihilation.EnumCollections+Stats,
         Assembly-CSharp],[System.Single, mscorlib]], mscorlib
     - Name: comparer
       Entry: 9
-      Data: 5
+      Data: 7
     - Name: 
       Entry: 12
       Data: 0
@@ -817,3 +658,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  startWeapon: {fileID: 11400000, guid: 015b4056b31ac7a46810fdf06e4cca3d, type: 2}

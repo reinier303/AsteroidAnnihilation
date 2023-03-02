@@ -11,7 +11,7 @@ namespace AsteroidAnnihilation
         public Dictionary<EnumCollections.Rarities, Vector2Int> RarityModAmountRange;
         public Dictionary<EnumCollections.Rarities, GameObject> RarityIdleEffects;
 
-        public WeaponData startWeapon;
+        public Weapon startWeapon;
         public Dictionary<EnumCollections.ItemType, EquipmentData> startGear;
 
         public int GetModAmount(EnumCollections.Rarities rarity)

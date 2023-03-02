@@ -351,7 +351,74 @@ namespace AsteroidAnnihilation
                 case SlotDataType.None:
                     return;
                 case SlotDataType.Item:
-                    return;
+                    //If item moves to inventory
+                    if (hoveredSlot.slotType == EnumCollections.ItemType.Inventory)
+                    {
+                        if (hoveredSlot.slotDataType == SlotDataType.Equipment)
+                        {
+                            //Get item in hoveredSlot and remove it
+                            EquipmentData data = inventoryManager.RemoveItem(equipment, hoverIndex);
+
+                            //Add current item to hoveredSlot
+                            inventoryManager.AddItem(item, hoverIndex);
+
+                            //Remove current item from current slot
+                            inventoryManager.RemoveItem(item, transform.GetSiblingIndex());
+
+                            //Add item in hoveredSlot to current slot if hovered slot contains item
+                            if (!data.Equals(default(EquipmentData)))
+                            {
+                                inventoryManager.AddItem(data, transform.GetSiblingIndex());
+                            }
+                            return;
+                        }
+                        else if (hoveredSlot.slotDataType == SlotDataType.Weapon)
+                        {
+                            //Get item in hoveredSlot and remove it
+                            WeaponData data = inventoryManager.RemoveItem(weapon, hoverIndex);
+
+                            //Add current item to hoveredSlot
+                            inventoryManager.AddItem(item, hoverIndex);
+
+                            //Remove current item from current slot
+                            inventoryManager.RemoveItem(item, transform.GetSiblingIndex());
+
+                            //Add item in hoveredSlot to current slot if hovered slot contains item
+                            if (!data.Equals(default(WeaponData)))
+                            {
+                                inventoryManager.AddItem(data, transform.GetSiblingIndex());
+                            }
+                            return;
+                        }
+                        else if(hoveredSlot.slotDataType == SlotDataType.Item)
+                        {
+                            //Get item in hoveredSlot and remove it
+                            ItemData data = inventoryManager.RemoveItem(item, hoverIndex);
+
+                            //Add current item to hoveredSlot
+                            inventoryManager.AddItem(item, hoverIndex);
+
+                            //Remove current item from current slot
+                            inventoryManager.RemoveItem(item, transform.GetSiblingIndex());
+
+                            //Add item in hoveredSlot to current slot if hovered slot contains item
+                            if (!data.Equals(default(ItemData)))
+                            {
+                                inventoryManager.AddItem(data, transform.GetSiblingIndex());
+                            }
+                            return;
+                        }
+                        else if (hoveredSlot.slotDataType == SlotDataType.None)
+                        {
+                            //Add current item to hoveredSlot
+                            inventoryManager.AddItem(item, hoverIndex);
+
+                            //Remove current item from current slot
+                            inventoryManager.RemoveItem(item, transform.GetSiblingIndex());
+                            return;
+                        }
+                        else { return; }
+                    } else { return; }
                 case SlotDataType.Equipment:
                     //If item moves to inventory
                     if (hoveredSlot.slotType == EnumCollections.ItemType.Inventory)

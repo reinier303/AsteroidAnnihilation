@@ -25,12 +25,14 @@ namespace AsteroidAnnihilation
         {
             SetItemProperties(equipment.ItemData);
             SetStats(equipment);
+            energyPerShot.gameObject.SetActive(false);
         }
 
         public void ShowTooltip(WeaponData weapon)
         {
             SetItemProperties(weapon.EquipmentData.ItemData);
             SetStats(weapon.EquipmentData);
+            energyPerShot.gameObject.SetActive(true);
             energyPerShot.text = EnumCollections.Stats.EnergyPerShot.ToString() + ": " + weapon.EquipmentData.EquipmentStats[EnumCollections.Stats.EnergyPerShot];
         }
 
@@ -38,6 +40,7 @@ namespace AsteroidAnnihilation
         {
             itemName.text = item.ItemName;
             itemType.text = item.Rarity.ToString() + " " + item.ItemType.ToString();
+            energyPerShot.gameObject.SetActive(false);
         }
 
         private void SetStats(EquipmentData equipmentData)

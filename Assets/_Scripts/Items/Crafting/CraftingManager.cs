@@ -107,7 +107,7 @@ namespace AsteroidAnnihilation
         {
             foreach(CraftingIngredient ingredient in selectedRecipe.CraftingIngredients)
             {
-                if(inventoryManager.GetItemAmountInInventory(ingredient.ItemNeeded.ItemName) < ingredient.Amount)
+                if(inventoryManager.GetItemAmountInInventory(ingredient.ItemNeeded.ItemType, ingredient.ItemNeeded.ItemName) < ingredient.Amount)
                 {
                     return false;
                 }
@@ -119,7 +119,7 @@ namespace AsteroidAnnihilation
         {
             foreach (CraftingIngredient ingredient in selectedRecipe.CraftingIngredients)
             {
-                inventoryManager.ReduceItemAmount(ingredient.ItemNeeded.ItemName, ingredient.Amount);
+                inventoryManager.ReduceItemAmount(ingredient.ItemNeeded.ItemType, ingredient.ItemNeeded.ItemName, ingredient.Amount);
             }
             switch(selectedRecipe.ItemType)
             {

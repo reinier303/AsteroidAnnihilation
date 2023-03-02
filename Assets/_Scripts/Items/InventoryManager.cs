@@ -161,7 +161,9 @@ namespace AsteroidAnnihilation
 
         public bool AddItem(ItemData item, int index = -1)
         {
-            int containedItem = GetItemAmountInInventory(item.ItemName);
+            Debug.Log(item.ItemName);
+
+            int containedItem = GetItemIndex(item.ItemName);
             if (containedItem != -1)
             {
                 ItemData data = InventoryItems[containedItem];
@@ -237,11 +239,14 @@ namespace AsteroidAnnihilation
             else { return (false, default); }
         }
 
-        public void RemoveItem(ItemData item, int index)
+        public ItemData RemoveItem(ItemData item, int index)
         {
+            ItemData data = default;
+            if (InventoryItems.ContainsKey(index)) { data = InventoryItems[index]; }
             InventoryItems.Remove(index);
-            ItemSlots[index] = default;
+            ItemSlots[index].ClearSlot();
             InitializeInventoryItems();
+            return data;
         }
 
         public EquipmentData RemoveItem(EquipmentData equipment, int index)
@@ -278,12 +283,32 @@ namespace AsteroidAnnihilation
             return GetItemCount() >= InventorySlots;
         }
 
-        public int GetItemAmountInInventory(string itemName)
+        public int GetItemAmountInInventory(EnumCollections.ItemType itemType, string itemName)
         {
-            foreach (int key in InventoryItems.Keys)
+            int amount = 0;
+            switch (itemType)
             {
-                if (InventoryItems[key].ItemName == itemName) { return InventoryItems[key].Amount; }
+                case EnumCollections.ItemType.Material:
+                    foreach (int key in InventoryItems.Keys)
+                    {
+                        if (InventoryItems[key].ItemName == itemName) { return InventoryItems[key].Amount; }
+                    }
+                    break;
+                case EnumCollections.ItemType.Equipment:
+                    foreach (int key in InventoryItems.Keys)
+                    {
+                        if (InventoryEquipment[key].ItemData.ItemName == itemName) { amount++; }
+                    }
+                    break;
+                case EnumCollections.ItemType.Weapon:
+                    amount = 0;
+                    foreach (int key in InventoryWeapons.Keys)
+                    {
+                        if (InventoryWeapons[key].EquipmentData.ItemData.ItemName == itemName) { amount++; }
+                    }
+                    break;
             }
+            if (amount > 0) { return amount; }
             return -1;
         }
 
@@ -296,13 +321,48 @@ namespace AsteroidAnnihilation
             return -1;
         }
 
-        public void ReduceItemAmount(string itemName, int reduction)
+        public int GetEquipmentIndex(string itemName)
         {
-            int index = GetItemIndex(itemName);
-            ItemData data = InventoryItems[index];
-            data.Amount -= reduction;
-            if(data.Amount == 0) { RemoveItem(data, index); }
-            else { InventoryItems[index] = data; }
+            foreach (int key in InventoryEquipment.Keys)
+            {
+                if (InventoryEquipment[key].ItemData.ItemName == itemName) { return key; }
+            }
+            return -1;
+        }
+
+        public int GetWeaponIndex(string itemName)
+        {
+            foreach (int key in InventoryWeapons.Keys)
+            {
+                if (InventoryWeapons[key].EquipmentData.ItemData.ItemName == itemName) { return key; }
+            }
+            return -1;
+        }
+
+        public void ReduceItemAmount(EnumCollections.ItemType itemType, string itemName, int reduction)
+        {
+            int index;
+            switch (itemType)
+            {
+                case EnumCollections.ItemType.Material:
+                    index = GetItemIndex(itemName);
+                    ItemData data = InventoryItems[index];
+                    data.Amount -= reduction;
+                    if (data.Amount == 0) { RemoveItem(data, index); }
+                    else { InventoryItems[index] = data; }
+                    break;
+                case EnumCollections.ItemType.Equipment:
+                    index = GetEquipmentIndex(itemName);
+                    EquipmentData equipmentData = InventoryEquipment[index];
+                    RemoveItem(equipmentData, index);
+                    break;
+                case EnumCollections.ItemType.Weapon:
+                    index = GetWeaponIndex(itemName);
+                    WeaponData weaponData = InventoryWeapons[index];
+                    RemoveItem(weaponData, index);
+                    break;
+            }
+
         }
 
         private int GetAvailableSlotIndex()

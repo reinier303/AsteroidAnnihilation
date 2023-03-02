@@ -145,4 +145,76 @@ MonoBehaviour:
         type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
+  - m_Name: RefinedMaterials
+    m_Hash: 679602381
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: ScrapMetalPlate
+      m_Hash: 517393574
+      m_Sprite: {fileID: 21300000, guid: ea696c3cff8f76345951b639ca7f1407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: ea696c3cff8f76345951b639ca7f1407,
+        type: 3}
+    - m_Name: SteelPlate
+      m_Hash: 338217498
+      m_Sprite: {fileID: 21300000, guid: 688e2f2276b31ae42bd4ba2c012c2933, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 688e2f2276b31ae42bd4ba2c012c2933,
+        type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: PlaceholderWeapons
+    m_Hash: 762731288
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: 0
+      m_Hash: 886824737
+      m_Sprite: {fileID: 21300000, guid: cf5a1866f085f0d4baf1cc773e74d130, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: cf5a1866f085f0d4baf1cc773e74d130,
+        type: 3}
+    - m_Name: 1
+      m_Hash: 64810935
+      m_Sprite: {fileID: 21300000, guid: 476a3920779d3af4899d29786ae3de47, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 476a3920779d3af4899d29786ae3de47,
+        type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 21300000, guid: d18601fa773b39f4493c3fcef97da9ee, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: d18601fa773b39f4493c3fcef97da9ee,
+        type: 3}
+    - m_Name: 3
+      m_Hash: 768773787
+      m_Sprite: {fileID: 21300000, guid: 6b5a3d4e1a53c1b4a9b8260dc6abf89d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 6b5a3d4e1a53c1b4a9b8260dc6abf89d,
+        type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Weapons
+    m_Hash: 498303613
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: StockPlasmaGun
+      m_Hash: 816171227
+      m_Sprite: {fileID: 21300000, guid: 275463b3a8c805e46a1fd433bd3c26fb, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 275463b3a8c805e46a1fd433bd3c26fb,
+        type: 3}
+    - m_Name: StockPlasmaGunV2
+      m_Hash: 312254302
+      m_Sprite: {fileID: 21300000, guid: 7c3a5316e94b08f429c1603c48efcbc6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 7c3a5316e94b08f429c1603c48efcbc6,
+        type: 3}
+    - m_Name: StockPlasmaGunV3
+      m_Hash: 630960072
+      m_Sprite: {fileID: 21300000, guid: d8a7cd76295d5e24a9825f3f654818eb, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: d8a7cd76295d5e24a9825f3f654818eb,
+        type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
   m_PrimaryLibraryGUID: 

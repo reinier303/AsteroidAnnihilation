@@ -27,7 +27,7 @@ namespace AsteroidAnnihilation
                 if (resetScaleAndPosition) { ResetScaleAndPosition(); }
                 Ingredients[i].gameObject.SetActive(true);
                 CraftingIngredient ingredient = recipe.CraftingIngredients[i];
-                Ingredients[i].InitializeIngredient(ingredient.ItemNeeded, ingredient.Amount, Mathf.Clamp(inventoryManager.GetItemAmountInInventory(ingredient.ItemNeeded.ItemName), 0, 100000));
+                Ingredients[i].InitializeIngredient(ingredient.ItemNeeded, ingredient.Amount, Mathf.Clamp(inventoryManager.GetItemAmountInInventory(ingredient.ItemNeeded.ItemType, ingredient.ItemNeeded.ItemName), 0, 100000));
             }
         }
 
