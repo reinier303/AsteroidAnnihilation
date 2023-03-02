@@ -20,6 +20,13 @@ namespace AK
         static const AkUniqueID PLAY_SHIPPLASMAGUNIMPACT = 4264920734U;
         static const AkUniqueID PLAY_SPACEAMBIENCE = 915492624U;
         static const AkUniqueID STOP_PLAYERSHIPENGINE = 4236749427U;
+        static const AkUniqueID TEMP_PLAY_ETFX_SHOOT_LASER = 3201422434U;
+        static const AkUniqueID TEMP_PLAY_LEVELUP = 1450272620U;
+        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT1 = 3965960414U;
+        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT2 = 3965960413U;
+        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT3 = 3965960412U;
+        static const AkUniqueID TEMP_PLAY_PLASMAGUNSHOT4 = 3965960411U;
+        static const AkUniqueID TEMP_PLAY_SWARMEXPLOSION = 2360230854U;
     } // namespace EVENTS
 
     namespace STATES
@@ -92,15 +99,6 @@ namespace AK
         static const AkUniqueID PLAYERSHIPTURNRATE = 1347618923U;
         static const AkUniqueID PLAYERSHIPVELOCITY = 3228488565U;
     } // namespace GAME_PARAMETERS
-
-    namespace BANKS
-    {
-        static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID AMBIENCE_SOUNDBANK = 3010096371U;
-        static const AkUniqueID MUSIC_SOUNDBANK = 3589812408U;
-        static const AkUniqueID SHIP_SOUNDBANK = 547480325U;
-        static const AkUniqueID WEAPONS_SOUNDBANK = 1692504546U;
-    } // namespace BANKS
 
     namespace BUSSES
     {

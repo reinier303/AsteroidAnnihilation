@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3965960414	Temp_Play_PlasmaGunShot1			\TestSounds\Temp_Play_PlasmaGunShot1	
+

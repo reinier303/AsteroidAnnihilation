@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4264920734	Play_ShipPlasmaGunImpact			\PlayerShip\Play_ShipPlasmaGunImpact	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	159455521	Modulator Envelope (Custom)				
+	863264156	Modulator Envelope (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	162665418	Echoes_Linear (Custom)	Wwise Delay			
+

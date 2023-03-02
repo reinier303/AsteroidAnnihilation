@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1172773070	Play_PlayerShipShootGun			\PlayerShip\Play_PlayerShipShootGun	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1749199752	PlayerShipGunLevelSwitch			\PlayerShipStates\PlayerShipGunLevelSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	987635873	Level_01	PlayerShipGunLevelSwitch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2508725640	PlayerShipEnergy			\PlayerShipParameters\PlayerShipEnergy	
+	2663975140	PlayerShipGunLevel			\PlayerShipParameters\PlayerShipGunLevel	
+
+Effect plug-ins	ID	Name	Type				Notes
+	240132277	Echoes_Linear (Custom)	Wwise Delay			
+

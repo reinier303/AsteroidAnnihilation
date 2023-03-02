@@ -9,105 +9,168 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1299072232" Type="User" Language="SFX" Hash="{C3D51FB9-2647-92A1-4EDA-A774DC1C1FF2}">
-			<ShortName>Persistent_SoundBank</ShortName>
-			<Path>Persistent_SoundBank.bnk</Path>
+		<SoundBank Id="915492624" Type="Event" Language="SFX" Hash="{F3B7B5BC-2BEB-19CF-9902-AEF1E8630843}">
+			<ShortName>Play_SpaceAmbience</ShortName>
+			<Path>Event/Play_SpaceAmbience.bnk</Path>
 			<Media>
-				<File Id="22072133" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="183657537" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_EnviromentAlienSounds-004.wav</ShortName>
+					<Path>Media/183657537.wem</Path>
+					<CachePath>SFX/S_O_2_48_EnviromentAlienSounds-004_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="388101089" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_EnviromentAlienSounds-001.wav</ShortName>
+					<Path>Media/388101089.wem</Path>
+					<CachePath>SFX/S_O_2_48_EnviromentAlienSounds-001_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="417342771" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_L_2_48_SpaceAmbience.wav</ShortName>
+					<Path>Media/417342771.wem</Path>
+					<CachePath>SFX/S_L_2_48_SpaceAmbience_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="825127488" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_EnviromentAlienSounds-003.wav</ShortName>
+					<Path>Media/825127488.wem</Path>
+					<CachePath>SFX/S_O_2_48_EnviromentAlienSounds-003_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="904303730" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_EnviromentAlienSounds-002.wav</ShortName>
+					<Path>Media/904303730.wem</Path>
+					<CachePath>SFX/S_O_2_48_EnviromentAlienSounds-002_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="915492624" Name="Play_SpaceAmbience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="417342771"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="321019979" Id="1938642156"/>
+							<MediaRefs>
+								<MediaRef Id="388101089"/>
+								<MediaRef Id="904303730"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="321019979" Id="1361491240"/>
+							<MediaRefs>
+								<MediaRef Id="183657537"/>
+								<MediaRef Id="388101089"/>
+								<MediaRef Id="825127488"/>
+								<MediaRef Id="904303730"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="321019979" Id="2915076976"/>
+							<MediaRefs>
+								<MediaRef Id="388101089"/>
+								<MediaRef Id="825127488"/>
+								<MediaRef Id="904303730"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="321019979" Id="2111510692" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="388101089"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="321019979" Name="NumberOfEnemies"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="321019979" Name="NumberOfEnemies">
+					<GameParameterRef Id="321019979"/>
+					<Switches>
+						<Switch Id="1361491240" Name="GiantSwarm"/>
+						<Switch Id="1938642156" Name="AFewEnemies"/>
+						<Switch Id="2111510692" Name="NoEnemies"/>
+						<Switch Id="2915076976" Name="ManyEnemies"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1172773070" Type="Event" Language="SFX" Hash="{2B69754D-653B-ACD5-1CD0-C86E99D7D9F2}">
+			<ShortName>Play_PlayerShipShootGun</ShortName>
+			<Path>Event/Play_PlayerShipShootGun.bnk</Path>
+			<Media>
+				<File Id="22072133" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PistolBody-003.wav</ShortName>
+					<Path>Media/22072133.wem</Path>
 					<CachePath>SFX/PistolBody-003_10C4C929.wem</CachePath>
 				</File>
-				<File Id="102477313" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="102477313" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PistolBody-002.wav</ShortName>
+					<Path>Media/102477313.wem</Path>
 					<CachePath>SFX/PistolBody-002_10C4C929.wem</CachePath>
 				</File>
-				<File Id="215372480" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Temp\PlasmaGunShot4.wav</ShortName>
-					<CachePath>SFX/SFX_Temp/PlasmaGunShot4_10C4C929.wem</CachePath>
-				</File>
-				<File Id="237743632" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="237743632" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_48_ShipGunBody-001.wav</ShortName>
+					<Path>Media/237743632.wem</Path>
 					<CachePath>SFX/S_O_2_48_ShipGunBody-001_10C4C929.wem</CachePath>
 				</File>
-				<File Id="265077398" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="265077398" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_ShipGunTail_003.wav</ShortName>
+					<Path>Media/265077398.wem</Path>
 					<CachePath>SFX/S_O_2_ShipGunTail_003_10C4C929.wem</CachePath>
 				</File>
-				<File Id="276439328" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Temp\PlasmaGunShot1.wav</ShortName>
-					<CachePath>SFX/SFX_Temp/PlasmaGunShot1_10C4C929.wem</CachePath>
-				</File>
-				<File Id="290230786" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="290230786" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_48_ShipGunTransient-003.wav</ShortName>
+					<Path>Media/290230786.wem</Path>
 					<CachePath>SFX/S_O_2_48_ShipGunTransient-003_10C4C929.wem</CachePath>
 				</File>
-				<File Id="343547370" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="343547370" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_48_ShipGunBody-003.wav</ShortName>
+					<Path>Media/343547370.wem</Path>
 					<CachePath>SFX/S_O_2_48_ShipGunBody-003_10C4C929.wem</CachePath>
 				</File>
-				<File Id="375205690" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Temp\PlasmaGunShot2.wav</ShortName>
-					<CachePath>SFX/SFX_Temp/PlasmaGunShot2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="427500297" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="427500297" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PistolBody-001.wav</ShortName>
+					<Path>Media/427500297.wem</Path>
 					<CachePath>SFX/PistolBody-001_10C4C929.wem</CachePath>
 				</File>
-				<File Id="553620808" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="553620808" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_ShipGunTail_004.wav</ShortName>
+					<Path>Media/553620808.wem</Path>
 					<CachePath>SFX/S_O_2_ShipGunTail_004_10C4C929.wem</CachePath>
 				</File>
-				<File Id="557894179" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="557894179" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>acid dnb kick.wav</ShortName>
+					<Path>Media/557894179.wem</Path>
 					<CachePath>SFX/acid dnb kick_10C4C929.wem</CachePath>
 				</File>
-				<File Id="602459634" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>S_O_2_48_ShipElectronicHum.wav</ShortName>
-					<CachePath>SFX/S_O_2_48_ShipElectronicHum_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="639078872" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="639078872" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_ShipGunTail_002.wav</ShortName>
+					<Path>Media/639078872.wem</Path>
 					<CachePath>SFX/S_O_2_ShipGunTail_002_10C4C929.wem</CachePath>
 				</File>
-				<File Id="641948614" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="641948614" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_48_ShipGunBody-002.wav</ShortName>
+					<Path>Media/641948614.wem</Path>
 					<CachePath>SFX/S_O_2_48_ShipGunBody-002_10C4C929.wem</CachePath>
 				</File>
-				<File Id="723541179" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Temp\Levelup.wav</ShortName>
-					<CachePath>SFX/SFX_Temp/Levelup_10C4C929.wem</CachePath>
-				</File>
-				<File Id="788860315" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Temp\etfx_shoot_laser.wav</ShortName>
-					<CachePath>SFX/SFX_Temp/etfx_shoot_laser_10C4C929.wem</CachePath>
-				</File>
-				<File Id="806410605" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="806410605" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_ShipGunTail_001.wav</ShortName>
+					<Path>Media/806410605.wem</Path>
 					<CachePath>SFX/S_O_2_ShipGunTail_001_10C4C929.wem</CachePath>
 				</File>
-				<File Id="809888030" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Temp\SwarmExplosion.wav</ShortName>
-					<CachePath>SFX/SFX_Temp/SwarmExplosion_10C4C929.wem</CachePath>
-				</File>
-				<File Id="853381070" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>S_O_2_48_ShipEngineExhaust.wav</ShortName>
-					<CachePath>SFX/S_O_2_48_ShipEngineExhaust_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="854929007" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="854929007" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_48_ShipGunTransient-002.wav</ShortName>
+					<Path>Media/854929007.wem</Path>
 					<CachePath>SFX/S_O_2_48_ShipGunTransient-002_10C4C929.wem</CachePath>
 				</File>
-				<File Id="951658105" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="951658105" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>S_O_2_48_ShipGunTransient-001.wav</ShortName>
+					<Path>Media/951658105.wem</Path>
 					<CachePath>SFX/S_O_2_48_ShipGunTransient-001_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1013912439" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="1013912439" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PistolBody-004.wav</ShortName>
+					<Path>Media/1013912439.wem</Path>
 					<CachePath>SFX/PistolBody-004_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1060657738" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Temp\PlasmaGunShot3.wav</ShortName>
-					<CachePath>SFX/SFX_Temp/PlasmaGunShot3_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -116,13 +179,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="1672365273" Name="Play_PlayerShipEngine" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="602459634"/>
-						<MediaRef Id="853381070"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1172773070" Name="Play_PlayerShipShootGun" DurationType="OneShot" DurationMin="0.64241797" DurationMax="0.8919477">
+				<Event Id="1172773070" Name="Play_PlayerShipShootGun" DurationType="OneShot" DurationMin="0.5669428" DurationMax="0.7157505">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1749199752" Id="987635873" Default="true"/>
@@ -151,66 +208,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="4236749427" Name="Stop_PlayerShipEngine" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="602459634"/>
-						<MediaRef Id="853381070"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3201422434" Name="Temp_Play_etfx_shoot_laser" DurationType="OneShot" DurationMin="0.44" DurationMax="0.44">
-					<MediaRefs>
-						<MediaRef Id="788860315"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1450272620" Name="Temp_Play_Levelup" DurationType="OneShot" DurationMin="3.3533106" DurationMax="3.3533106">
-					<MediaRefs>
-						<MediaRef Id="723541179"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3965960414" Name="Temp_Play_PlasmaGunShot1" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
-					<MediaRefs>
-						<MediaRef Id="276439328"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3965960413" Name="Temp_Play_PlasmaGunShot2" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
-					<MediaRefs>
-						<MediaRef Id="375205690"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3965960412" Name="Temp_Play_PlasmaGunShot3" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
-					<MediaRefs>
-						<MediaRef Id="1060657738"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3965960411" Name="Temp_Play_PlasmaGunShot4" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
-					<MediaRefs>
-						<MediaRef Id="215372480"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2360230854" Name="Temp_Play_SwarmExplosion" DurationType="OneShot" DurationMin="1" DurationMax="1">
-					<MediaRefs>
-						<MediaRef Id="809888030"/>
-					</MediaRefs>
-				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="1438366550" Name="PlayerShipHealth"/>
-				<GameParameter Id="1918122584" Name="PlayerShipAcceleration"/>
+				<GameParameter Id="2508725640" Name="PlayerShipEnergy"/>
 				<GameParameter Id="2663975140" Name="PlayerShipGunLevel"/>
-				<GameParameter Id="3228488565" Name="PlayerShipVelocity"/>
 			</GameParameters>
 			<SwitchGroups>
-				<SwitchGroup Id="155164948" Name="PlayerShipHealthStates">
-					<GameParameterRef Id="1438366550"/>
-					<Switches>
-						<Switch Id="777824873" Name="AlmostDead"/>
-						<Switch Id="825447798" Name="HealthMedium"/>
-						<Switch Id="1924267063" Name="HealthLow"/>
-						<Switch Id="2044049779" Name="Dead"/>
-						<Switch Id="3493536634" Name="HealthAlmostFull"/>
-						<Switch Id="4197849920" Name="HealthFull"/>
-					</Switches>
-				</SwitchGroup>
 				<SwitchGroup Id="1749199752" Name="PlayerShipGunLevelSwitch">
 					<GameParameterRef Id="2663975140"/>
 					<Switches>
@@ -219,7 +222,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DB1F25F0-5AD0-9C14-6F81-D92AD2D89ADA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9C668F64-8446-FABB-D898-B01E0E921146}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -240,6 +243,17 @@
 				<GameParameter Id="2663975140" Name="PlayerShipGunLevel"/>
 				<GameParameter Id="3228488565" Name="PlayerShipVelocity"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="4091656514" Name="GameState">
+					<States>
+						<State Id="319258907" Name="Paused"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1247366870" Name="CraftingMenu"/>
+						<State Id="2407792274" Name="InventoryMenu"/>
+						<State Id="3944636910" Name="StartMenu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="155164948" Name="PlayerShipHealthStates">
 					<GameParameterRef Id="1438366550"/>
@@ -269,6 +283,402 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="1450272620" Type="Event" Language="SFX" Hash="{B734B4D5-0C86-1D63-E71F-AC3673D22EA7}">
+			<ShortName>Temp_Play_Levelup</ShortName>
+			<Path>Event/Temp_Play_Levelup.bnk</Path>
+			<Media>
+				<File Id="723541179" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_Temp\Levelup.wav</ShortName>
+					<Path>Media/723541179.wem</Path>
+					<CachePath>SFX/SFX_Temp/Levelup_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1450272620" Name="Temp_Play_Levelup" DurationType="OneShot" DurationMin="3.3533106" DurationMax="3.3533106">
+					<MediaRefs>
+						<MediaRef Id="723541179"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1672365273" Type="Event" Language="SFX" Hash="{6919F11C-2338-9C4F-2BF6-66A33E8D0ED6}">
+			<ShortName>Play_PlayerShipEngine</ShortName>
+			<Path>Event/Play_PlayerShipEngine.bnk</Path>
+			<Media>
+				<File Id="602459634" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipElectronicHum.wav</ShortName>
+					<Path>Media/602459634.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipElectronicHum_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="853381070" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipEngineExhaust.wav</ShortName>
+					<Path>Media/853381070.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipEngineExhaust_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1839543277" Name="DynamicEngineSound_Parametric_EQ" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="1672365273" Name="Play_PlayerShipEngine" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="602459634"/>
+						<MediaRef Id="853381070"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1839543277"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1438366550" Name="PlayerShipHealth"/>
+				<GameParameter Id="1918122584" Name="PlayerShipAcceleration"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="155164948" Name="PlayerShipHealthStates">
+					<GameParameterRef Id="1438366550"/>
+					<Switches>
+						<Switch Id="777824873" Name="AlmostDead"/>
+						<Switch Id="825447798" Name="HealthMedium"/>
+						<Switch Id="1924267063" Name="HealthLow"/>
+						<Switch Id="2044049779" Name="Dead"/>
+						<Switch Id="3493536634" Name="HealthAlmostFull"/>
+						<Switch Id="4197849920" Name="HealthFull"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1857418338" Type="Event" Language="SFX" Hash="{F1E17A75-184B-0068-81FC-9AB6ED1BAEAB}">
+			<ShortName>Play_DefaultMusic</ShortName>
+			<Path>Event/Play_DefaultMusic.bnk</Path>
+			<Media>
+				<File Id="71718156" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_Rabid - Ethan Meixsell.wav</ShortName>
+					<Path>Media/71718156.wem</Path>
+					<CachePath>SFX/S_O_2_48_Rabid - Ethan Meixsell_10C4C929.wem</CachePath>
+				</File>
+				<File Id="79370004" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_Chtulthu - Quincas Moreira.wav</ShortName>
+					<Path>Media/79370004.wem</Path>
+					<CachePath>SFX/S_O_2_48_Chtulthu - Quincas Moreira_10C4C929.wem</CachePath>
+				</File>
+				<File Id="125807400" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_SeaTac - TrackTribe.wav</ShortName>
+					<Path>Media/125807400.wem</Path>
+					<CachePath>SFX/S_O_2_48_SeaTac - TrackTribe_10C4C929.wem</CachePath>
+				</File>
+				<File Id="446501465" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_Granite - Ethan Meixsell.wav</ShortName>
+					<Path>Media/446501465.wem</Path>
+					<CachePath>SFX/S_O_2_48_Granite - Ethan Meixsell_10C4C929.wem</CachePath>
+				</File>
+				<File Id="749443208" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_The Coming Storm - Ethan Meixsell.wav</ShortName>
+					<Path>Media/749443208.wem</Path>
+					<CachePath>SFX/S_O_2_48_The Coming Storm - Ethan Meixsell_10C4C929.wem</CachePath>
+				</File>
+				<File Id="759440740" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_The Fiery Furnace - Ethan Meixsell.wav</ShortName>
+					<Path>Media/759440740.wem</Path>
+					<CachePath>SFX/S_O_2_48_The Fiery Furnace - Ethan Meixsell_10C4C929.wem</CachePath>
+				</File>
+				<File Id="825969796" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_Loitering - Riot.wav</ShortName>
+					<Path>Media/825969796.wem</Path>
+					<CachePath>SFX/S_O_2_48_Loitering - Riot_10C4C929.wem</CachePath>
+				</File>
+				<File Id="897546970" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_Nomads - The Mini Vandals.wav</ShortName>
+					<Path>Media/897546970.wem</Path>
+					<CachePath>SFX/S_O_2_48_Nomads - The Mini Vandals_10C4C929.wem</CachePath>
+				</File>
+				<File Id="971912876" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_Demilitarized Zone - Ethan Meixsell.wav</ShortName>
+					<Path>Media/971912876.wem</Path>
+					<CachePath>SFX/S_O_2_48_Demilitarized Zone - Ethan Meixsell_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1012698644" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_The Dismal Hand - The Whole Other.wav</ShortName>
+					<Path>Media/1012698644.wem</Path>
+					<CachePath>SFX/S_O_2_48_The Dismal Hand - The Whole Other_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1057074882" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_Bloody Tears - Quincas Moreira.wav</ShortName>
+					<Path>Media/1057074882.wem</Path>
+					<CachePath>SFX/S_O_2_48_Bloody Tears - Quincas Moreira_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1857418338" Name="Play_DefaultMusic" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="71718156"/>
+						<MediaRef Id="79370004"/>
+						<MediaRef Id="125807400"/>
+						<MediaRef Id="446501465"/>
+						<MediaRef Id="749443208"/>
+						<MediaRef Id="759440740"/>
+						<MediaRef Id="825969796"/>
+						<MediaRef Id="897546970"/>
+						<MediaRef Id="971912876"/>
+						<MediaRef Id="1012698644"/>
+						<MediaRef Id="1057074882"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2360230854" Type="Event" Language="SFX" Hash="{089582EC-CDBE-BB69-EC6B-C52FA8E668F5}">
+			<ShortName>Temp_Play_SwarmExplosion</ShortName>
+			<Path>Event/Temp_Play_SwarmExplosion.bnk</Path>
+			<Media>
+				<File Id="809888030" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_Temp\SwarmExplosion.wav</ShortName>
+					<Path>Media/809888030.wem</Path>
+					<CachePath>SFX/SFX_Temp/SwarmExplosion_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2360230854" Name="Temp_Play_SwarmExplosion" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="809888030"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3201422434" Type="Event" Language="SFX" Hash="{1F6F60CD-A8F9-BEAE-C767-9E3FB0DD48C0}">
+			<ShortName>Temp_Play_etfx_shoot_laser</ShortName>
+			<Path>Event/Temp_Play_etfx_shoot_laser.bnk</Path>
+			<Media>
+				<File Id="788860315" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_Temp\etfx_shoot_laser.wav</ShortName>
+					<Path>Media/788860315.wem</Path>
+					<CachePath>SFX/SFX_Temp/etfx_shoot_laser_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3201422434" Name="Temp_Play_etfx_shoot_laser" DurationType="OneShot" DurationMin="0.44" DurationMax="0.44">
+					<MediaRefs>
+						<MediaRef Id="788860315"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3482721360" Type="Event" Language="SFX" Hash="{F8AE4485-F439-BE20-CB20-8011FB4F9A18}">
+			<ShortName>Play_ShipDash</ShortName>
+			<Path>Event/Play_ShipDash.bnk</Path>
+			<Media>
+				<File Id="604328523" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Science Fiction Sci-Fi Electronic Beep Zap.wav</ShortName>
+					<Path>Media/604328523.wem</Path>
+					<CachePath>SFX/Science Fiction Sci-Fi Electronic Beep Zap_10C4C929.wem</CachePath>
+				</File>
+				<File Id="637093827" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipDashWoosh-002.wav</ShortName>
+					<Path>Media/637093827.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipDashWoosh-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="725818672" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>dash.wav</ShortName>
+					<Path>Media/725818672.wem</Path>
+					<CachePath>SFX/dash_10C4C929.wem</CachePath>
+				</File>
+				<File Id="773283785" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipDashWoosh-003.wav</ShortName>
+					<Path>Media/773283785.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipDashWoosh-003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="856200799" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>ui metalic hover sound.wav</ShortName>
+					<Path>Media/856200799.wem</Path>
+					<CachePath>SFX/ui metalic hover sound_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1010372247" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipDashWoosh-001.wav</ShortName>
+					<Path>Media/1010372247.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipDashWoosh-001_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="147515964" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="3482721360" Name="Play_ShipDash" DurationType="OneShot" DurationMin="2.282438" DurationMax="3.47957">
+					<MediaRefs>
+						<MediaRef Id="604328523"/>
+						<MediaRef Id="637093827"/>
+						<MediaRef Id="725818672"/>
+						<MediaRef Id="773283785"/>
+						<MediaRef Id="856200799"/>
+						<MediaRef Id="1010372247"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="147515964"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3965960411" Type="Event" Language="SFX" Hash="{E80291C6-FCD7-CEEF-39E3-6A0BEE3428EC}">
+			<ShortName>Temp_Play_PlasmaGunShot4</ShortName>
+			<Path>Event/Temp_Play_PlasmaGunShot4.bnk</Path>
+			<Media>
+				<File Id="215372480" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_Temp\PlasmaGunShot4.wav</ShortName>
+					<Path>Media/215372480.wem</Path>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot4_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3965960411" Name="Temp_Play_PlasmaGunShot4" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="215372480"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3965960412" Type="Event" Language="SFX" Hash="{0841593C-259F-78D2-150F-2B0CC6D50F5B}">
+			<ShortName>Temp_Play_PlasmaGunShot3</ShortName>
+			<Path>Event/Temp_Play_PlasmaGunShot3.bnk</Path>
+			<Media>
+				<File Id="1060657738" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_Temp\PlasmaGunShot3.wav</ShortName>
+					<Path>Media/1060657738.wem</Path>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot3_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3965960412" Name="Temp_Play_PlasmaGunShot3" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="1060657738"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3965960413" Type="Event" Language="SFX" Hash="{CC5F77E1-F3DD-AFDA-6EE3-BE5204103A19}">
+			<ShortName>Temp_Play_PlasmaGunShot2</ShortName>
+			<Path>Event/Temp_Play_PlasmaGunShot2.bnk</Path>
+			<Media>
+				<File Id="375205690" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_Temp\PlasmaGunShot2.wav</ShortName>
+					<Path>Media/375205690.wem</Path>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot2_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3965960413" Name="Temp_Play_PlasmaGunShot2" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="375205690"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3965960414" Type="Event" Language="SFX" Hash="{B4B33EFF-AA96-9A78-B23D-3F95CFD2AA75}">
+			<ShortName>Temp_Play_PlasmaGunShot1</ShortName>
+			<Path>Event/Temp_Play_PlasmaGunShot1.bnk</Path>
+			<Media>
+				<File Id="276439328" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SFX_Temp\PlasmaGunShot1.wav</ShortName>
+					<Path>Media/276439328.wem</Path>
+					<CachePath>SFX/SFX_Temp/PlasmaGunShot1_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3965960414" Name="Temp_Play_PlasmaGunShot1" DurationType="OneShot" DurationMin="1.44" DurationMax="1.44">
+					<MediaRefs>
+						<MediaRef Id="276439328"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4236749427" Type="Event" Language="SFX" Hash="{50311443-1CD9-56DC-BC33-C33023B92614}">
+			<ShortName>Stop_PlayerShipEngine</ShortName>
+			<Path>Event/Stop_PlayerShipEngine.bnk</Path>
+			<Events>
+				<Event Id="4236749427" Name="Stop_PlayerShipEngine" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4264920734" Type="Event" Language="SFX" Hash="{B86688F9-58BE-E56A-6A03-B23EA3A5FC28}">
+			<ShortName>Play_ShipPlasmaGunImpact</ShortName>
+			<Path>Event/Play_ShipPlasmaGunImpact.bnk</Path>
+			<Media>
+				<File Id="265077398" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_ShipGunTail_003.wav</ShortName>
+					<Path>Media/265077398.wem</Path>
+					<CachePath>SFX/S_O_2_ShipGunTail_003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="290230786" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipGunTransient-003.wav</ShortName>
+					<Path>Media/290230786.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipGunTransient-003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="516591877" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>GunImpact Master-bounce-2.wav</ShortName>
+					<Path>Media/516591877.wem</Path>
+					<CachePath>SFX/GunImpact Master-bounce-2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="553620808" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_ShipGunTail_004.wav</ShortName>
+					<Path>Media/553620808.wem</Path>
+					<CachePath>SFX/S_O_2_ShipGunTail_004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="557894179" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>acid dnb kick.wav</ShortName>
+					<Path>Media/557894179.wem</Path>
+					<CachePath>SFX/acid dnb kick_10C4C929.wem</CachePath>
+				</File>
+				<File Id="639078872" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_ShipGunTail_002.wav</ShortName>
+					<Path>Media/639078872.wem</Path>
+					<CachePath>SFX/S_O_2_ShipGunTail_002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="806410605" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_ShipGunTail_001.wav</ShortName>
+					<Path>Media/806410605.wem</Path>
+					<CachePath>SFX/S_O_2_ShipGunTail_001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="854929007" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipGunTransient-002.wav</ShortName>
+					<Path>Media/854929007.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipGunTransient-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="951658105" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>S_O_2_48_ShipGunTransient-001.wav</ShortName>
+					<Path>Media/951658105.wem</Path>
+					<CachePath>SFX/S_O_2_48_ShipGunTransient-001_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="162665418" Name="Echoes_Linear (Custom)" LibName="Wwise Delay" LibId="6946819"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="4264920734" Name="Play_ShipPlasmaGunImpact" DurationType="OneShot" DurationMin="1.2446983" DurationMax="1.2446983">
+					<MediaRefs>
+						<MediaRef Id="265077398"/>
+						<MediaRef Id="290230786"/>
+						<MediaRef Id="516591877"/>
+						<MediaRef Id="553620808"/>
+						<MediaRef Id="557894179"/>
+						<MediaRef Id="639078872"/>
+						<MediaRef Id="806410605"/>
+						<MediaRef Id="854929007"/>
+						<MediaRef Id="951658105"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="162665418"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D49DB0D1-70FC-F770-0510-CEC8BB7035AD}</FileHash>
+	<FileHash>{F5182F7A-212D-19D3-673B-A02BB3B42CB6}</FileHash>
 </SoundBanksInfo>

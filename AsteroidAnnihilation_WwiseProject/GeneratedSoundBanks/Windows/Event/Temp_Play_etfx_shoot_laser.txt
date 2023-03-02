@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3201422434	Temp_Play_etfx_shoot_laser			\TestSounds\Temp_Play_etfx_shoot_laser	
+

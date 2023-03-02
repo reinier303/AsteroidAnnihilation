@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BF7C0F67-C892-400E-B493-122D95C960AF}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Weapons" ID="{BF7C0F67-C892-400E-B493-122D95C960AF}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Projectiles" ID="{5023303A-A61F-4C3C-8BEB-664F87EB0E40}" ShortID="351563205">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="ShipMetalGunImpact" ID="{6A1A9AE6-2A18-4087-94E3-2449878A72CC}" ShortID="565836376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="ImpactShipGun" ID="{7358347F-ACA0-4DC6-88E5-E86796C6BC1C}" ShortID="718133828">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-500</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="S_O_2_48_ShipDashTransient-001" ID="{475C56DD-4C28-4DF0-9B1F-D623049D82C8}" ShortID="735881175">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipDashTransient-001" ID="{571F36B7-38EB-498E-8479-39AF753CC3E8}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipDashTransient-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="272712666"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipDashTransient-001" ID="{571F36B7-38EB-498E-8479-39AF753CC3E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipDashTransient-002" ID="{93D1AC15-7341-48F0-9392-AEECEFBC129B}" ShortID="400314790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipDashTransient-002" ID="{CD2148B3-D7A7-4853-AD18-3DE0C554213E}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipDashTransient-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="591674222"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipDashTransient-002" ID="{CD2148B3-D7A7-4853-AD18-3DE0C554213E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipDashTransient-003" ID="{02B6CC09-A65E-4E7D-960D-7A3CAB5BADDA}" ShortID="1023050349">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipDashTransient-003" ID="{982EE405-783D-4861-ABBD-A828622B192A}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipDashTransient-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1021459001"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipDashTransient-003" ID="{982EE405-783D-4861-ABBD-A828622B192A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipDashTransient-004" ID="{DA1F53DF-0091-4521-A133-FEE014466B52}" ShortID="763614406">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipDashTransient-004" ID="{9234467C-9D1E-45E6-90A7-F69D205DE4C3}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipDashTransient-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="325776896"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipDashTransient-004" ID="{9234467C-9D1E-45E6-90A7-F69D205DE4C3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipDashTransient-005" ID="{585D5232-4291-4A4F-BFD4-A75BB8BD6239}" ShortID="468399804">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipDashTransient-005" ID="{87B1B6A7-940F-4153-9CDA-D1D79E746387}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipDashTransient-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="37023708"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipDashTransient-005" ID="{87B1B6A7-940F-4153-9CDA-D1D79E746387}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{705F8C6E-F270-4CF5-8D86-47FA9B779B02}" ShortID="116918548">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{EB4C2EF4-9AE5-495C-8F81-B3B95E689604}" ShortID="445998451">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																			<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.579"/>
+																			<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																		</PropertyList>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{6443EFD0-A8E8-4888-801B-AD3F5A261CDF}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<Sound Name="Transient_Persistent" ID="{6C821F84-167B-490D-AB18-8C7B60D183E3}" ShortID="448898700">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>13</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{72B5F613-8DF3-4665-BE7D-619BB74E66B5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="S_0_2_GunTransientBase" ID="{4D383184-A2C5-49C2-A076-E7C146945CAA}">
+											<Language>SFX</Language>
+											<AudioFile>acid dnb kick.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="557894179"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="S_0_2_GunTransientBase" ID="{4D383184-A2C5-49C2-A076-E7C146945CAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Transient" ID="{EEB8D117-DA8A-4458-A31F-CDC8D4017976}" ShortID="478551217">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.02</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-610</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A3CA6365-5811-4C1F-8A54-F98E82DA1DE3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="S_O_2_48_ShipGunTransient-001" ID="{02F03C21-67A1-4C4C-9ECC-24ACB38B7828}" ShortID="504947034">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-001" ID="{4DD88613-5ED1-450F-974C-FFEA550F7AAA}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="951658105"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-001" ID="{4DD88613-5ED1-450F-974C-FFEA550F7AAA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipGunTransient-002" ID="{FF31B51F-CF16-49BC-A0DF-FDAE247B0F80}" ShortID="133003179">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-002" ID="{32392474-EE1C-4B44-AEC5-982332FC27CC}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854929007"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-002" ID="{32392474-EE1C-4B44-AEC5-982332FC27CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipGunTransient-003" ID="{02761F46-1CA7-4379-B6A6-3BA1A8DCD13C}" ShortID="58561453">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-003" ID="{3F5C2496-CAB0-4A5B-8709-C99DB420D4AA}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="290230786"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-003" ID="{3F5C2496-CAB0-4A5B-8709-C99DB420D4AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="ShipPlasmaGunImpact" ID="{F0CA3C4C-0735-44E9-8EF5-4DAEFBE73DD2}" ShortID="23659561">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Transient_Persistent" ID="{97DBB44C-3D4F-4CD2-9630-8E18B301C16E}" ShortID="243319177">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>13</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8F8F4664-6C52-4338-A650-4BCFF76BB991}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="S_0_2_GunTransientBase" ID="{CA8E8A80-7E1C-4D17-AA4F-BAAD2D2EDF6D}">
+											<Language>SFX</Language>
+											<AudioFile>acid dnb kick.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="557894179"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="S_0_2_GunTransientBase" ID="{CA8E8A80-7E1C-4D17-AA4F-BAAD2D2EDF6D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Transient" ID="{B5FC9B1C-8C06-4B1E-8F29-1F0ED80F9592}" ShortID="929644786">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.02</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1390</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{01431905-F3AC-4A5D-AA01-4B7BC28B4817}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="S_O_2_48_ShipGunTransient-001" ID="{37FB8772-32F9-458C-B1A5-E7403653C775}" ShortID="1008051331">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-001" ID="{DAA70235-FF54-4A3F-964A-F5C289DB4D6D}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="951658105"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-001" ID="{DAA70235-FF54-4A3F-964A-F5C289DB4D6D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipGunTransient-002" ID="{3542FCDD-B34D-4640-B697-24EEA7ACD579}" ShortID="800917790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-002" ID="{73ED430A-5558-478D-9E79-CC143DCF8028}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854929007"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-002" ID="{73ED430A-5558-478D-9E79-CC143DCF8028}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipGunTransient-003" ID="{554E5A47-5B40-4CF8-B147-29936D308BE0}" ShortID="343098615">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-003" ID="{E6D8B715-28DF-4D8F-96B7-3B8416457825}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="290230786"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-003" ID="{E6D8B715-28DF-4D8F-96B7-3B8416457825}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="GunImpact Master-bounce-2" ID="{E9586CA7-A038-4497-A0BF-D9F042233E81}" ShortID="1039802450">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GunImpact Master-bounce-2" ID="{C9701382-CB81-4DB5-8E57-57D92527DB43}">
+											<Language>SFX</Language>
+											<AudioFile>GunImpact Master-bounce-2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="516591877"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{44B2EB40-63D6-4EE4-B0BF-26ADBC637438}" ShortID="1039069494">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{9E514D5F-EE27-428E-B09C-9BECEE29E1CD}" ShortID="863264156">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackCurve" Type="Real64" Value="90"/>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.163"/>
+																		</PropertyList>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{4BBEA91C-0D0B-46F0-B5DE-9723F1640936}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>2202</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>120</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1FC85DA9-33E4-4491-B85A-16947D9ABB08}" ShortID="11025929">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{093EE3E4-4089-4B8E-8E68-8FE985CF4C1C}" ShortID="159455521">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackCurve" Type="Real64" Value="100"/>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																			<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.348"/>
+																			<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																		</PropertyList>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{9E185C5B-D999-4FEB-8995-8A57FC07C2C5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="GunImpact Master-bounce-2" ID="{C9701382-CB81-4DB5-8E57-57D92527DB43}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Tail" ID="{0531C2E6-3A80-43A2-BCCA-B3AA5E8306C9}" ShortID="458652094">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>27</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>2350</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9954CF72-AFED-4F5F-8DDE-74BDED751B2B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}">
+												<Effect Name="Echoes_Linear (Custom)" ID="{04D47D83-F7F5-4D86-A5BE-FF1BEEE563DE}" ShortID="162665418" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<PropertyList>
+														<Property Name="DelayTime" Type="Real32" Value="0.161"/>
+														<Property Name="Feedback" Type="Real32" Value="21.5"/>
+														<Property Name="WetDryMix" Type="Real32" Value="8.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="S_O_2_ShipGunTail_001" ID="{F804D1B9-2504-4A9D-AD49-FD740FCA31B4}" ShortID="473775029">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_ShipGunTail_001" ID="{B23150B1-A0CF-4FAF-8963-A07172CC8FA0}">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_ShipGunTail_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="806410605"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_ShipGunTail_001" ID="{B23150B1-A0CF-4FAF-8963-A07172CC8FA0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_ShipGunTail_002" ID="{F35F1683-9994-4FEA-8403-9BA25F5C076F}" ShortID="716312810">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_ShipGunTail_002" ID="{B996B71F-A430-4146-AEF4-D7B83F315038}">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_ShipGunTail_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="639078872"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_ShipGunTail_002" ID="{B996B71F-A430-4146-AEF4-D7B83F315038}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_ShipGunTail_003" ID="{46E76259-B61E-48A5-B868-20610AE57387}" ShortID="716615273">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_ShipGunTail_003" ID="{47FEE3CF-3B60-4672-87FB-8D3542E5CE40}">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_ShipGunTail_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="265077398"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_ShipGunTail_003" ID="{47FEE3CF-3B60-4672-87FB-8D3542E5CE40}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_ShipGunTail_004" ID="{E241CCF9-86F3-4A40-A36C-9F4383C703F0}" ShortID="266407459">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_ShipGunTail_004" ID="{D0892C42-1499-4E9E-AAAD-B7EB322A1807}">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_ShipGunTail_004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="553620808"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_ShipGunTail_004" ID="{D0892C42-1499-4E9E-AAAD-B7EB322A1807}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<SwitchContainer Name="GunShot" ID="{E896DC42-438B-43B6-83BB-66AD7742259E}" ShortID="933632418">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Level_01" ID="{19F8AE46-D57A-4CC8-98DB-91F48F6E3D96}" WorkUnitID="{4E2A8B21-6F9B-4C48-A1DD-C7B97CD3CA44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="PlayerShipGunLevelSwitch" ID="{C2FF35D9-9EB6-43FD-987A-D22C6B737882}" WorkUnitID="{4E2A8B21-6F9B-4C48-A1DD-C7B97CD3CA44}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="ShipGunLevel_01" ID="{ECC19E3C-8B98-4591-A2B1-C4489D13C574}" ShortID="861383453">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Transient" ID="{4113C83E-665C-4F32-BF34-2CA3E3A7B5C0}" ShortID="617005400">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.02</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>2400</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8B642386-11A7-45B9-B64F-9D14EBD972F3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="S_O_2_48_ShipGunTransient-001" ID="{5740F16B-DB8E-4E43-9E43-2A2D3475B773}" ShortID="88451311">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-001" ID="{C2BED60D-3CD7-4E3E-B523-38E31A5E3779}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="951658105"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-001" ID="{C2BED60D-3CD7-4E3E-B523-38E31A5E3779}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipGunTransient-002" ID="{A987CA9B-1AEA-4057-841D-0657181AF7D4}" ShortID="404687134">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-002" ID="{5F87CB3F-7181-4729-8049-FEBF2C31C6F3}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854929007"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-002" ID="{5F87CB3F-7181-4729-8049-FEBF2C31C6F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_ShipGunTransient-003" ID="{9DB85603-64C9-40B3-8E4A-90E86B8FEDA6}" ShortID="1046179209">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_ShipGunTransient-003" ID="{5463642E-6BE4-4B0B-9F74-C4A317CD4C26}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_ShipGunTransient-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="290230786"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_ShipGunTransient-003" ID="{5463642E-6BE4-4B0B-9F74-C4A317CD4C26}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Transient_Persistent" ID="{71F92444-0336-42C4-A4FB-A569575459D1}" ShortID="846991040">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>13</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C3A42A03-F522-489B-ACA6-4F0C19897706}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="S_0_2_GunTransientBase" ID="{8F90F945-092D-4210-8558-070FA3BA2BD9}">
+											<Language>SFX</Language>
+											<AudioFile>acid dnb kick.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="557894179"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="S_0_2_GunTransientBase" ID="{8F90F945-092D-4210-8558-070FA3BA2BD9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="Delayed" ID="{84ABA8F6-D97B-4201-8099-C7606759DC4A}" ShortID="218286484">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.045</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Tail" ID="{2C1D4191-F401-49CE-B583-1E9181E3FB49}" ShortID="877484530">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>1390</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{783E63DC-AD9B-45BD-9235-991C8903EBEA}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}">
+														<Effect Name="Echoes_Linear (Custom)" ID="{3E566BDD-9348-49BE-96AB-920CEE138482}" ShortID="240132277" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="0.161"/>
+																<Property Name="Feedback" Type="Real32" Value="21.5"/>
+																<Property Name="WetDryMix" Type="Real32" Value="8.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="S_O_2_ShipGunTail_001" ID="{D55D11AE-EBDF-4A0A-8F9A-635AC4678AC3}" ShortID="903440293">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="S_O_2_ShipGunTail_001" ID="{C8DB18AA-2BA9-4534-8640-6E801F597436}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>S_O_2_ShipGunTail_001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="806410605"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="S_O_2_ShipGunTail_001" ID="{C8DB18AA-2BA9-4534-8640-6E801F597436}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="S_O_2_ShipGunTail_002" ID="{974B12D4-C877-4DDE-A6C5-0C9E1DA639E4}" ShortID="622425771">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="S_O_2_ShipGunTail_002" ID="{E66DC658-C930-46AE-AB29-B88B62DF50D5}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>S_O_2_ShipGunTail_002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="639078872"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="S_O_2_ShipGunTail_002" ID="{E66DC658-C930-46AE-AB29-B88B62DF50D5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="S_O_2_ShipGunTail_003" ID="{97AC07AC-DD9D-42AD-94C0-73F4C6EC0DDB}" ShortID="18076312">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="S_O_2_ShipGunTail_003" ID="{25166B18-88C2-42EC-9720-2E39622CB380}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>S_O_2_ShipGunTail_003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="265077398"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="S_O_2_ShipGunTail_003" ID="{25166B18-88C2-42EC-9720-2E39622CB380}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="S_O_2_ShipGunTail_004" ID="{106949D0-B77D-466B-84D3-F6A9B213CD5F}" ShortID="619750797">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="S_O_2_ShipGunTail_004" ID="{DBC68296-022B-4F76-A8B4-BC22C60A0A31}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>S_O_2_ShipGunTail_004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="553620808"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="S_O_2_ShipGunTail_004" ID="{DBC68296-022B-4F76-A8B4-BC22C60A0A31}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Body" ID="{FC096E9F-0BB1-47B7-BCD7-E31C97C56175}" ShortID="593570277">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5C255C03-2421-460A-B7F9-67932E0D396F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="S_O_2_48_ShipGunBody-001" ID="{730EAA76-30A6-4B29-BBFD-CED58660C3DC}" ShortID="297459755">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="S_O_2_48_ShipGunBody-001" ID="{5C4616EE-2D12-4A97-A4B4-C5DF6FCDB1C0}">
+															<Language>SFX</Language>
+															<AudioFile>S_O_2_48_ShipGunBody-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="237743632"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="S_O_2_48_ShipGunBody-001" ID="{5C4616EE-2D12-4A97-A4B4-C5DF6FCDB1C0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="S_O_2_48_ShipGunBody-002" ID="{5A894A08-6E59-4868-B40C-401F798ED114}" ShortID="16997798">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="S_O_2_48_ShipGunBody-002" ID="{2D3AC034-8464-4960-9C3B-9F0BFAD7067C}">
+															<Language>SFX</Language>
+															<AudioFile>S_O_2_48_ShipGunBody-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="641948614"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="S_O_2_48_ShipGunBody-002" ID="{2D3AC034-8464-4960-9C3B-9F0BFAD7067C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="S_O_2_48_ShipGunBody-003" ID="{D3A00712-65A7-443B-84E3-4CAF9D6EF705}" ShortID="642451994">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="S_O_2_48_ShipGunBody-003" ID="{57ADDA4B-9DC7-4B74-B758-3E8DF26BB889}">
+															<Language>SFX</Language>
+															<AudioFile>S_O_2_48_ShipGunBody-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="343547370"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="S_O_2_48_ShipGunBody-003" ID="{57ADDA4B-9DC7-4B74-B758-3E8DF26BB889}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Trainsient_2" ID="{A36DE77E-0DCF-4668-B73F-D632767E28D1}" ShortID="394162223">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="PistolBody-002" ID="{E8D902C3-71F0-4274-99EF-F3BEE2ED80A5}" ShortID="908236439">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PistolBody-002" ID="{A44674BF-60AE-41BD-B1DD-145686C207CD}">
+															<Language>SFX</Language>
+															<AudioFile>PistolBody-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="102477313"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="PistolBody-002" ID="{A44674BF-60AE-41BD-B1DD-145686C207CD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PistolBody-003" ID="{612F3299-D34A-471D-9724-B24937554285}" ShortID="367353939">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PistolBody-003" ID="{DBC01EF3-547F-4F06-B60D-C38320E84047}">
+															<Language>SFX</Language>
+															<AudioFile>PistolBody-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="22072133"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="PistolBody-003" ID="{DBC01EF3-547F-4F06-B60D-C38320E84047}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PistolBody-004" ID="{01975E0D-4368-4D04-815B-ADB0BA64EE90}" ShortID="43621520">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PistolBody-004" ID="{8266D3E5-2F55-4C0D-A85E-1A811E921810}">
+															<Language>SFX</Language>
+															<AudioFile>PistolBody-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1013912439"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="PistolBody-004" ID="{8266D3E5-2F55-4C0D-A85E-1A811E921810}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PistolBody-001" ID="{8E38D380-6BA9-4223-B8E7-E303D5F84113}" ShortID="359756057">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PistolBody-001" ID="{B7AE1C58-D24D-4F6A-89E3-B12781016978}">
+															<Language>SFX</Language>
+															<AudioFile>PistolBody-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="427500297"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="PistolBody-001" ID="{B7AE1C58-D24D-4F6A-89E3-B12781016978}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{0BB08774-9F37-4993-8D02-4DF6151B98E3}" ShortID="387494540">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PlayerShipEnergy" ID="{BBE0B478-3E21-42EF-AEC6-0F6AF7A6C6B7}" WorkUnitID="{E8903925-F938-4228-911D-377EAC5B4A21}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B0C9F19C-600A-4D03-9C5E-351E7C72C57E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>27</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{6324AE61-D0C9-47CC-A8F6-8799BCB8F7C8}" ShortID="1073316297">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PlayerShipEnergy" ID="{BBE0B478-3E21-42EF-AEC6-0F6AF7A6C6B7}" WorkUnitID="{E8903925-F938-4228-911D-377EAC5B4A21}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{D45E6854-40D2-40C6-BDFB-B81AA11348C8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-703</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<BlendTrackList>
+								<BlendTrack Name="New Blend Track" ID="{48D62829-2B50-432D-977D-B69592BB8E54}" ShortID="118153614"/>
+							</BlendTrackList>
+						</BlendContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="ShipGunLevel_01" ID="{ECC19E3C-8B98-4591-A2B1-C4489D13C574}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Level_01" ID="{19F8AE46-D57A-4CC8-98DB-91F48F6E3D96}"/>
+								<ItemList>
+									<ItemRef Name="ShipGunLevel_01" ID="{ECC19E3C-8B98-4591-A2B1-C4489D13C574}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3482721360	Play_ShipDash			\PlayerShip\Play_ShipDash	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	864038332	Modulator Envelope (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	147515964	RoomVerb (Custom)	Wwise RoomVerb			
+

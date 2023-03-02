@@ -6,7 +6,7 @@
 				<GameParameter Name="PlayerShipVelocity" ID="{2A14C57A-F4DE-4E5F-BC70-F1B461610050}">
 					<PropertyList>
 						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
@@ -41,8 +41,8 @@
 				</GameParameter>
 				<GameParameter Name="PlayerShipAcceleration" ID="{29C100C1-3EAA-4E3B-A4BD-AD5D7C2308D9}">
 					<PropertyList>
-						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="3"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="3.5"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>

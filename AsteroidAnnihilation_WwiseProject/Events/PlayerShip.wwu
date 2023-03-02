@@ -8,7 +8,7 @@
 						<Action Name="" ID="{676D66DA-1E66-45F0-93B3-E47499A0257F}" ShortID="393949323">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ShipGunShot" ID="{E896DC42-438B-43B6-83BB-66AD7742259E}" WorkUnitID="{5B5EF29F-FF65-4EE8-BDCF-6886F765F7CC}"/>
+									<ObjectRef Name="GunShot" ID="{E896DC42-438B-43B6-83BB-66AD7742259E}" WorkUnitID="{BF7C0F67-C892-400E-B493-122D95C960AF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -34,6 +34,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="EngineMain" ID="{002BA358-8C86-431D-B5F1-6501616842FF}" WorkUnitID="{5B5EF29F-FF65-4EE8-BDCF-6886F765F7CC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ShipDash" ID="{CD863930-5454-47AD-BE28-3212A52A760C}">
+					<ChildrenList>
+						<Action Name="" ID="{3BD6346B-328A-4B9B-AED8-1D457C37E13B}" ShortID="360545136">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ShipDash" ID="{3B0129F9-B974-456E-B28B-6985A9BE7DAD}" WorkUnitID="{5B5EF29F-FF65-4EE8-BDCF-6886F765F7CC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ShipPlasmaGunImpact" ID="{CFFD670C-0CF5-4245-9CFF-640935EC3FC1}">
+					<ChildrenList>
+						<Action Name="" ID="{C70F0837-2E10-4131-9545-6B73C69F9CD3}" ShortID="1010799825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ShipPlasmaGunImpact" ID="{F0CA3C4C-0735-44E9-8EF5-4DAEFBE73DD2}" WorkUnitID="{BF7C0F67-C892-400E-B493-122D95C960AF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

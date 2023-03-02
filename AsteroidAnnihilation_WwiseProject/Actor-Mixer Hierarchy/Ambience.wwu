@@ -14,6 +14,13 @@
 					</ReferenceList>
 				</ActorMixer>
 				<ActorMixer Name="AmbienceNonSpatial" ID="{456A1778-5D31-4572-B9DD-42C378C12B69}" ShortID="1073020641">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
@@ -22,6 +29,419 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="SpaceAmbience" ID="{C0457881-D275-40D0-80B1-EBD29C92830C}" ShortID="36449851">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>230</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="AlienAmountDependentSwitch" ID="{46B549D8-45D7-4050-8E86-85EA3F90B019}" ShortID="30312699">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="NoEnemies" ID="{31A083EF-CCA6-48CF-B283-098AA67E5953}" WorkUnitID="{1A811AF2-2E73-4BA1-89D4-1E90D7E4D46C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="NumberOfEnemies" ID="{6E6D5655-34E4-4C35-9EE5-A61953E3460B}" WorkUnitID="{1A811AF2-2E73-4BA1-89D4-1E90D7E4D46C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="S_O_2_48_EnviromentAlienSounds-001" ID="{DCEA0534-CAC9-4DD0-85D0-8551D31D9025}" ShortID="187791403">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FC365A3D-BF3B-4555-A3EF-25496E4AB41F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_EnviromentAlienSounds-001" ID="{7F1DDA7F-9191-4C86-BD80-A9BE012BA291}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_EnviromentAlienSounds-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="388101089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_EnviromentAlienSounds-001" ID="{7F1DDA7F-9191-4C86-BD80-A9BE012BA291}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_EnviromentAlienSounds-002" ID="{C54EC575-AEB0-461F-86B2-6B4E3571B56F}" ShortID="636045425">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CBFE2368-2184-4678-8BB8-03B352B4F016}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_EnviromentAlienSounds-002" ID="{CF86FB6D-7345-44C1-A9BA-04167B29D6EF}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_EnviromentAlienSounds-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="904303730"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_EnviromentAlienSounds-002" ID="{CF86FB6D-7345-44C1-A9BA-04167B29D6EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_EnviromentAlienSounds-003" ID="{E0C719E6-EC62-480E-B564-09BDCF4EFA3C}" ShortID="927816780">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{34F1A509-07B9-4D40-A533-D54B807C7B28}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_EnviromentAlienSounds-003" ID="{D25EA2CB-EB5B-412B-BDDF-8916EC1428C5}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_EnviromentAlienSounds-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="825127488"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_EnviromentAlienSounds-003" ID="{D25EA2CB-EB5B-412B-BDDF-8916EC1428C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="S_O_2_48_EnviromentAlienSounds-004" ID="{F4BBFD78-285D-4FDE-8C27-CEE96CEC3F24}" ShortID="227016918">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{470ECEBA-2951-4E36-8C96-1D6246148175}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="S_O_2_48_EnviromentAlienSounds-004" ID="{3B23D781-F7FC-43DD-A145-0AC3B6FA461A}">
+													<Language>SFX</Language>
+													<AudioFile>S_O_2_48_EnviromentAlienSounds-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="183657537"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="S_O_2_48_EnviromentAlienSounds-004" ID="{3B23D781-F7FC-43DD-A145-0AC3B6FA461A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1EDF2F7B-4D02-498A-A2BC-B0AE2696EBE1}" ShortID="712352229">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{62E959C0-35B8-47C2-968D-EC4B0A04F646}" ShortID="712506345"/>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{EAEEAD80-F885-4870-AC26-8528E9BC3F2F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="S_O_2_48_EnviromentAlienSounds-001" ID="{DCEA0534-CAC9-4DD0-85D0-8551D31D9025}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="S_O_2_48_EnviromentAlienSounds-002" ID="{C54EC575-AEB0-461F-86B2-6B4E3571B56F}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="S_O_2_48_EnviromentAlienSounds-004" ID="{F4BBFD78-285D-4FDE-8C27-CEE96CEC3F24}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="S_O_2_48_EnviromentAlienSounds-003" ID="{E0C719E6-EC62-480E-B564-09BDCF4EFA3C}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="AFewEnemies" ID="{8931E330-9A83-45D9-BDA9-1FA5A278502F}"/>
+												<ItemList>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-001" ID="{DCEA0534-CAC9-4DD0-85D0-8551D31D9025}"/>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-002" ID="{C54EC575-AEB0-461F-86B2-6B4E3571B56F}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="GiantSwarm" ID="{C88B39C6-8449-4C18-A1F8-8CC58CFB991C}"/>
+												<ItemList>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-002" ID="{C54EC575-AEB0-461F-86B2-6B4E3571B56F}"/>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-004" ID="{F4BBFD78-285D-4FDE-8C27-CEE96CEC3F24}"/>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-001" ID="{DCEA0534-CAC9-4DD0-85D0-8551D31D9025}"/>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-003" ID="{E0C719E6-EC62-480E-B564-09BDCF4EFA3C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ManyEnemies" ID="{673853D3-CE59-4C35-92DC-D1F103B2FA50}"/>
+												<ItemList>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-002" ID="{C54EC575-AEB0-461F-86B2-6B4E3571B56F}"/>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-003" ID="{E0C719E6-EC62-480E-B564-09BDCF4EFA3C}"/>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-001" ID="{DCEA0534-CAC9-4DD0-85D0-8551D31D9025}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="NoEnemies" ID="{31A083EF-CCA6-48CF-B283-098AA67E5953}"/>
+												<ItemList>
+													<ItemRef Name="S_O_2_48_EnviromentAlienSounds-001" ID="{DCEA0534-CAC9-4DD0-85D0-8551D31D9025}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<Sound Name="PersistentAmbience" ID="{221A82CB-0181-4AA6-92B7-E798139F863E}" ShortID="714729161">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48B64D56-5878-4F5F-B835-6B67C639CEB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1060F7F7-C771-4C58-A5D5-65E67559C019}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="S_L_2_48_SpaceAmbience" ID="{4F78846B-337C-45F0-8746-F80B07A28A96}">
+											<Language>SFX</Language>
+											<AudioFile>S_L_2_48_SpaceAmbience.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417342771"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="S_L_2_48_SpaceAmbience" ID="{4F78846B-337C-45F0-8746-F80B07A28A96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{28933E4A-98E1-454A-B8FD-396A92EB7409}" ShortID="458122886">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<Custom>
+													<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{48BF9D15-6499-4BB3-98DA-A54F4D96B93A}" ShortID="121798651"/>
+												</Custom>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{EE51F9A9-FA7C-40BA-B653-217475FD79F1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

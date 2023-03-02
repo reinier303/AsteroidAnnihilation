@@ -1984,6 +1984,18 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Effect Name="DynamicEngineSound_Parametric_EQ" ID="{3FD345C3-0D48-4177-AF0A-10659F3D9E4A}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="358"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="86"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="7500"/>
+						<Property Name="GainBand1" Type="Real32" Value="-2.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="3"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="2.1"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

@@ -3,10 +3,30 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{C2771BC4-8A16-4C85-8DA7-ED3209B64741}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Persistent_SoundBank" ID="{FDED8D48-4BA6-4BD1-A76E-280A55573B02}">
+				<SoundBank Name="Ship_SoundBank" ID="{FDED8D48-4BA6-4BD1-A76E-280A55573B02}">
 					<ObjectInclusionList>
-						<ObjectRef Name="SFX_Temp" ID="{21980EC5-096D-458F-B937-998606CAB556}" WorkUnitID="{0EF3220C-CDB5-4CE9-BC74-7110775D2EE4}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayerShip" ID="{5B5EF29F-FF65-4EE8-BDCF-6886F765F7CC}" WorkUnitID="{5B5EF29F-FF65-4EE8-BDCF-6886F765F7CC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerShip" ID="{CF5AF357-1A70-4819-BD90-1D61FD34AC0A}" WorkUnitID="{CF5AF357-1A70-4819-BD90-1D61FD34AC0A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music_SoundBank" ID="{89D9A547-69E8-43FA-BFAC-7C96D2055AC2}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{75E841C0-89ED-4240-A605-F3DC79A13C66}" WorkUnitID="{75E841C0-89ED-4240-A605-F3DC79A13C66}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Weapons_SoundBank" ID="{EA736422-DCEE-4863-A3F8-67D2CA7B5C64}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Weapons" ID="{BF7C0F67-C892-400E-B493-122D95C960AF}" WorkUnitID="{BF7C0F67-C892-400E-B493-122D95C960AF}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambience_SoundBank" ID="{A4503BE4-019D-443B-A51F-402FE2AF371F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambience" ID="{455D36EB-1997-4139-8E6F-EA9D4FB50B16}" WorkUnitID="{455D36EB-1997-4139-8E6F-EA9D4FB50B16}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

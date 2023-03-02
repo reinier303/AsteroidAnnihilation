@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1672365273	Play_PlayerShipEngine			\PlayerShip\Play_PlayerShipEngine	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	155164948	PlayerShipHealthStates			\PlayerShipStates\PlayerShipHealthStates	
+
+Switch	ID	Name	Switch Group			Notes
+	777824873	AlmostDead	PlayerShipHealthStates			
+	825447798	HealthMedium	PlayerShipHealthStates			
+	1924267063	HealthLow	PlayerShipHealthStates			
+	2044049779	Dead	PlayerShipHealthStates			
+	3493536634	HealthAlmostFull	PlayerShipHealthStates			
+	4197849920	HealthFull	PlayerShipHealthStates			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1438366550	PlayerShipHealth			\PlayerShipParameters\PlayerShipHealth	
+	1918122584	PlayerShipAcceleration			\PlayerShipParameters\PlayerShipAcceleration	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1839543277	DynamicEngineSound_Parametric_EQ	Wwise Parametric EQ			
+

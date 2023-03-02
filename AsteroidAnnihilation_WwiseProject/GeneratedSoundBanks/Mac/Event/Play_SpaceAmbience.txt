@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	915492624	Play_SpaceAmbience			\Ambience\Play_SpaceAmbience	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	321019979	NumberOfEnemies			\EnviromentSwitches\NumberOfEnemies	
+
+Switch	ID	Name	Switch Group			Notes
+	1361491240	GiantSwarm	NumberOfEnemies			
+	1938642156	AFewEnemies	NumberOfEnemies			
+	2111510692	NoEnemies	NumberOfEnemies			
+	2915076976	ManyEnemies	NumberOfEnemies			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	321019979	NumberOfEnemies			\EnviromentParameters\NumberOfEnemies	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	121798651	Modulator Envelope (Custom)				
+	712506345	Modulator Envelope (Custom)				
+

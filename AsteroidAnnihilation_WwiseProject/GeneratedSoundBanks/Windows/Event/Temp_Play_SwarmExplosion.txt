@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2360230854	Temp_Play_SwarmExplosion			\TestSounds\Temp_Play_SwarmExplosion	
+

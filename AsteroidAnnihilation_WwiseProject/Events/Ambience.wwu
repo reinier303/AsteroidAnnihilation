@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BD1872AF-AF94-48F9-B475-DEAB561FEF1A}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{BD1872AF-AF94-48F9-B475-DEAB561FEF1A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_SpaceAmbience" ID="{8DC5775B-3DA8-41F9-A37A-FD2ADF4E8B08}">
+					<ChildrenList>
+						<Action Name="" ID="{53931EC3-F837-4C2C-85D5-73DAF3904BE6}" ShortID="276561191">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SpaceAmbience" ID="{C0457881-D275-40D0-80B1-EBD29C92830C}" WorkUnitID="{455D36EB-1997-4139-8E6F-EA9D4FB50B16}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
