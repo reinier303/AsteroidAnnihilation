@@ -159,32 +159,48 @@ namespace AsteroidAnnihilation
             //Update trinkets/components
         }
 
-        public bool AddItem(ItemData item, int index = -1)
+        public (bool, ItemData) AddItem(ItemData item, int index = -1, bool fromInventory = false)
         {
-            Debug.Log(item.ItemName);
-
-            int containedItem = GetItemIndex(item.ItemName);
-            if (containedItem != -1)
+            if(!fromInventory)
             {
-                ItemData data = InventoryItems[containedItem];
-                data.Amount++;
-                InventoryItems[containedItem] = data;
-                return true;
-            }
-            else if (!InventoryFull())
-            {
-                if (index == -1)
+                int containedItem = GetItemIndex(item.ItemName);
+                if (containedItem != -1)
                 {
-                    index = GetAvailableSlotIndex();
-                    if (index == -1) { return false; }
+                    ItemData data = InventoryItems[containedItem];
+                    data.Amount++;
+                    InventoryItems[containedItem] = data;
+                    return (true, default);
                 }
-                InventoryItems.Add(index, item);
+                else if (!InventoryFull())
+                {
+                    if (index == -1)
+                    {
+                        index = GetAvailableSlotIndex();
+                        if (index == -1) { return (false, default); }
+                    }
+                    InventoryItems.Add(index, item);
+                    ItemSlots[index].SetItem(item);
+                    InitializeInventoryItems();
+                    return (true, default);
+                }
+                else { return (false, default); }
+            }
+            else
+            {
+                ItemData data = default;
+                if (!InventoryItems.ContainsKey(index))
+                {
+                    InventoryItems.Add(index, item);
+                }
+                else
+                {
+                    data = InventoryItems[index];
+                    InventoryItems[index] = item;
+                }
                 ItemSlots[index].SetItem(item);
                 InitializeInventoryItems();
-                return true;
-            } 
-            else { return false; }
-
+                return (true, data);
+            }
         }
 
         public (bool, EquipmentData) AddItem(EquipmentData equipment, int index = -1)

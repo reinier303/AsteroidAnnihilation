@@ -157,7 +157,7 @@ namespace AsteroidAnnihilation
                     break;
                 case EnumCollections.ItemType.Material:
                     Debug.Log(itemData.ItemName);
-                    bool itemSuccess = inventoryManager.AddItem(itemData);
+                    (bool itemSuccess, ItemData receivedData) = inventoryManager.AddItem(itemData);
                     if (itemSuccess)
                     {
                         ItemPickedUp();

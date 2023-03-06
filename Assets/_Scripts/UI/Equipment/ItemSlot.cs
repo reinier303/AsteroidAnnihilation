@@ -18,6 +18,9 @@ namespace AsteroidAnnihilation
         private WeaponData weapon;
         [SerializeField] private Image icon;
         [SerializeField] private TextMeshProUGUI amountText;
+        private Vector2 amountStartPos;
+        private RectTransform amountTransform;
+
 
         public EnumCollections.ItemType slotType;
         public enum SlotDataType { None, Item, Equipment, Weapon }
@@ -26,13 +29,19 @@ namespace AsteroidAnnihilation
         private Vector2 iconStartPos;
         private RectTransform iconTransform;
 
+
         private void Awake()
         {
             uIManager = UIManager.Instance;
             slotDataType = SlotDataType.None;
             iconTransform = icon.GetComponent<RectTransform>();
             iconStartPos = iconTransform.anchoredPosition;
-            if (amountText != null) { amountText.gameObject.SetActive(false); }
+            if (amountText != null)
+            {
+                amountTransform = amountText.GetComponent<RectTransform>();
+                amountStartPos = amountTransform.anchoredPosition;
+                amountText.gameObject.SetActive(false);
+            }
         }
 
         private void Start()
@@ -107,6 +116,7 @@ namespace AsteroidAnnihilation
                     break;
             }
             slotDataType = SlotDataType.None;
+            if (amountText != null){amountText.text = "";}
             icon.sprite = null;
             icon.color = new Color(255, 255, 255, 0);
 
@@ -221,6 +231,8 @@ namespace AsteroidAnnihilation
             if (!ContainsItem()) { return; }
 
             iconTransform.anchoredPosition += eventData.delta;
+            if(amountText != null) { amountTransform.anchoredPosition += eventData.delta; }    
+            
         }
 
         public void OnEndDrag(PointerEventData eventData)
@@ -231,6 +243,7 @@ namespace AsteroidAnnihilation
             if (eventData.pointerCurrentRaycast.gameObject != null) { hoveredSlot = eventData.pointerCurrentRaycast.gameObject.GetComponent<ItemSlot>(); }
 
             iconTransform.anchoredPosition = iconStartPos;
+            if (amountText != null){ amountTransform.anchoredPosition = amountStartPos;}
 
             if (hoveredSlot != null)
             {
@@ -396,7 +409,7 @@ namespace AsteroidAnnihilation
                             ItemData data = inventoryManager.RemoveItem(item, hoverIndex);
 
                             //Add current item to hoveredSlot
-                            inventoryManager.AddItem(item, hoverIndex);
+                            inventoryManager.AddItem(item, hoverIndex, true);
 
                             //Remove current item from current slot
                             inventoryManager.RemoveItem(item, transform.GetSiblingIndex());
@@ -411,7 +424,7 @@ namespace AsteroidAnnihilation
                         else if (hoveredSlot.slotDataType == SlotDataType.None)
                         {
                             //Add current item to hoveredSlot
-                            inventoryManager.AddItem(item, hoverIndex);
+                            inventoryManager.AddItem(item, hoverIndex, true);
 
                             //Remove current item from current slot
                             inventoryManager.RemoveItem(item, transform.GetSiblingIndex());
@@ -454,6 +467,24 @@ namespace AsteroidAnnihilation
 
                             //Add item in hoveredSlot to current slot if hovered slot contains item
                             if (!data.Equals(default(WeaponData)))
+                            {
+                                inventoryManager.AddItem(data, transform.GetSiblingIndex());
+                            }
+                            return;
+                        }
+                        else if (hoveredSlot.slotDataType == SlotDataType.Item)
+                        {
+                            //Get item in hoveredSlot and remove it
+                            ItemData data = inventoryManager.RemoveItem(item, hoverIndex);
+
+                            //Add current item to hoveredSlot
+                            inventoryManager.AddItem(equipment, hoverIndex);
+
+                            //Remove current item from current slot
+                            inventoryManager.RemoveItem(equipment, transform.GetSiblingIndex());
+
+                            //Add item in hoveredSlot to current slot if hovered slot contains item
+                            if (!data.Equals(default(ItemData)))
                             {
                                 inventoryManager.AddItem(data, transform.GetSiblingIndex());
                             }
@@ -527,6 +558,24 @@ namespace AsteroidAnnihilation
 
                             //Add item in hoveredSlot to current slot if hovered slot contains item
                             if (!data.Equals(default(EquipmentData)))
+                            {
+                                inventoryManager.AddItem(data, transform.GetSiblingIndex());
+                            }
+                            return;
+                        }
+                        else if (hoveredSlot.slotDataType == SlotDataType.Item)
+                        {
+                            //Get item in hoveredSlot and remove it
+                            ItemData data = inventoryManager.RemoveItem(item, hoverIndex);
+
+                            //Add current item to hoveredSlot
+                            inventoryManager.AddItem(weapon, hoverIndex);
+
+                            //Remove current item from current slot
+                            inventoryManager.RemoveItem(weapon, transform.GetSiblingIndex());
+
+                            //Add item in hoveredSlot to current slot if hovered slot contains item
+                            if (!data.Equals(default(ItemData)))
                             {
                                 inventoryManager.AddItem(data, transform.GetSiblingIndex());
                             }
