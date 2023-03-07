@@ -29,9 +29,15 @@ MonoBehaviour:
     Item: {fileID: 11400000, guid: 4d41e90de32496045ad5c3c40b5ec2f3, type: 2}
     Equipment: {fileID: 0}
     Weapon: {fileID: 0}
-  - Weight: 30
+  - Weight: 75
     AmountRange: {x: 1, y: 1}
     ItemType: 0
     Item: {fileID: 11400000, guid: a761318ce2613564d93e26e761a8db47, type: 2}
+    Equipment: {fileID: 0}
+    Weapon: {fileID: 0}
+  - Weight: 45
+    AmountRange: {x: 1, y: 1}
+    ItemType: 0
+    Item: {fileID: 11400000, guid: 9d3c35bc261f46745b29cb196806b873, type: 2}
     Equipment: {fileID: 0}
     Weapon: {fileID: 0}

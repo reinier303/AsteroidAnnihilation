@@ -63,7 +63,7 @@ namespace AsteroidAnnihilation
             BackgroundNebulaGrey,
         }
 
-        public enum Weapons
+        public enum WeaponTypes
         {
             None = 0,
             BulletWeapon = 1,

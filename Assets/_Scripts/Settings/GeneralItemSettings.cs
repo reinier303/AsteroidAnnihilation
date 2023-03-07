@@ -12,7 +12,9 @@ namespace AsteroidAnnihilation
         public Dictionary<EnumCollections.Rarities, GameObject> RarityIdleEffects;
 
         public Weapon startWeapon;
-        public Dictionary<EnumCollections.ItemType, EquipmentData> startGear;
+        public Dictionary<EnumCollections.ItemType, Equipment> startGear;
+
+        [SerializeField] private Dictionary<EnumCollections.WeaponTypes, Weapon> weaponScripts;
 
         public int GetModAmount(EnumCollections.Rarities rarity)
         {
@@ -22,6 +24,11 @@ namespace AsteroidAnnihilation
         public GameObject GetRarityMaterial(EnumCollections.Rarities rarity)
         {
             return RarityIdleEffects[rarity];
+        }
+
+        public Weapon GetWeaponScript(EnumCollections.WeaponTypes type)
+        {
+            return weaponScripts[type];
         }
     }
 }

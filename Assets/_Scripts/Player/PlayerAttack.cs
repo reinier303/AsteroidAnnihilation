@@ -83,7 +83,7 @@ namespace AsteroidAnnihilation
             currentWeaponDatas = equipmentManager.GetAllEquipedWeapons();
             foreach (int index in currentWeaponDatas.Keys)
             {
-                if (currentWeaponDatas[index].WeaponType == EnumCollections.Weapons.None)
+                if (currentWeaponDatas[index].WeaponType == EnumCollections.WeaponTypes.None)
                 {
                     currentWeapons.Add(index, (Weapon)ScriptableObject.CreateInstance("Weapon"));
                     continue;
@@ -110,7 +110,7 @@ namespace AsteroidAnnihilation
             currentWeaponDatas = equipmentManager.GetAllEquipedWeapons();
             foreach (int index in currentWeaponDatas.Keys)
             {
-                if (currentWeaponDatas[index].WeaponType == EnumCollections.Weapons.None) 
+                if (currentWeaponDatas[index].WeaponType == EnumCollections.WeaponTypes.None) 
                 {
                     currentWeapons[index] = (Weapon)ScriptableObject.CreateInstance("Weapon");
                     continue; 
@@ -171,9 +171,9 @@ namespace AsteroidAnnihilation
 
         private void UpdateAudioHooks()
         {
-            if(currentWeapons[0].WeaponType == EnumCollections.Weapons.None) { return; }
+            if(currentWeapons[0].WeaponType == EnumCollections.WeaponTypes.None) { return; }
             AkSoundEngine.SetRTPCValue("PlayerShipGunLevel", GetFireRateAverage() * currentWeapons[0].GetEquipmentStat(EnumCollections.Stats.Damage, 0), gameObject);
-            AkSoundEngine.SetRTPCValue("PlayerShipEnergy", currentEnergy / MaxEnergy, gameObject);
+            if (MaxEnergy > 0) { AkSoundEngine.SetRTPCValue("PlayerShipEnergy", currentEnergy / MaxEnergy, gameObject); }
         }
 
         private void Fire(int buttonDown)
@@ -190,7 +190,7 @@ namespace AsteroidAnnihilation
                     //Temp
                     for (int i = 0; i < currentWeapons.Count; i++)
                     {
-                        if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
+                        if (currentWeapons[i].WeaponType == EnumCollections.WeaponTypes.None) { continue; }
                         //Todo::Move this to weapon script.
                         audioManager.PlayAudio("Play_PlayerShipShootGun");
                         currentWeapons[i].Fire(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
@@ -207,7 +207,7 @@ namespace AsteroidAnnihilation
                     //Temp
                     for (int i = 0; i < currentWeapons.Count; i++)
                     {
-                        if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
+                        if (currentWeapons[i].WeaponType == EnumCollections.WeaponTypes.None) { continue; }
                         //Todo::Move this to weapon script.
                         audioManager.PlayAudio("Play_PlayerShipShootGun");
                         currentWeapons[i].Fire2nd(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
@@ -223,7 +223,7 @@ namespace AsteroidAnnihilation
             bool hasWeapon = false;
             for(int i = 0; i < currentWeapons.Count; i++)
             {
-                if (currentWeapons[i].WeaponType != EnumCollections.Weapons.None) { hasWeapon = true; break; }
+                if (currentWeapons[i].WeaponType != EnumCollections.WeaponTypes.None) { hasWeapon = true; break; }
             }
             return hasWeapon;
         }
@@ -243,7 +243,7 @@ namespace AsteroidAnnihilation
             int weapons = 0;
             for (int i = 0; i < currentWeapons.Count; i++)
             {
-                if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
+                if (currentWeapons[i].WeaponType == EnumCollections.WeaponTypes.None) { continue; }
                 float coreFireRate = equipmentManager.GetGearStatValue(EnumCollections.ItemType.EnergyCore, EnumCollections.Stats.FireRate);
                 totalFirerate += (currentWeapons[i].GetEquipmentStat(EnumCollections.Stats.FireRate, i) + coreFireRate);
                 weapons++;
@@ -256,7 +256,7 @@ namespace AsteroidAnnihilation
             float cost = 0;
             for (int i = 0; i < currentWeapons.Count; i++)
             {
-                if (currentWeapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
+                if (currentWeapons[i].WeaponType == EnumCollections.WeaponTypes.None) { continue; }
                 cost += currentWeapons[i].GetEquipmentStat(EnumCollections.Stats.EnergyPerShot, i);
             }
             cost *= (1 - rPlayer.RPlayerStats.GetSkillsValue(EnumCollections.Stats.EnergyEfficiency));

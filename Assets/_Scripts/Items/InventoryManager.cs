@@ -131,7 +131,7 @@ namespace AsteroidAnnihilation
                 if (i < weaponSlots)
                 {
                     weaponSlot.SetActive(true);
-                    if (weapons[i].WeaponType == EnumCollections.Weapons.None) { continue; }
+                    if (weapons[i].WeaponType == EnumCollections.WeaponTypes.None) { continue; }
                     if (weapons.Count > i) { 
                         weaponSlot.GetComponent<ItemSlot>().SetItem(weapons[i]);
                         weaponSlot.GetComponent<ItemSlot>().InitializeSlot();

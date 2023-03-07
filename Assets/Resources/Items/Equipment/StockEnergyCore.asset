@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9be7c2230a53c04d9113a272806812e, type: 3}
-  m_Name: StandardCoreT1
+  m_Name: StockEnergyCore
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -40,7 +40,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
@@ -50,30 +50,6 @@ MonoBehaviour:
     - Name: $v
       Entry: 4
       Data: 100
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
-      Entry: 4
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
-    - Name: $v
-      Entry: 4
-      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -114,10 +90,10 @@ MonoBehaviour:
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 1.35
+      Data: 1
     - Name: 
       Entry: 4
-      Data: 1.6
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -135,10 +111,10 @@ MonoBehaviour:
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 60
+      Data: 50
     - Name: 
       Entry: 4
-      Data: 80
+      Data: 50
     - Name: 
       Entry: 8
       Data: 
@@ -160,70 +136,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
-    - Name: $v
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0.05
-    - Name: 
-      Entry: 4
-      Data: 0.1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 9
-    - Name: $v
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0.15
-    - Name: 
-      Entry: 4
-      Data: 0.3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 10
-    - Name: $v
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 10
-    - Name: 
-      Entry: 4
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -231,10 +144,9 @@ MonoBehaviour:
       Entry: 8
       Data: 
   ID: 0
-  BaseEquipmentName: Standard Energy Core
   Tier: 1
+  ItemName: Stock Energy Core
   Icons:
   - {fileID: 21300000, guid: 35eb7c83ac2f84341ad2d48a8c755095, type: 3}
-  - {fileID: 21300000, guid: 26b767df66e78a8479a4b3c3b5f58874, type: 3}
-  - {fileID: 21300000, guid: b168804ce0f2bd249b3f709fe2e77335, type: 3}
   ItemType: 2
+  BaseEquipmentName: Stock Energy Core

@@ -85,7 +85,7 @@ MonoBehaviour:
       Data: 
   ID: 0
   Tier: 1
-  ItemName: IronOre
+  ItemName: Iron Ore
   Icons:
   - {fileID: 21300000, guid: 1192fdfe6298e3a4882898cef5a3f1d4, type: 3}
   ItemType: 0

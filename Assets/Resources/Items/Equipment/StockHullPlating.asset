@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9be7c2230a53c04d9113a272806812e, type: 3}
-  m_Name: StandardHullT1
+  m_Name: StockHullPlating
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -40,7 +40,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
@@ -50,30 +50,6 @@ MonoBehaviour:
     - Name: $v
       Entry: 4
       Data: 100
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
-      Entry: 4
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
-    - Name: $v
-      Entry: 4
-      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -114,10 +90,10 @@ MonoBehaviour:
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 45
+      Data: 30
     - Name: 
       Entry: 4
-      Data: 55
+      Data: 30
     - Name: 
       Entry: 8
       Data: 
@@ -138,7 +114,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 4
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -160,91 +136,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 12
-    - Name: $v
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 5
-    - Name: 
-      Entry: 4
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 23
-    - Name: $v
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0.05
-    - Name: 
-      Entry: 4
-      Data: 0.1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 21
-    - Name: $v
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0.5
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 22
-    - Name: $v
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0.5
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -252,10 +144,9 @@ MonoBehaviour:
       Entry: 8
       Data: 
   ID: 0
-  BaseEquipmentName: Standard Hull Plating
   Tier: 1
+  ItemName: Stock Hull Plating
   Icons:
   - {fileID: 21300000, guid: ba6588674de33c34393816f0385b2d95, type: 3}
-  - {fileID: 21300000, guid: ef71c50c940f856418685f8ae5d89b1f, type: 3}
-  - {fileID: 21300000, guid: e2c311086e241f14ea2e0e5202a037a8, type: 3}
   ItemType: 1
+  BaseEquipmentName: Stock Hull Plating

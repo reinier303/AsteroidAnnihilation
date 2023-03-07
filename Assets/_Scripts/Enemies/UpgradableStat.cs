@@ -14,7 +14,7 @@ namespace AsteroidAnnihilation
         public bool HasNegative;
         public bool Upgradable;
 
-        public EnumCollections.Weapons WeaponType;
+        public EnumCollections.WeaponTypes WeaponType;
     }
 
     public static class StatHelper

@@ -148,7 +148,7 @@ MonoBehaviour:
   PermanencePartMinMaxAmount: {x: 6, y: 8}
   PermanencePartOutwardsPower: 400
   PermanenceScaleFactor: 0.07
-  DropTable: {fileID: 0}
+  DropTable: {fileID: 11400000, guid: e7c0cabc3b269e540a8333548748cb80, type: 2}
   spriteRenderer: {fileID: 0}
   isDead: 0
   isInitialized: 0

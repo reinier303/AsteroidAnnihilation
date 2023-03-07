@@ -62,17 +62,17 @@ namespace AsteroidAnnihilation
             {
                 case EnumCollections.ItemType.Weapon:
                     itemType = EnumCollections.ItemType.Weapon;
-                    weaponData = equipmentManager.GenerateWeapon();
+                    weaponData = drop.Weapon.GenerateWeaponData(generalItemSettings);
                     icon.sprite = weaponData.EquipmentData.ItemData.Icon;
                     break;
                 case EnumCollections.ItemType.HullPlating:
                     itemType = EnumCollections.ItemType.HullPlating;
-                    equipmentData = equipmentManager.GenerateEquipment();
+                    equipmentData = drop.Equipment.GenerateEquipmentData(generalItemSettings);
                     icon.sprite = equipmentData.ItemData.Icon;
                     break;
                 case EnumCollections.ItemType.Material:
                     itemType = EnumCollections.ItemType.Material;
-                    itemData = equipmentManager.GenerateItemData(drop.Item);
+                    itemData = drop.Item.GenerateItemData(1);
                     itemData.Amount = Random.Range(drop.AmountRange.x, drop.AmountRange.y);
                     itemData.Icon = drop.Item.GetIcon();
                     icon.sprite = itemData.Icon;

@@ -131,8 +131,14 @@ MonoBehaviour:
       m_FromMain: 0
       m_SpriteOverride: {fileID: 21300000, guid: f5c17c4e9f0572045aa49b63084b6b9e,
         type: 3}
+    - m_Name: SmallGravitationCore
+      m_Hash: 122151868
+      m_Sprite: {fileID: 21300000, guid: e0f6ba614f2cd3047babc727bd542d06, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: e0f6ba614f2cd3047babc727bd542d06,
+        type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 2
+    m_EntryOverrideCount: 3
   - m_Name: Scrap
     m_Hash: 731155727
     m_CategoryList: []

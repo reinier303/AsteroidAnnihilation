@@ -8,7 +8,7 @@ namespace AsteroidAnnihilation
     [System.Serializable]
     public class Weapon : Equipment, IFire
     {
-        public EnumCollections.Weapons WeaponType;
+        public EnumCollections.WeaponTypes WeaponType;
         public EnumCollections.PlayerProjectiles ProjectileType;
 
         private UIManager uIManager;

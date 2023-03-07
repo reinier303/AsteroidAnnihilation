@@ -52,7 +52,7 @@ namespace AsteroidAnnihilation
     public class StatCompletionReward
     {
         public bool IsWeapon;
-        [ShowIf("IsWeapon")] public EnumCollections.Weapons WeaponType;
+        [ShowIf("IsWeapon")] public EnumCollections.WeaponTypes WeaponType;
         [ShowIf("IsWeapon")] public EnumCollections.Stats WeaponStatType;
         [HideIf("IsWeapon")] public EnumCollections.PlayerStats PlayerStatType;
         public float RewardAmount;
