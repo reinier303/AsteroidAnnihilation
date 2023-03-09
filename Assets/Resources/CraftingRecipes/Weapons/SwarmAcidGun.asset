@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cafaa0e583cf5924e8d132899b38020b, type: 3}
   m_Name: SwarmAcidGun
   m_EditorClassIdentifier: 
+  UnitCost: 100
   CraftingIngredients:
   - ItemNeeded: {fileID: 11400000, guid: 67a1d3ed006b79c4c9a4c0810929d18c, type: 2}
     Amount: 15

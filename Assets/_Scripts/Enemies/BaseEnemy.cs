@@ -119,8 +119,11 @@ namespace AsteroidAnnihilation
             if (grouped) { enemyGroup.StartCoroutine(enemyGroup.EnemyDisabled()); }
             DropUnits(DroppedUnits);
             gameManager.RPlayer.RPlayerStats.AddToExperience(ExperienceGained);
-            ExpPopUp expPopUp = objectPooler.SpawnFromPool("ExpPopUp", Vector2.zero, Quaternion.identity).GetComponent<ExpPopUp>();
-            expPopUp.Initialize(ExperienceGained);
+            if(ExperienceGained > 0)
+            {
+                ExpPopUp expPopUp = objectPooler.SpawnFromPool("ExpPopUp", Vector2.zero, Quaternion.identity).GetComponent<ExpPopUp>();
+                expPopUp.Initialize(ExperienceGained);
+            }
             if (countsAsEnemy && spawnManager != null) 
             {
                 if (missionManager != null) { missionManager.AddObjectiveProgress(MissionObjectiveType.Elimination); }

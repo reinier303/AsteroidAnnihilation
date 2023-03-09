@@ -193,7 +193,7 @@ namespace AsteroidAnnihilation
                         if (currentWeapons[i].WeaponType == EnumCollections.WeaponTypes.None) { continue; }
                         //Todo::Move this to weapon script.
                         audioManager.PlayAudio("Play_PlayerShipShootGun");
-                        currentWeapons[i].Fire(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
+                        currentWeapons[i].Fire(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i, (1 + statManager.GetStat(EnumCollections.Stats.AllDamage) / 100));
                     }
                     canFire = false;
                     StartCoroutine(FireCooldownTimer(buttonDown));               
@@ -210,7 +210,7 @@ namespace AsteroidAnnihilation
                         if (currentWeapons[i].WeaponType == EnumCollections.WeaponTypes.None) { continue; }
                         //Todo::Move this to weapon script.
                         audioManager.PlayAudio("Play_PlayerShipShootGun");
-                        currentWeapons[i].Fire2nd(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i);
+                        currentWeapons[i].Fire2nd(RObjectPooler, transform, addedPlayerVelocity, weaponPositions[i], i, (1 + statManager.GetStat(EnumCollections.Stats.AllDamage) / 100));
                     }
                     canFire = false;
                     StartCoroutine(FireCooldownTimer(buttonDown));
@@ -248,7 +248,7 @@ namespace AsteroidAnnihilation
                 totalFirerate += (currentWeapons[i].GetEquipmentStat(EnumCollections.Stats.FireRate, i) + coreFireRate);
                 weapons++;
             }
-            return totalFirerate / Mathf.Clamp(weapons, 1, 25);
+            return (totalFirerate / Mathf.Clamp(weapons, 1, 25) * (1 + statManager.GetStat(EnumCollections.Stats.FireRate)));
         }
 
         private bool CanApplyEnergyCost(float multiplier = 1)

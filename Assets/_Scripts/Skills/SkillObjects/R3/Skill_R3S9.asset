@@ -16,6 +16,6 @@ MonoBehaviour:
   Id: 44726
   Cost: 1
   Prerequisite: {fileID: 11400000, guid: 8d971f29602e49e47b448b2235c104ac, type: 2}
-  Stat: 30
-  Value: 0.15
+  Stat: 2
+  Value: 0.12
   Stats: []

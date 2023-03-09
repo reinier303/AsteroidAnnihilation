@@ -8,6 +8,7 @@ namespace AsteroidAnnihilation
     [CreateAssetMenu(menuName = "CraftingRecipe", order = 994)]
     public class CraftingRecipe : ScriptableObject
     {
+        public float UnitCost;
         public List<CraftingIngredient> CraftingIngredients;
 
         public EnumCollections.ItemType ItemType;

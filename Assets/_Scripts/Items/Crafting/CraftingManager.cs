@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 
 namespace AsteroidAnnihilation
 {
@@ -12,6 +13,7 @@ namespace AsteroidAnnihilation
         private InventoryManager inventoryManager;
         private ObjectPooler objectPooler;
         private SettingsManager settingsManager;
+        private PlayerStats playerStats;
 
         [SerializeField] private Transform recipesHolder;
 
@@ -20,6 +22,7 @@ namespace AsteroidAnnihilation
 
         private CraftingRecipe selectedRecipe;
         [SerializeField] private CraftingRecipeUIElement craftingConfirmationUIElement;
+        [SerializeField] private TextMeshProUGUI unitCostText; 
 
         // Start is called before the first frame update
         private void Awake()
@@ -34,6 +37,7 @@ namespace AsteroidAnnihilation
             inventoryManager = InventoryManager.Instance;
             objectPooler = ObjectPooler.Instance;
             settingsManager = SettingsManager.Instance;
+            playerStats = Player.Instance.transform.GetComponent<PlayerStats>();
             ShowRecipes();
         }
 
@@ -92,6 +96,7 @@ namespace AsteroidAnnihilation
         {
             selectedRecipe = recipe;
             craftingConfirmationUIElement.InitializeRecipe(selectedRecipe);
+            unitCostText.text = "Unit Cost: " + selectedRecipe.UnitCost;
         }
 
         public void TryCraftItem()
@@ -105,7 +110,8 @@ namespace AsteroidAnnihilation
 
         public bool CheckRecipeRequirements()
         {
-            foreach(CraftingIngredient ingredient in selectedRecipe.CraftingIngredients)
+            if (playerStats.GetStatValue(EnumCollections.PlayerStats.CurrentUnits) < selectedRecipe.UnitCost) { return false; }
+            foreach (CraftingIngredient ingredient in selectedRecipe.CraftingIngredients)
             {
                 if(inventoryManager.GetItemAmountInInventory(ingredient.ItemNeeded.ItemType, ingredient.ItemNeeded.ItemName) < ingredient.Amount)
                 {

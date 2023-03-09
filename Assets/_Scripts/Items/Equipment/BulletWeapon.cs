@@ -14,7 +14,7 @@ namespace AsteroidAnnihilation
             base.Initialize(pStats, equipmentManager);
         }
 
-        public override void Fire(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex)
+        public override void Fire(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex, float damageMultiplier)
         {
             float spread = GetEquipmentStat(EnumCollections.Stats.ProjectileSpread, weaponIndex);
             //Use ceil to int for powerUp to apply effects of 1.5 upward
@@ -49,7 +49,7 @@ namespace AsteroidAnnihilation
                 BaseProjectile projectile = projectileObject.GetComponent<BaseProjectile>();
 
                 //Set projectile stat values
-                float damage = GetEquipmentStat(EnumCollections.Stats.Damage, weaponIndex);
+                float damage = GetEquipmentStat(EnumCollections.Stats.Damage, weaponIndex) * damageMultiplier;
                 projectile.PlayerVelocity = velocity;
                 float projectileSpeed = GetEquipmentStat(EnumCollections.Stats.ProjectileSpeed, weaponIndex);
                 float lifeTime = GetEquipmentStat(EnumCollections.Stats.LifeTime, weaponIndex);
@@ -60,7 +60,7 @@ namespace AsteroidAnnihilation
 
         }
 
-        public override void Fire2nd(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex)
+        public override void Fire2nd(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex, float damageMultiplier)
         {
             float spread = GetEquipmentStat(EnumCollections.Stats.ProjectileSpread, weaponIndex);
             //Use ceil to int for powerUp to apply effects of 1.5 upward
@@ -95,7 +95,7 @@ namespace AsteroidAnnihilation
                 BaseProjectile projectile = projectileObject.GetComponent<BaseProjectile>();
 
                 //Set projectile stat values
-                float damage = GetEquipmentStat(EnumCollections.Stats.Damage, weaponIndex) * 1.25f;
+                float damage = GetEquipmentStat(EnumCollections.Stats.Damage, weaponIndex) * 1.25f * damageMultiplier;
                 projectile.PlayerVelocity = velocity;
                 float projectileSpeed = GetEquipmentStat(EnumCollections.Stats.ProjectileSpeed, weaponIndex) * 1.25f;
                 float lifeTime = GetEquipmentStat(EnumCollections.Stats.LifeTime, weaponIndex);

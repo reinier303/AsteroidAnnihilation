@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cafaa0e583cf5924e8d132899b38020b, type: 3}
   m_Name: StockHullPlating
   m_EditorClassIdentifier: 
+  UnitCost: 50
   CraftingIngredients:
   - ItemNeeded: {fileID: 11400000, guid: dfabfa31cb1026a419a2ab080196dfd9, type: 2}
     Amount: 8

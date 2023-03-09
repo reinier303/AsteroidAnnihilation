@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cafaa0e583cf5924e8d132899b38020b, type: 3}
   m_Name: SteelPlate
   m_EditorClassIdentifier: 
+  UnitCost: 20
   CraftingIngredients:
   - ItemNeeded: {fileID: 11400000, guid: 515fd65cf3573ed4a8ae967b7c1c9bb7, type: 2}
     Amount: 2

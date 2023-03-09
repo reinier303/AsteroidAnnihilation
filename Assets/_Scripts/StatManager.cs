@@ -43,6 +43,14 @@ namespace AsteroidAnnihilation
             energyRegen += playerStats.GetSkillsValue(EnumCollections.Stats.EnergyRegen);
             energyRegen += equipmentManager.GetGearStatValue(EnumCollections.ItemType.EnergyCore, EnumCollections.Stats.EnergyRegen);
             AddStat(EnumCollections.Stats.EnergyRegen, energyRegen);
+
+            float allDamage = playerStats.GetSkillsValue(EnumCollections.Stats.AllDamage);
+            allDamage += equipmentManager.GetGearStatValue(EnumCollections.ItemType.EnergyCore, EnumCollections.Stats.AllDamage);
+            AddStat(EnumCollections.Stats.AllDamage, allDamage);
+
+            float fireRate = playerStats.GetSkillsValue(EnumCollections.Stats.FireRate);
+            fireRate += equipmentManager.GetGearStatValue(EnumCollections.ItemType.EnergyCore, EnumCollections.Stats.FireRate);
+            AddStat(EnumCollections.Stats.FireRate, fireRate);
         }
 
         private void CalculateDefensiveStats()

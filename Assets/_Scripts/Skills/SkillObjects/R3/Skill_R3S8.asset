@@ -17,5 +17,5 @@ MonoBehaviour:
   Cost: 1
   Prerequisite: {fileID: 11400000, guid: 6b44c78c7c57ecc42aae525d4f96e7c5, type: 2}
   Stat: 30
-  Value: 10
+  Value: 15
   Stats: []

@@ -151,6 +151,7 @@ namespace AsteroidAnnihilation
             {
                 return GetTotalExpNeeded();
             }
+            if (GetPlayerLevel() >= playerLevelSettings.PlayerLevels.Count) { return 0f; }
 
             return GetTotalExpNeeded() - playerLevelSettings.PlayerLevels[GetPlayerLevel() - 2].TotalExp;
         }
@@ -162,6 +163,7 @@ namespace AsteroidAnnihilation
         public float GetExperienceLevelProgress()
         {
             if(GetPlayerLevel() <= 1) { return Stats[EnumCollections.PlayerStats.CurrentExperience]; }
+            if (GetPlayerLevel() >= playerLevelSettings.PlayerLevels.Count) { return 0f; }
             else { return Stats[EnumCollections.PlayerStats.CurrentExperience] - playerLevelSettings.PlayerLevels[GetPlayerLevel() - 2].TotalExp; }
             
         }
@@ -181,6 +183,7 @@ namespace AsteroidAnnihilation
         /// <returns></returns>
         public float GetTotalExpNeeded()
         {
+            if(GetPlayerLevel() >= playerLevelSettings.PlayerLevels.Count) { return 0f; }
             return playerLevelSettings.PlayerLevels[GetPlayerLevel() - 1].TotalExp;
         }
 

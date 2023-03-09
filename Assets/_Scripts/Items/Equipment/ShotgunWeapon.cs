@@ -13,7 +13,7 @@ namespace AsteroidAnnihilation
             base.Initialize(pStats, equipmentManager);
         }
 
-        public override void Fire(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex)
+        public override void Fire(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex, float damageMultiplier)
         {
             float spread = GetEquipmentStat(EnumCollections.Stats.ProjectileSpread, weaponIndex);
             float count = (int)GetEquipmentStat(EnumCollections.Stats.ProjectileCount, weaponIndex);

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cafaa0e583cf5924e8d132899b38020b, type: 3}
   m_Name: StockPlasmaGunV2
   m_EditorClassIdentifier: 
+  UnitCost: 150
   CraftingIngredients:
   - ItemNeeded: {fileID: 11400000, guid: 015b4056b31ac7a46810fdf06e4cca3d, type: 2}
     Amount: 1

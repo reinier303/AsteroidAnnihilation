@@ -12,7 +12,7 @@ namespace AsteroidAnnihilation
             base.Initialize(pStats, equipmentManager);
         }
 
-        public override void Fire(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex)
+        public override void Fire(ObjectPooler objectPooler, Transform player, Vector2 velocity, Vector2 weaponPosition, int weaponIndex, float damageMultiplier)
         {
             GameObject Mine = objectPooler.SpawnFromPool("PlayerMine", player.position - (player.up * 0.75f), Quaternion.identity);
             Mine.GetComponent<Rigidbody2D>().AddForce(-player.up * GetEquipmentStat(EnumCollections.Stats.LaunchVelocity, weaponIndex));
