@@ -12,8 +12,8 @@ namespace AsteroidAnnihilation
 
         protected override void Awake()
         {
-            spriteRenderer = GetComponent<SpriteRenderer>();
             base.Awake();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         public override void Initialize(float size, float damage, float speed, float lifeTime, bool isCrit, bool secondary = false)

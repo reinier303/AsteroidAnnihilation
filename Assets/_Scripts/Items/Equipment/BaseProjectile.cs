@@ -23,10 +23,16 @@ namespace AsteroidAnnihilation
 
         protected virtual void Awake()
         {
+            Debug.Log(baseScale + "" + Size);
+
+            baseScale = transform.localScale;
+        }
+
+        protected virtual void Start()
+        {
             objectPooler = ObjectPooler.Instance;
             gameManager = GameManager.Instance;
             audioManager = AudioManager.Instance;
-            baseScale = transform.localScale;
         }
 
         public virtual void Initialize(float size, float damage, float speed, float lifeTime, bool isCrit, bool secondary = false)

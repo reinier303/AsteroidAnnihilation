@@ -6,9 +6,9 @@ namespace AsteroidAnnihilation
 {
     public class ShotgunProjectile : BaseProjectile
     {
-        protected override void Awake()
+        protected override void Start()
         {
-            base.Awake();
+            base.Start();
         }
 
         public override void Initialize(float size, float damage, float speed, float lifeTime, bool isCrit, bool secondary = false)

@@ -94,6 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7600869832941621757}
   - component: {fileID: 8625615832296085448}
+  - component: {fileID: 1504970427}
+  - component: {fileID: 1504970426}
   m_Layer: 0
   m_Name: BanditMine
   m_TagString: Untagged
@@ -169,3 +171,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1504970427
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5865335152416358239}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.41
+--- !u!114 &1504970426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5865335152416358239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc36dbe1a6bf30409d0af50f7c644d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnHitEffectName: BanditMineExplosion
+  WeaponIndex: 0
+  Damage: 10
+  ProjectileSpeed: 0
+  LifeTime: 15
+  IsCrit: 0
+  Size: 1
+  PlayerVelocity: {x: 0, y: 0}
+  ShakeMagnitude: 5.5
+  ShakeDuration: 0.4

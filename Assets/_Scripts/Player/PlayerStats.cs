@@ -118,7 +118,8 @@ namespace AsteroidAnnihilation
 
         private void CheckLevelUp(float expGiven)
         {
-            float overLevelExp = Mathf.Clamp(Stats[EnumCollections.PlayerStats.CurrentExperience] - GetTotalExpNeeded(), 0, Mathf.Infinity);
+            float overLevelExp = Mathf.Clamp(expGiven - GetTotalExpNeeded(), 0, Mathf.Infinity);
+            Debug.Log(expGiven + ", "  +  overLevelExp);
             if (Stats[EnumCollections.PlayerStats.CurrentExperience] > GetTotalExpNeeded())
             {
                 if (PlayerLevel == 1) {

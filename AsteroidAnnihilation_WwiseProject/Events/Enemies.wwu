@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{825595A0-3596-406F-BA63-97908977D23B}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Enemies" ID="{825595A0-3596-406F-BA63-97908977D23B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Enemies" ID="{825595A0-3596-406F-BA63-97908977D23B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_BanditMineExplosion" ID="{F3B2048F-2071-45B9-A371-77937689E1C4}">
+					<ChildrenList>
+						<Action Name="" ID="{CEE4D717-7DD2-4F61-9891-F01237730E65}" ShortID="516418989">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="etfx_explosion_grenade" ID="{61D99D1C-ED94-4929-B405-C03C8B535B7E}" WorkUnitID="{0EF3220C-CDB5-4CE9-BC74-7110775D2EE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

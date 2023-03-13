@@ -80,6 +80,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Temp_Play_BanditMineExplosion" ID="{458FD4B2-3AE9-4C16-B22C-95DA990AD742}">
+					<ChildrenList>
+						<Action Name="" ID="{467B8729-8E18-418C-8283-2FB551AD684F}" ShortID="762581418">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="etfx_explosion_grenade" ID="{61D99D1C-ED94-4929-B405-C03C8B535B7E}" WorkUnitID="{0EF3220C-CDB5-4CE9-BC74-7110775D2EE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
