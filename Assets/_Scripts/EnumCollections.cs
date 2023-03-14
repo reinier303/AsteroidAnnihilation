@@ -168,7 +168,9 @@ namespace AsteroidAnnihilation
 
         public enum EnemyProjectiles
         {
-            SwarmBullet1 = 0
+            SwarmBullet1 = 0,
+            BanditBullet1 = 1,
+            BanditMine1 = 2,
         }
 
         public enum Rarities

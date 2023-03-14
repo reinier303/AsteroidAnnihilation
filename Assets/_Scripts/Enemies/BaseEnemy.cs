@@ -65,9 +65,9 @@ namespace AsteroidAnnihilation
 
         protected void MoveAwayFromBoss()
         {
-            Vector2 target = -Player.position;
+            Vector2 direction = Player.position - transform.position;
             transform.position += transform.up * Time.deltaTime * 3.5f;
-            Rotate(target);
+            Rotate(direction);
         }
 
         protected virtual void CheckAggroDistance()

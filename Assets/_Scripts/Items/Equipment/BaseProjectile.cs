@@ -37,6 +37,10 @@ namespace AsteroidAnnihilation
 
         public virtual void Initialize(float size, float damage, float speed, float lifeTime, bool isCrit, bool secondary = false)
         {
+            objectPooler = ObjectPooler.Instance;
+            gameManager = GameManager.Instance;
+            audioManager = AudioManager.Instance;
+
             canDamage = true;
             Size = size;
             Damage = damage;

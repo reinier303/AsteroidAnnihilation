@@ -85,6 +85,10 @@ namespace AsteroidAnnihilation
             }
             PlayerHitEffect.SetActive(true);
             uIManager.StartCoroutine(uIManager.TweenAlpha(uIManager.HitVignette.rectTransform, uIManager.VignetteDuration, uIManager.AlphaTo, 0));
+            gameManager.StartCoroutine(gameManager.Sleep(0.05f));
+            cameraManager.StartCoroutine(cameraManager.Shake(0.4f, 5f));
+
+
             if (!gameManager.PlayerAlive)
             {
                 return;
