@@ -187,8 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprites:
   - {fileID: 21300000, guid: 6ab22f4a8f42e0a49940555c939880f3, type: 3}
-  MaxHealth: 35
-  currentHealth: 35
+  MaxHealth: 50
+  currentHealth: 50
   ShakeMagnitude: 5.5
   ShakeDuration: 0.5
   HitSound: 
@@ -210,7 +210,7 @@ MonoBehaviour:
   KilledByIndex: 0
   Aggro: 0
   Player: {fileID: 0}
-  DamageType: 0
+  DamageType: 1
   ContactDamage: 20
   RotationSpeed: 0.025
   DroppedUnits: 20
@@ -224,8 +224,8 @@ MonoBehaviour:
   DeathOnImpact: 0
   countsAsEnemy: 1
   enemyType: 
-  moveSpeed: 3.25
-  aggroMove: 6
+  moveSpeed: 6
+  aggroMove: 8
   projectileType: 1
   projectileDamage: 5
   fireRate: 3
@@ -235,3 +235,4 @@ MonoBehaviour:
   randomRotation: 1
   fireTimer: 0
   randomSizeEnabled: 1
+  burstFireDelay: 0.12

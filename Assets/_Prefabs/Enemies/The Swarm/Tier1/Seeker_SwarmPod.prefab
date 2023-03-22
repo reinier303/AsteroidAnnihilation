@@ -163,7 +163,7 @@ MonoBehaviour:
   KilledByIndex: 0
   Aggro: 0
   Player: {fileID: 0}
-  DamageType: 0
+  DamageType: 5
   ContactDamage: 10
   RotationSpeed: 0.007
   DroppedUnits: 15

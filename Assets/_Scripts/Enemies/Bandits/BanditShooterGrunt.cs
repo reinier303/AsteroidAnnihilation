@@ -22,8 +22,6 @@ namespace AsteroidAnnihilation
         [SerializeField] private float burstFireDelay;
         [SerializeField] private WaitForSeconds burstFireWait;
 
-
-
         private float baseStopDistance;
 
         protected override void Start()
@@ -39,7 +37,7 @@ namespace AsteroidAnnihilation
             }
             currSpeed = moveSpeed * Random.Range(0.998f, 1.002f);
             RotationSpeed *= Random.Range(0.998f, 1.002f);
-            fireTimer = fireRate;
+            fireTimer = 0.5f;
             baseStopDistance = StopDistance;
             StopDistance = baseStopDistance + Random.Range(-5, 3);
 
@@ -86,13 +84,13 @@ namespace AsteroidAnnihilation
         protected virtual IEnumerator Fire()
         {
             if(burstFireWait == null) { burstFireWait = new WaitForSeconds(burstFireDelay); }
-            SwarmProjectile projectile = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up + -transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
-            SwarmProjectile projectile2 = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up + transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
+            SwarmProjectile projectile = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up * 0.7f + -transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
+            SwarmProjectile projectile2 = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up * 0.7f + transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
             projectile.Initialize(projectileSize, projectileDamage, projectileSpeed, projectileLifeTime, false);
             projectile2.Initialize(projectileSize, projectileDamage, projectileSpeed, projectileLifeTime, false);
             yield return burstFireWait;
-            SwarmProjectile projectile3 = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up + -transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
-            SwarmProjectile projectile4 = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up + transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
+            SwarmProjectile projectile3 = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up * 0.7f + -transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
+            SwarmProjectile projectile4 = objectPooler.SpawnFromPool(projectileType.ToString(), transform.position + transform.up * 0.7f + transform.right * 0.3f, transform.rotation).GetComponent<SwarmProjectile>();
             projectile3.Initialize(projectileSize, projectileDamage, projectileSpeed, projectileLifeTime, false);
             projectile4.Initialize(projectileSize, projectileDamage, projectileSpeed, projectileLifeTime, false);
         }

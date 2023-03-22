@@ -95,10 +95,16 @@ namespace AsteroidAnnihilation
                 audioManager.PlayAudio("PlasmaGunHit");
                 gameObject.SetActive(false);
             }
+            //Destructable projectileHit
+            else if(collider.CompareTag("EnemyProjectilesDestructable"))
+            {
+                
+            }
         }
 
         public virtual IEnumerator DisableAfterTime()
         {
+            Debug.Log(LifeTime);
             yield return new WaitForSeconds(LifeTime);
             objectPooler.SpawnFromPool(OnHitEffectName, transform.position, Quaternion.identity);
             //audioManager.PlayAudio("PlasmaGunHit");

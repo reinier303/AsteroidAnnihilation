@@ -40,8 +40,8 @@ namespace AsteroidAnnihilation
             SwarmDroneGroupSmall = 22,
             SwarmDroneGroupMedium = 23,
             SwarmDroneGroupLarge = 24,
-            OutlawGrunt = 10,
-            OutlawMarauderMK1 = 11
+            BanditShooterGrunt = 10,
+            BanditRocketGrunt = 11,
         }
 
         public enum Bosses
@@ -171,6 +171,7 @@ namespace AsteroidAnnihilation
             SwarmBullet1 = 0,
             BanditBullet1 = 1,
             BanditMine1 = 2,
+            BanditRocket1 = 3,
         }
 
         public enum Rarities
