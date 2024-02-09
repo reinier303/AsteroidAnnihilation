@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a5890b76b58a04b8b86195bb58c0c8, type: 3}
   m_Name: BanditMineExplosion
   m_EditorClassIdentifier: 
-  Sound:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a564150f83e380541856dc2c5fd6b98e,
-      type: 2}
+  Clips:
+  - {fileID: 8300000, guid: 1fd31868d68903d4f9e2c4a3b7ef98f3, type: 3}
+  VolumeRange: {x: 1, y: 1}
+  PitchRange: {x: 1, y: 1}
   Tag: BanditMineExplosion

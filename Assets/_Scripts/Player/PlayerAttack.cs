@@ -4,7 +4,6 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.EventSystems;
 using Sirenix.OdinInspector;
-using AK.Wwise;
 using static AsteroidAnnihilation.EnumCollections;
 
 namespace AsteroidAnnihilation
@@ -149,8 +148,6 @@ namespace AsteroidAnnihilation
         // Update is called once per frame
         private void Update()
         {
-            UpdateAudioHooks();
-
             if (Time.timeScale == 0)
             {
                 return;
@@ -167,13 +164,6 @@ namespace AsteroidAnnihilation
                 }
                 Fire(mouseButton);
             }
-        }
-
-        private void UpdateAudioHooks()
-        {
-            if(currentWeapons[0].WeaponType == EnumCollections.WeaponTypes.None) { return; }
-            AkSoundEngine.SetRTPCValue("PlayerShipGunLevel", GetFireRateAverage() * currentWeapons[0].GetEquipmentStat(EnumCollections.Stats.Damage, 0), gameObject);
-            if (MaxEnergy > 0) { AkSoundEngine.SetRTPCValue("PlayerShipEnergy", currentEnergy / MaxEnergy, gameObject); }
         }
 
         private void Fire(int buttonDown)

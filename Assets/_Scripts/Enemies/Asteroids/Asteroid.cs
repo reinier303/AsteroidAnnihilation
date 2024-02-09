@@ -208,7 +208,7 @@ namespace AsteroidAnnihilation
             EjectTrailEffects();
             SpawnParticleEffect();
             SpawnSegments();
-            DeathSound.Post(gameObject);
+            AudioManager.Instance.PlayAudio(DeathSound);
             cameraManager.StartCoroutine(cameraManager.Shake(ShakeDuration, ShakeMagnitude));
             gameObject.SetActive(false);
         }

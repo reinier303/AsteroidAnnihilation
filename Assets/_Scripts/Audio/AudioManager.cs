@@ -68,7 +68,7 @@ namespace AsteroidAnnihilation
             foreach (ScriptableAudio audio in ScriptableAudios)
             {
                 //Check if pool info is filled.
-                if (audio.Sound != null && audio.Tag != null)
+                if (audio.Clips != null && audio.Tag != null)
                 {
                     Audios.Add(audio.Tag, audio);
                 }
@@ -88,9 +88,12 @@ namespace AsteroidAnnihilation
         {
             ScriptableAudio sa = Audios[tag];
             if(sa.Tag == "") { return; }
-            Debug.Log(sa.Sound.Name);
-            AkSoundEngine.PostEvent(sa.Sound.Name, gObj == null ? gameObject : gObj);
-            //sa.Sound.PostEvent(gameObject);
+            AudioSource source = objectPooler.SpawnFromPool("AudioSource", transform.position, Quaternion.identity).GetComponent<AudioSource>();
+            source.clip = sa.Clips[Random.Range(0, sa.Clips.Count)];
+            source.volume = Random.Range(sa.VolumeRange.x, sa.VolumeRange.y);
+            source.pitch = Random.Range(sa.PitchRange.x, sa.PitchRange.y);
+
+            source.Play();
         }
 
         public virtual void MoveToNextSongRoundRobin()

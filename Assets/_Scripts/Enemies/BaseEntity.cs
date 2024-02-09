@@ -19,7 +19,7 @@ namespace AsteroidAnnihilation
 
         [Header("Audio")]
         public string HitSound;
-        public AK.Wwise.Event DeathSound;
+        public string DeathSound;
 
         [Header("Particle Effect")]
         public EnumCollections.ExplosionFX ParticleEffect;
@@ -148,7 +148,7 @@ namespace AsteroidAnnihilation
             SpawnSegments();
             SpawnParticleEffect();
             DropPickUps();
-            DeathSound.Post(gameObject);
+            AudioManager.Instance.PlayAudio(DeathSound);
             cameraManager.StartCoroutine(cameraManager.Shake(ShakeDuration, ShakeMagnitude));
             gameObject.SetActive(false);
         }

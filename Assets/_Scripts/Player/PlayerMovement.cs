@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Cinemachine;
-using AK.Wwise;
 
 namespace AsteroidAnnihilation
 {
@@ -149,7 +148,6 @@ namespace AsteroidAnnihilation
         // Update is called once per frame
         private void Update()
         {
-            UpdateAudioHooks();
             if (Time.timeScale == 0)
             {
                 return;
@@ -172,13 +170,6 @@ namespace AsteroidAnnihilation
                 StartCoroutine(Dash());
             }
             Move();
-        }
-
-        private void UpdateAudioHooks()
-        {
-            AkSoundEngine.SetRTPCValue("PlayerShipAcceleration", MovementInput.normalized.magnitude, gameObject);
-            AkSoundEngine.SetRTPCValue("PlayerShipVelocity", rb.velocity.normalized.magnitude, gameObject);
-            AkSoundEngine.SetRTPCValue("PlayerShipTurnRate", currAngle, gameObject);
         }
 
         private IEnumerator Dash()
